@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+      <img src="assets/images/telugulogo.png" height="50">
+    </ion-buttons>
+    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+    <ion-buttons slot="end">
+      <img src="assets/img/swami.jpeg" height="50">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-content-color">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col style="font-size:17px" class="ion-text-center">
+        <b>శ్లోకాలు తెలుగు  పదాలతో వెతకండి</b>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="custom-card">
+          <ion-card-content>
+            <ion-row>
+              <ion-col>
+                <input type="text" placeholder="తెలుగు పదం అందివ్వండి" class="form-control-input" [(ngModel)]="searchTerm" />
+                <ion-button shape="round" fill="outline" (click)="searchWord()">వెతకండి</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <span style="color:maroon"><b>{{searchMessage}}</b></span>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="organized.length>0">
+
+          <ion-card style="margin:auto;color:black">
+            <ion-card-content>
+              <ion-row *ngFor="let sd of organized">
+                <ion-col *ngIf="sd.pages.length>0">
+                  <ion-row>
+                    <ion-col class="ion-text-center"> <b>
+                          <span style="border-radius:10px;font-size:18px;">{{sd.chapterName}}</span></b>                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let pg of sd.pages">
+                    <ion-col>
+                      <ion-card >
+                        <ion-card-content>
+                          <ion-row>
+                            <ion-col (click)="goToContentPage(pg)">
+                              <b><span [innerHtml]="this.global.geetha[pg.pageNumber].verse | safe:'html'"></span></b>
+                            </ion-col>
+                          </ion-row>
+                        </ion-card-content> 
+                      </ion-card>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+
+            </ion-card-content>
+          </ion-card>
+
+
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

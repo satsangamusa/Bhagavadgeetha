@@ -3,27 +3,79 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-row>
+            <ion-col class="ion-text-center">
+              <img width="180px" src="assets/images/telugulogo.png">
+            </ion-col>
+          </ion-row>
+          <ion-row *ngFor="let m of menuItems; let i = index">
+            <ion-col>
+                <ion-item  (click)="global.mainItem = i;global.selectedItem=-1;goToChapter(m);sm=sm==1?0:1" 
+                lines="none" detail="false"  [class.selected]="global.mainItem == i ">
+                <ion-icon [name]='m.icon' style="color:royalblue"></ion-icon>&nbsp;
+                
+                <ion-label><b>{{ m.title }}</b></ion-label>
 
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
-            <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-              <ion-label>{{ p.title }}</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
+                </ion-item>
+                <div *ngIf="global.mainItem == i && sm==1" >
+                    <ion-row  *ngFor="let s of m.subs;let j = index">
+                        <ion-col style="margin-left:5px">
+                            <ion-item (click)="global.selectedItem = j;global.subItem=-1;goToChapter(s); sh=sh==1?0:1" 
+                            lines="none" detail="false" [class.main-blinker]="j==1" [class.selected]="global.selectedItem == j && global.mainItem == i ">
+                            <ion-icon name='document-text'  style="color:royalblue"></ion-icon>&nbsp;  
+                            <ion-label><b>{{ s.title }}</b></ion-label>
+                            </ion-item>
+
+                            <div *ngIf="global.selectedItem == j && sh==1">
+                                <ion-row  *ngFor="let ss of s.subs;let k = index">
+                                    <ion-col style="margin-left:5px">
+                                        <ion-item (click)="global.subItem = k;goToChapter(ss);" 
+                                        lines="none" detail="false" 
+                                        [ngStyle]="{'color':ss.color === 'pink' ? 'pink' : 'black' }"
+                                        [class.main-blinker]="j!=1 && ss.blink=='testBlink'" 
+                                        [class.selected]="global.subItem == k && global.mainItem == i && global.selectedItem == j ">
+                                        <ion-label><b>{{ ss.shloka }}</b></ion-label>
+                                        </ion-item>
+                                        
+                                    </ion-col>
+                                  </ion-row>
+                                </div>
+
+                        </ion-col>
+                      </ion-row>
+                    </div>
+            </ion-col>
+          </ion-row>
+          <!--ion-row *ngFor="let p of global.chapters; let i = index">
+            <ion-col >
+                <ion-item  (click)="global.selectedItem = i;global.subItem=-1;goToChapter(p);" 
+                lines="none" detail="false" [class.selected]="global.selectedItem == i ">
+                <ion-label>{{ p.title }}</ion-label>
+                </ion-item>
+                <div *ngIf="global.selectedItem == i">
+                <ion-row  *ngFor="let s of p.subs;let j = index">
+                    <ion-col>
+                        <ion-item (click)="global.subItem = j;goToChapter(s);" 
+                        lines="none" detail="false" [class.selected]="global.subItem == j && global.selectedItem == i ">
+                          <ion-label>{{ s.shloka }}</ion-label>
+                        </ion-item>
+                    </ion-col>
+                  </ion-row>
+                </div>
+            </ion-col>
+
+          </ion-row-->
+           
         </ion-list>
 
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
-        </ion-list>
+        <ion-row>
+            <ion-col>
+              <span><b> Ⓒ 1978-2020 Thraithashakam. All rights reserved</b></span>
+            </ion-col>
+          </ion-row>
       </ion-content>
     </ion-menu>
+     
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
 </ion-app>

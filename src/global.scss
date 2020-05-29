@@ -24,3 +24,280 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+.container {
+    margin:auto
+  
+  }
+  .flex-row {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+  }
+  .app, app-dashboard, app-root {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  div {
+    display: block;
+  }   
+  
+  .custom-icon-class{
+    font-size:60px;
+    border-radius:40px;
+    color:white;
+   
+  }
+  .custom-icon-class:hover{
+    color:#071f40;
+    border-radius:40px;
+    background:white;
+    animation: shake 0.5s;
+    
+  }
+  .custom-icon-col-class{
+    border-radius:10px;
+    min-width:350px;
+    background:#071f40;
+     
+    ion-col{
+        margin: 20px;
+    }
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    } 
+    
+    .ion-content-color {
+        --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+        --color:white;
+    }
+    .green {
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        color: #FFFFFF;
+        background-color: #4CAF50;
+        text-decoration: none !important;
+        text-align: center;
+        cursor: pointer;
+        min-width:50px;
+        font-weight: bold;
+        font-size: 11px;
+        border-radius: 5px;
+        margin-bottom: 16px!important;
+        white-space: nowrap;
+    }
+    
+    .blue {
+        background-color: #1569E6;
+        border: none;
+        display: inline-block;
+        padding: 8px 16px;
+        vertical-align: middle;
+        overflow: hidden;
+        color: #FFFFFF;
+        min-width:50px;
+        font-size: 11px;
+        font-weight: bold;
+        text-decoration: none !important;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 16px!important;
+        white-space: nowrap;
+    }
+
+    :host ::ng-deep #table  {
+        // color: hotpink;
+        border-collapse: collapse;
+         border-color: blue;
+         > thead > tr > th{
+             border: 0.5px solid black;
+         }
+         > tbody > tr > td{
+             border: 0.5px solid black;
+             font-size:12px;
+         }
+         
+         > tbody > tr:nth-child(even) {background: #e4e5e6
+            
+        }
+         > tbody > tr:nth-child(odd) {background: #FFF}
+     
+       }
+     
+  .orders-item{
+   color: black;
+   --background:#fefefe;
+   margin:2px;
+   font-weight:400;
+   font-size:14px;
+}
+
+
+.form-control-input {
+  display: block;
+ 
+  padding: 0.375rem 0.75rem;
+  font-size: 13px;
+  position: relative;
+ 
+  max-width:250px;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 1.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+ }
+
+ .form-control-text-area{
+  display: block;
+  
+  padding: 0.375rem 0.75rem;
+  font-size: 13px;
+  position: relative;
+  
+  border-radius: 1.25rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+   
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+
+
+  //for video images
+
+
+  .viditem
+  {
+    
+    
+    padding:0.25vmax;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    line-height:140%;
+    font-family: 'Mandali', sans-serif;
+    font-weight: bold;
+    font-size: calc(1em + 0.5vw);
+
+    margin:15px 0;
+  }
+  .vid-img-container
+  {
+    position:relative;
+    display: block;
+    text-decoration: none;
+    transition:0.3s;
+    filter:drop-shadow(0 0 1px black);
+  }
+  .vid-img-container img
+  {
+    width:100%;
+    display: block;
+    transition: 0.3s;
+  }
+  .playimg
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    filter: opacity(0%);
+  }
+  .vidimg
+  {
+    filter:grayscale(0%);
+    border:6px double white;
+    border-radius: 15px 60px;
+  }
+  .vid-img-container:hover .playimg
+  {
+    visibility:visible;
+    filter:opacity(100%);
+    transform:scale(0.65);
+  }
+  .vid-img-container:hover .vidimg
+  {
+    filter:grayscale(100%);
+    transform: scale(0.9);
+  }
+
+  ion-card{
+    --color:black;
+  }
+
+
+
+
+
+  .main-blinker {
+    animation: main-blinker-animation 1.5s linear infinite;
+  }
+  
+  @keyframes main-blinker-animation {  
+      
+    40% { color: rgb(0, 0, 255); }
+    100%{font-weight:600}
+    50%{font-size:17px;}
+  }
+  
+  .kalpitham-blinker {
+    animation: kalpitham-blinker-animation 1.5s linear infinite;
+  }
+  
+  @keyframes kalpitham-blinker-animation {  
+     
+    80% { color: pink; }
+    100%{font-weight:400}
+    100%{opacity:1}
+    50%{font-size:17px;}
+  }
+
+  .custom-popover .popover-content{
+    top: 60px !important;
+    width: 300px;
+}
+.align-icon {
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+.icon-color {
+  
+  color:royalblue;
+}

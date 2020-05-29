@@ -1,0 +1,81 @@
+.custom-card{
+    
+  background:lightgrey;
+  color:black;
+  border-radius:10px;
+}
+.chapter-heading{
+  font-style: bold;
+  color:black;
+  cursor: pointer;
+   
+}
+.chapter-heading:hover{
+  background:linear-gradient(grey,blue);
+  color:white;
+  cursor: pointer;
+  border-radius:10px;
+}
+
+ion-content{
+  
+  user-select: text;
+}
+ion-footer{
+  background-color: #222;
+}
+
+
+div .col{
+  font-size: 18px;
+}
+ 
+.selectable,p,span {
+
+-webkit-user-select: text;
+
+-moz-user-select: text;
+
+-ms-user-select: text;
+
+user-select: text;
+
+}
+
+
+.ms{
+   font-style:italic; 
+   text-align:left; 
+   border-style:solid; 
+   border-radius:10px; 
+   border-color:black; 
+   font-weight: bold;
+   font-size:17px;
+}
+.ns{
+  text-align:left; 
+   font-weight: bold;
+   font-size:17px;
+}
+
+ 
+.testBlink {
+   opacity: 0;
+   animation: blinking 1s infinite;
+ }
+ 
+ @keyframes blinking {
+   from,
+   5% {
+     opacity: 1;
+     color:white;
+     
+   }
+   100%,
+   to {
+     opacity: 2;
+     color:gold;
+    
+   }
+ }
+   

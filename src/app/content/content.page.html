@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+      <img src="assets/images/telugulogo.png" height="50">
+    </ion-buttons>
+    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+
+    <ion-buttons slot="end">
+      <img src="assets/img/swami.jpeg" height="50">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-content-color">
+  <ion-row>
+    <ion-col class="ion-text-center">
+      
+      
+      <ion-title class="ion-text-center" style="line-height:50px">
+        
+        <ion-icon *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1" name="arrow-back" class="align-icon"></ion-icon> 
+        &nbsp; <b><span> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>&nbsp; <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon> 
+        &nbsp; <ion-icon *ngIf="this.global.currentPage<=568" (click)="this.global.currentPage=this.global.currentPage+1" name="arrow-forward" class="align-icon"></ion-icon></ion-title>
+      
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+
+        
+      <ion-card class="custom-card">
+
+        <ion-card-content [ngStyle]="{'font-size':this.global.fontSize+'px'}" (click)="this.global.fontSize=this.global.fontSize==15?20:15">
+
+          <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
+
+            <ion-col class="ns">
+              <span  [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==true">
+            <ion-col class="ms">
+              <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+            </ion-col>
+          </ion-row>
+
+          <ion-row *ngIf="this.global.geetha[this.global.currentPage].videoId!=null && this.global.networkStatus=='ONLINE' ">
+            <ion-col class="ion-text-center">
+                  <div class="viditem">
+                      <a class="vid-img-container">
+                          <iframe  class="vidimg" style="min-width:400px" height="290" 
+                          [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'" 
+                          frameborder="0" allowfullscreen></iframe>
+                      </a>
+                    </div>
+  
+              </ion-col>  
+            
+            <!--ion-col class="ion-text-center">
+  
+                  <iframe width="560" height="315" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'" frameborder="0" allowfullscreen></iframe>
+                  <div class="viditem">
+                      <a class="vid-img-container" target="_blank" href="https://www.youtube.com/watch?v={{this.global.geetha[this.global.currentPage].videoId}}">
+                          <img class="playimg" src="assets/img/playbutton.png">
+                          <img class="vidimg" src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg" data-src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg">
+                      </a>
+                    </div>
+  
+              </ion-col-->
+            </ion-row>
+          
+          <ion-row>
+            <ion-col>
+              <span [innerHTML]="this.global.geetha[this.global.currentPage].meaning | safe:'html'"> </span>
+
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <span [innerHTML]="this.global.geetha[this.global.currentPage].pageText | safe:'html'"> </span>
+
+
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

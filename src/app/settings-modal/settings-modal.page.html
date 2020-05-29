@@ -1,0 +1,20 @@
+<ion-content class="ion-content-color">
+    
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <span><h3><b>అక్షరముల ఆకార మార్పులు</b></h3></span>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="ion-text-center">
+           <span [ngStyle]="{'font-size':global.fontSize+'px'}"><b>ఆత్మ</b></span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <ion-range min="15" max="40" step="1" snaps="true" [(ngModel)]="global.fontSize" color="secondary"></ion-range>
+        </ion-col>
+      </ion-row>
+    
+    </ion-content>
