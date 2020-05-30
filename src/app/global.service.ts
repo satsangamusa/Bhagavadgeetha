@@ -1220,180 +1220,207 @@ export class GlobalService {
   chapterName:"రచయిత ముందు మాట",
   chapterNumber:0,
   pageNumber:30,
-  verse:``, meaning:``, main:false, pageText:`<div class="row">
-  <div class="col">
-      <img style="height:70px;" src="assets/img/emptybox.png"/>
-  </div>
-      </div>
-      
-  <div class="row">
-      <div class="col" style="text-decoration: underline">
-            <span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-          <b>భావము మార్చిన శ్లోకములు:-</b>
-            </span>
-    </div>
-  </div> 
-  <div class="row">
-      <div class="col">
-            <span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-        <b>సాంఖ్యయోగములో</b> </span>    
-      </div>
-      <div class="col">
-          -
-      </div>
-        <div class="col">
-                <span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-            <b>11, 19, 22, 23, 24, 45, 47</b></span>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-          <b>కర్మయోగములో</b>    </span> 
-        </div>
-        <div class="col">
-            -
-        </div>
-          <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-              <b>9, 21, 24, 35</b></span>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-            <b>జ్ఞానయోగములో</b>     </span>
-          </div>
-          <div class="col">
-              -
-          </div>
-            <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                <b>5, 6, 7, 8, 13, 17, 33</b></span>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-              <b>కర్మసన్యాస యోగములో</b>     </span>
-            </div>
-            <div class="col">
-                -
-            </div>
-              <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                  <b>6, 18</b></span>
-            </div>
-          </div>
-          <div class="row">
-              <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                <b>ఆత్మసంయమ యోగములో</b>   </span>  
-              </div>
-              <div class="col">
-                  -
-              </div>
-                <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                    <b>1, 3, 5, 6, 32, 41</b></span>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                  <b>విజ్ఞాన యోగములో </b>     </span>
-                </div>
-                <div class="col">
-                    -
-                </div>
-                  <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                      <b>5, 11, 25</b></span>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                    <b>అక్షర పరబ్రహ్మ యోగములో</b>     </span>
-                  </div>
-                  <div class="col">
-                      -
-                  </div>
-                    <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                        <b>4, 13, 23, 24, 25</b></span>
-                  </div>
-                </div>
-                <div class="row">
-                    <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                      <b>రాజవిద్యా రాజగుహ్యమే యోగములో</b>  </span>   
-                    </div>
-                    <div class="col">
-                        -
-                    </div>
-                      <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                          <b>13, 22, 24, 25, 26</b></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                      <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                        <b>విభూతి యోగములో</b>   </span>  
-                      </div>
-                      <div class="col">
-                          -
-                      </div>
-                        <div class="col">
-                            <b>6</b>
-                      </div>
-                    </div>
-                    <div class="row">
-                        <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                          <b>విశ్వరూప సందర్శన యోగములో</b>  </span>   
-                        </div>
-                        <div class="col">
-                            -
-                        </div>
-                          <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                              <b>23, 25, 27, 39</b></span>
-                        </div>
-                      </div>
-                      <div class="row">
-                          <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                            <b>క్షేత్ర క్షేత్రజ్ఞ విభాగ యోగములో</b>   </span>  
-                          </div>
-                          <div class="col">
-                              -
-                          </div>
-                            <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                                <b>2, 6</b></span>
-                          </div>
-                        </div>
-          <div class="row">
-              <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                <b>పురుషోత్తమ ప్రాప్తి యోగములో</b>   </span>  
-              </div>
-              <div class="col">
-                  -
-              </div>
-                <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                    <b>2, 14, 15, 16, 17</b></span>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                  <b>దైవాసుర సంపద్విభాగ యోగములో </b>    </span> 
-                </div>
-                <div class="col">
-                    -
-                </div>
-                  <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                      <b>7, 8, 9</b></span>
-                </div>
-              </div>
-              <div class="row">  
-                  <div class="col"><span [ngStyle] = "{'font-size':this.fontSize+'px'}">   
-                    <b>మోక్ష సన్న్యాస యోగములో - </b> </span>    
-                  </div>
-                  <div class="col">
-                      -
-                  </div>
-                    <div class="col">
-                        <b>2</b>
-                  </div>
-                </div>
-               
-                <div class="row">  <div class="col" style="font-size:20px"><i>ఇట్లు</i></div></div> 
-                <div class="row"> <div class="col" style="font-size:20px">ఇందూ ధర్మప్రదాత</div></div> 
-                <div class="row">  <div class="col" style="font-size:20px">సంచలనాత్మక రచయిత, త్రైత సిద్ధాంత ఆదికర్త</div></div> 
-                <div class="row">  <div class="col" style="font-size:21px"><b> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></div></div> `
+  verse:``, meaning:``, main:false, pageText:` 
+  <ion-row>
+  <ion-col>
+      <img style="height:70px;" src="assets/img/emptybox.png" />
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col class="ion-text-center">
+    <u>
+      <b>భావము మార్చిన శ్లోకములు:-</b></u>
+
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>సాంఖ్యయోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>11, 19, 22, 23, 24, 45, 47</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>కర్మయోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>9, 21, 24, 35</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>జ్ఞానయోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>5, 6, 7, 8, 13, 17, 33</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>కర్మసన్యాస యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>6, 18</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>ఆత్మసంయమ యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>1, 3, 5, 6, 32, 41</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>విజ్ఞాన యోగములో </b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>5, 11, 25</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>అక్షర పరబ్రహ్మ యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>4, 13, 23, 24, 25</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>రాజవిద్యా రాజగుహ్యమే యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>13, 22, 24, 25, 26</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>విభూతి యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>6</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>విశ్వరూప సందర్శన యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>23, 25, 27, 39</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>క్షేత్ర క్షేత్రజ్ఞ విభాగ యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>2, 6</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>పురుషోత్తమ ప్రాప్తి యోగములో</b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>2, 14, 15, 16, 17</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>దైవాసుర సంపద్విభాగ యోగములో </b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+
+      <b>7, 8, 9</b>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+
+      <b>మోక్ష సన్న్యాస యోగములో - </b>
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      <b>2</b>
+  </ion-col>
+</ion-row>
+<b>
+<ion-row>
+  <ion-col style="font-size:20px"> ఇట్లు </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col style="font-size:20px">ఇందూ ధర్మప్రదాత
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col style="font-size:20px">సంచలనాత్మక రచయిత, త్రైత సిద్ధాంత ఆదికర్త
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col style="font-size:21px"><b> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></ion-col>
+</ion-row>
+</b>
+  `
 },
 {
   chapterName:"సాంఖ్య యోగము",
@@ -3126,371 +3153,365 @@ meaning:`<b>భావము:</b> నిత్యముండువాడు, స
           వివరమును వరుసగ మూడు భాగములలో వ్రాసిన దానిని పరిశీలించి చదివి జీవాత్మ, ఆత్మ, పరమాత్మల, వివరమును బాగుగ 
           అర్థము చేసుకోగలరని ఆశిస్తున్నాము.
      
-   <div class="row">
-     <div class="col">
-          <b>
-                జీవాత్మ 
-          </b>
-      </div>
-      <div class="col">
-          <b>
-                ఆత్మ
-          </b>
-      </div>
-      <div class="col">
-          <b>
-                పరమాత్మ
-          </b>
-      </div>
-   </div>
-        <div class="row">
-            <div class="col">
-                   1. నాశనము కలది 
-             </div>
-             <div class="col">
-                   నాశనము లేనిది
-             </div>
-             <div class="col">
-                   నాశనము లేనిది
-             </div>
-          </div>
-          <div class="row">
-              <div class="col">
-                    2. మరణము కలది 
-               </div>
-               <div class="col">
-                    మరణము లేనిది
-               </div>
-               <div class="col">
-                    మరణము లేనిది
-               </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                        3. అగ్నికి కాలదు<br>
-                    కత్తికి తెగదు<br>
-                    నీటికి తడువదు 
-                 </div>
-                 <div class="col">
-                        అగ్నికి కాలును<br>
-                    కత్తికి తెగును<br>
-                    నీటికి తడుచును
-                 </div>
-                 <div class="col">
-                        అగ్నికి కాలదు<br>
-                    కత్తికి తెగదు<br>
-                    నీటికి తడువదు
-                 </div>
-              </div>  
-              <div class="row">
-                  <div class="col">
-                        4.జ్ఞానదృష్ఠికి తెలియును
-                   </div>
-                   <div class="col">
-                        జ్ఞానదృష్ఠికి తెలియును
-                   </div>
-                   <div class="col">
-                        జ్ఞానదృష్ఠికి కూడ తెలియదు
-                   </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                            5.ఒక్క శరీరము లోపల ఉండును 
-                     </div>
-                     <div class="col">
-                            శరీరము లోపల అనంతముగ ఉండును
-                     </div>
-                     <div class="col">
-                            అన్ని శరీరముల లోపల బయట కూడ ఉండును
-                     </div>
-                  </div>
-                  <div class="row">
-                      <div class="col">
-                            6.శరీరము బయట లేదు 
-                       </div>
-                       <div class="col">
-                            శరీరము బయట లేదు
-                       </div>
-                       <div class="col">
-                            శరీరము బయట కూడ ఉన్నది
-                       </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                                7. ఆకారమున్నది  
-                         </div>
-                         <div class="col">
-                                ఆకారమున్నది
-                         </div>
-                         <div class="col">
-                                ఆకారము లేదు.
-                         </div>
-                      </div>
-                      <div class="row">
-                          <div class="col">
-                                8. పేరు ఉన్నది
-                           </div>
-                           <div class="col">
-                                పేరు ఉన్నది
-                           </div>
-                           <div class="col">
-                                పేరు లేనిది
-                           </div>
-                        </div>
+          <ion-row>
+          <ion-col>
+              <b>
+                      జీవాత్మ 
+                </b>
+          </ion-col>
+          <ion-col>
+              <b>
+                      ఆత్మ
+                </b>
+          </ion-col>
+          <ion-col>
+              <b>
+                      పరమాత్మ
+                </b>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              1. నాశనము కలది
+          </ion-col>
+          <ion-col>
+              నాశనము లేనిది
+          </ion-col>
+          <ion-col>
+              నాశనము లేనిది
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              2. మరణము కలది
+          </ion-col>
+          <ion-col>
+              మరణము లేనిది
+          </ion-col>
+          <ion-col>
+              మరణము లేనిది
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              3. అగ్నికి కాలదు<br> కత్తికి తెగదు<br> నీటికి తడువదు
+          </ion-col>
+          <ion-col>
+              అగ్నికి కాలును<br> కత్తికి తెగును<br> నీటికి తడుచును
+          </ion-col>
+          <ion-col>
+              అగ్నికి కాలదు<br> కత్తికి తెగదు<br> నీటికి తడువదు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              4.జ్ఞానదృష్ఠికి తెలియును
+          </ion-col>
+          <ion-col>
+              జ్ఞానదృష్ఠికి తెలియును
+          </ion-col>
+          <ion-col>
+              జ్ఞానదృష్ఠికి కూడ తెలియదు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              5.ఒక్క శరీరము లోపల ఉండును
+          </ion-col>
+          <ion-col>
+              శరీరము లోపల అనంతముగ ఉండును
+          </ion-col>
+          <ion-col>
+              అన్ని శరీరముల లోపల బయట కూడ ఉండును
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              6.శరీరము బయట లేదు
+          </ion-col>
+          <ion-col>
+              శరీరము బయట లేదు
+          </ion-col>
+          <ion-col>
+              శరీరము బయట కూడ ఉన్నది
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              7. ఆకారమున్నది
+          </ion-col>
+          <ion-col>
+              ఆకారమున్నది
+          </ion-col>
+          <ion-col>
+              ఆకారము లేదు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              8. పేరు ఉన్నది
+          </ion-col>
+          <ion-col>
+              పేరు ఉన్నది
+          </ion-col>
+          <ion-col>
+              పేరు లేనిది
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              9. జీవుల సంఖ్య అనేకము
+          </ion-col>
+          <ion-col>
+              ఆత్మ ఒక్కటే అయిన దీని ఖండములనేకములు
+          </ion-col>
+          <ion-col>
+              ఇది ఏకమైనది
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              10. కర్మననుభవించునది
+          </ion-col>
+          <ion-col>
+              కర్మననుభవించదు
+          </ion-col>
+          <ion-col>
+              కర్మననుభవించదు
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              11. శక్తిలేనివాడు
+          </ion-col>
+          <ion-col>
+              శక్తికలవాడు
+          </ion-col>
+          <ion-col>
+              శక్తియే తానైనవాడు
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              12. ముద్దాయి
+          </ion-col>
+          <ion-col>
+              సాక్షి
+          </ion-col>
+          <ion-col>
+              జీవాత్మకు ఆత్మకు భిన్నముగా ఉంటూ సాక్షికానివాడు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              13. గుణవికారములున్నవి
+          </ion-col>
+          <ion-col>
+              గుణవికారములు లేవు
+          </ion-col>
+          <ion-col>
+              గుణవికారములు లేవు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              14. విభూతి రేఖలలో క్రిందిది
+          </ion-col>
+          <ion-col>
+              విభూతి రేఖలలో మధ్యది.
+          </ion-col>
+          <ion-col>
+              విభూతి రేఖలలో పైది.</ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+      
+              15. ఆరాధించువాడు
+          </ion-col>
+          <ion-col>
+              ఆరాధింపబడువాడు
+          </ion-col>
+          <ion-col>
+              ఆరాధనలకందువాడు కాదు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              16. సృష్ఠింపబడినవాడు.
+          </ion-col>
+          <ion-col>
+              సృష్ఠింపబడినవాడు
+          </ion-col>
+          <ion-col>
+              సృష్ఠించినవాడు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              జీవుడు
+          </ion-col>
+          <ion-col>
+              ఆత్మ
+          </ion-col>
+          <ion-col>
+              దేవుడు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              18. ప్రళయము తర్వాత లేనివాడు
+          </ion-col>
+          <ion-col>
+              ప్రళయము తర్వాత లేనివాడు
+          </ion-col>
+          <ion-col>
+              ప్రళయము తర్వాత కూడ ఉన్నవాడు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              19. ప్రకృతి మాత అగును
+          </ion-col>
+          <ion-col>
+              ప్రకృతి తోబుట్టువగును
+          </ion-col>
+          <ion-col>
+              ప్రకృతి భార్య అగును.
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              20. ఆత్మలో కలియువాడు
+          </ion-col>
+          <ion-col>
+              జీవాత్మను పరమాత్మలో కలుపు మధ్యవర్తి
+          </ion-col>
+          <ion-col>
+              జీవాత్మను కలుపుకొనువాడు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              21. శూణ్యములో లేనిది
+          </ion-col>
+          <ion-col>
+              శూణ్యములో లేనిది
+          </ion-col>
+          <ion-col>
+              శూణ్యములో ఉన్నది.
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              22. జగత్తులో ఒకచోట శరీరములో ఉన్నవాడు
+          </ion-col>
+          <ion-col>
+              జగత్తులో శరీరములలో శరీరమంతట ఉన్నవాడు.
+          </ion-col>
+          <ion-col>
+              విశ్వమంతయు ఉన్నవాడు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              23.బ్రతికి ఉన్నపుడు జీవాత్మ ఆత్మను తెలుసుకోవచ్చును.
+          </ion-col>
+          <ion-col>
+              బ్రతికి ఉన్నపుడు ఆత్మ జీవాత్మను కలుపుకోవచ్చును.
+          </ion-col>
+          <ion-col>
+              బ్రతికి ఉన్న ఎవరు తెలుసుకోలేనిది.
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              24. జీవున్ని పూజచే ఆరాధించవచ్చును
+          </ion-col>
+          <ion-col>
+              ఆత్మను యోగముచే ఆరాధించవచ్చును
+          </ion-col>
+          <ion-col>
+              ఏవిధ పూజ,ఏ యోగముచే ఆరాధించలేము
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              25. కర్మ ఆధీనములోని వాడు
+          </ion-col>
+          <ion-col>
+              కర్మను అనుసరించువాడు.
+          </ion-col>
+          <ion-col>
+              కర్మ సంబంధము లేనివాడు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              26. కర్మ కట్టెలను మోయువాడు
+          </ion-col>
+          <ion-col>
+              కర్మ కట్టెలను కాల్చువాడు
+          </ion-col>
+          <ion-col>
+              అగ్నియై ఉన్నవాడు.
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              27. క్షరుడు
+          </ion-col>
+          <ion-col>
+              అక్షరుడు
+          </ion-col>
+          <ion-col>
+              పురుషోత్తముడు
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              28. గ్రుడ్డివాడు
+          </ion-col>
+          <ion-col>
+      
+              చూపుగలవాడు
+          </ion-col>
+          <ion-col>
+              చూపు రూపు లేనివాడు
+          </ion-col>
+      </ion-row>
+      
+      <ion-row>
+          <ion-col>
+              29. వ్యక్తుడు
+          </ion-col>
+          <ion-col>
+              వ్యక్తుడు
+          </ion-col>
+          <ion-col>
+              అవ్యక్తుడు
+          </ion-col>
+      </ion-row>
+      
+      
+      <ion-row>
+          <ion-col>
+              30. కర్మబద్దుడు
+          </ion-col>
+          <ion-col>
+              జీవబద్దుడు
+          </ion-col>
+          <ion-col>
+              అబద్దుడు
+          </ion-col>
+      </ion-row>
 
-                        <div class="row">
-                            <div class="col">
-                                    9. జీవుల సంఖ్య అనేకము 
-                             </div>
-                             <div class="col">
-                                    ఆత్మ ఒక్కటే అయిన దీని ఖండములనేకములు
-                             </div>
-                             <div class="col">
-                                    ఇది ఏకమైనది
-                             </div>
-                          </div>
-                          <div class="row">
-                              <div class="col">
-                                    10. కర్మననుభవించునది 
-                               </div>
-                               <div class="col">
-                                    కర్మననుభవించదు
-                               </div>
-                               <div class="col">
-                                    కర్మననుభవించదు
-                               </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col">
-                                        11. శక్తిలేనివాడు  
-                                 </div>
-                                 <div class="col">
-                                        శక్తికలవాడు
-                                 </div>
-                                 <div class="col">
-                                        శక్తియే తానైనవాడు
-                                 </div>
-                              </div>
-
-                              <div class="row">
-                                  <div class="col">
-                                        12. ముద్దాయి  
-                                   </div>
-                                   <div class="col">
-                                        సాక్షి
-                                   </div>
-                                   <div class="col">
-                                        జీవాత్మకు ఆత్మకు భిన్నముగా ఉంటూ సాక్షికానివాడు
-                                   </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                            13. గుణవికారములున్నవి
-                                     </div>
-                                     <div class="col">
-                                            గుణవికారములు లేవు
-                                     </div>
-                                     <div class="col">
-                                            గుణవికారములు లేవు
-                                     </div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col">
-                                            14. విభూతి రేఖలలో క్రిందిది 
-                                       </div>
-                                       <div class="col">
-                                            విభూతి రేఖలలో మధ్యది.
-                                       </div>
-                                       <div class="col">
-                                            విభూతి రేఖలలో పైది.</div>
-                                  </div>
-                                            <div class="row"  >
-                                                  <div class="col"  >
-                                             
-                                                         15. ఆరాధించువాడు  
-                                                       </div>
-                                                       <div class="col">
-                                                             ఆరాధింపబడువాడు
-                                                       </div>
-                                                       <div class="col">
-                                                              ఆరాధనలకందువాడు కాదు.
-                                                       </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                             16. సృష్ఠింపబడినవాడు.
-                                                         </div>
-                                                         <div class="col">
-                                                              సృష్ఠింపబడినవాడు
-                                                         </div>
-                                                         <div class="col">
-                                                              సృష్ఠించినవాడు
-                                                         </div>
-                                                      </div>
-                                                      <div class="row">
-                                                          <div class="col">
-                                                                  జీవుడు 
-                                                           </div>
-                                                           <div class="col">
-                                                                  ఆత్మ
-                                                           </div>
-                                                           <div class="col">
-                                                                  దేవుడు
-                                                           </div>
-                                                        </div>  
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                  18. ప్రళయము తర్వాత లేనివాడు
-                                                             </div>
-                                                             <div class="col">
-                                                                  ప్రళయము తర్వాత లేనివాడు
-                                                             </div>
-                                                             <div class="col">
-                                                                 ప్రళయము తర్వాత కూడ ఉన్నవాడు.
-                                                             </div>
-                                                          </div>
-                                                          <div class="row">
-                                                              <div class="col">
-                                                                      19. ప్రకృతి మాత అగును 
-                                                               </div>
-                                                               <div class="col">
-                                                                      ప్రకృతి తోబుట్టువగును
-                                                               </div>
-                                                               <div class="col">
-                                                                      ప్రకృతి భార్య అగును.
-                                                               </div>
-                                                            </div>
-                                                             
-                                                              <div class="row">
-                                                                  <div class="col">
-                                                                          20. ఆత్మలో కలియువాడు  
-                                                                   </div>
-                                                                   <div class="col">
-                                                                          జీవాత్మను పరమాత్మలో కలుపు మధ్యవర్తి
-                                                                   </div>
-                                                                   <div class="col">
-                                                                         జీవాత్మను కలుపుకొనువాడు.
-                                                                   </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col">
-                                                                         21. శూణ్యములో లేనిది
-                                                                     </div>
-                                                                     <div class="col">
-                                                                         శూణ్యములో లేనిది
-                                                                     </div>
-                                                                     <div class="col">
-                                                                         శూణ్యములో ఉన్నది.
-                                                                     </div>
-                                                                  </div>
-                              
-                                                                  <div class="row">
-                                                                      <div class="col">
-                                                                             22. జగత్తులో ఒకచోట శరీరములో ఉన్నవాడు
-                                                                       </div>
-                                                                       <div class="col">
-                                                                             జగత్తులో శరీరములలో శరీరమంతట ఉన్నవాడు.
-                                                                       </div>
-                                                                       <div class="col">
-                                                                             విశ్వమంతయు ఉన్నవాడు.
-                                                                       </div>
-                                                                    </div>
-                                                                    <div class="row">
-                                                                        <div class="col">
-                                                                              23.బ్రతికి ఉన్నపుడు జీవాత్మ ఆత్మను తెలుసుకోవచ్చును.
-                                                                         </div>
-                                                                         <div class="col">
-                                                                             బ్రతికి ఉన్నపుడు ఆత్మ జీవాత్మను కలుపుకోవచ్చును.
-                                                                         </div>
-                                                                         <div class="col">
-                                                                              బ్రతికి ఉన్న ఎవరు తెలుసుకోలేనిది.
-                                                                         </div>
-                                                                      </div>
-                              
-                                                                      <div class="row">
-                                                                          <div class="col">
-                                                                                 24. జీవున్ని పూజచే ఆరాధించవచ్చును  
-                                                                           </div>
-                                                                           <div class="col">
-                                                                                 ఆత్మను యోగముచే ఆరాధించవచ్చును
-                                                                           </div>
-                                                                           <div class="col">
-                                                                                  ఏవిధ పూజ,ఏ యోగముచే        ఆరాధించలేము
-                                                                           </div>
-                                                                        </div>
-                              
-                                                                        <div class="row">
-                                                                            <div class="col">
-                                                                                 25. కర్మ ఆధీనములోని వాడు  
-                                                                             </div>
-                                                                             <div class="col">
-                                                                                  కర్మను అనుసరించువాడు.
-                                                                             </div>
-                                                                             <div class="col">
-                                                                                   కర్మ సంబంధము లేనివాడు.
-                                                                             </div>
-                                                                          </div>
-                                                                          <div class="row">
-                                                                              <div class="col">
-                                                                                      26. కర్మ కట్టెలను మోయువాడు
-                                                                               </div>
-                                                                               <div class="col">
-                                                                                     కర్మ కట్టెలను కాల్చువాడు
-                                                                               </div>
-                                                                               <div class="col">
-                                                                                      అగ్నియై ఉన్నవాడు.
-                                                                               </div>
-                                                                            </div>
-                                                                            <div class="row">
-                                                                                <div class="col">
-                                                                                     27. క్షరుడు
-                                                                                 </div>
-                                                                                 <div class="col">
-                                                                                      అక్షరుడు 
-                                                                                 </div>
-                                                                                 <div class="col">
-                                                                                     పురుషోత్తముడు
-                                                                                 </div>
-                                                                              </div>
-                                                                          <div class="row">
-                                                                              <div class="col">
-                                                                                      28. గ్రుడ్డివాడు
-                                                                               </div>
-                                                                               <div class="col">
-                                                                                          
-                                                                                       చూపుగలవాడు 
-                                                                               </div>
-                                                                               <div class="col">
-                                                                                       చూపు రూపు లేనివాడు
-                                                                               </div>
-                                                                            </div>
-                                                                            
-                                                                            <div class="row">
-                                                                                <div class="col">
-                                                                                       29. వ్యక్తుడు
-                                                                                 </div>
-                                                                                 <div class="col">
-                                                                                      వ్యక్తుడు 
-                                                                                 </div>
-                                                                                 <div class="col">
-                                                                                      అవ్యక్తుడు
-                                                                                 </div>
-                                                                              </div> 
-                              
-                              
-                                                                              <div class="row">
-                                                                                  <div class="col">
-                                                                                           30. కర్మబద్దుడు
-                                                                                   </div>
-                                                                                   <div class="col">
-                                                                                           జీవబద్దుడు 
-                                                                                   </div>
-                                                                                   <div class="col">
-                                                                                            అబద్దుడు
-                                                                                   </div>
-                                                                                </div> 
-                              
                                             
                                         <br><br> 
                                                   &nbsp;జీవితములో జీవుడైనవాడు జ్ఞానము ప్రకారము అరాధించవలసినది ఆత్మనే. ఈ విషయము తెలియజేయు నిమిత్తము ఈశ్వర లింగము మీద విభూతి రేఖలలోగాని, 
@@ -4255,36 +4276,95 @@ main:false, pageText:`
   <br><br><b>
   ఏ ఇంద్రియమునకు, ఏ ఇంద్రియములతో స్నేహమున్నది క్రింద గల పట్టికలో చూడుము.
   </b><br><br> 
-  <div class="row"> <div class="col"> 1. జీవునికి</div>  <div class="col"> :</div>  <div class="col"> అహము, బుద్ధి, (2)</div>  </div>
-   
-  <div class="row"> <div class="col"> 2. మనస్సుకు</div>  <div class="col"> :</div>  <div class="col"> ఐదు కర్మేంద్రియములు, ఐదు జ్ఞానేంద్రియములు, బుద్ధి, చిత్తము,(12)</div>  </div>
+  <ion-row>
+  <ion-col> 1. జీవునికి</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> అహము, బుద్ధి, (2)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 3. బుద్ధికి </div>  <div class="col"> :</div>  <div class="col">   మనస్సు, చిత్తము, జీవుడు (3)</div>  </div>
+<ion-row>
+  <ion-col> 2. మనస్సుకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> ఐదు కర్మేంద్రియములు, ఐదు జ్ఞానేంద్రియములు, బుద్ధి, చిత్తము,(12)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 4. చిత్తమునకు</div>  <div class="col"> :</div>  <div class="col"> బుద్ధి, మనస్సు, అహము (3)</div>  </div>
+<ion-row>
+  <ion-col> 3. బుద్ధికి </ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు, చిత్తము, జీవుడు (3)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col">5. అహమునకు</div>  <div class="col"> :</div>  <div class="col"> జీవుడు, చిత్తము (2)</div>  </div>
+<ion-row>
+  <ion-col> 4. చిత్తమునకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> బుద్ధి, మనస్సు, అహము (3)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 6. కన్నుకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col>5. అహమునకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> జీవుడు, చిత్తము (2)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 7. ముక్కుకు </div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 6. కన్నుకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 8. చెవికి </div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 7. ముక్కుకు </ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 9. నాలుకకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 8. చెవికి </ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 10. చర్మమునకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 9. నాలుకకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 11. చేతులకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 10. చర్మమునకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 12: కాళ్లకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 11. చేతులకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 13. నోరుకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 12: కాళ్లకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 14: గుదమునకు</div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
+<ion-row>
+  <ion-col> 13. నోరుకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col"> 15: గుహ్యమునకు  </div>  <div class="col"> :</div>  <div class="col"> మనస్సు (1)</div>  </div>
-  
+<ion-row>
+  <ion-col> 14: గుదమునకు</ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 15: గుహ్యమునకు </ion-col>
+  <ion-col> :</ion-col>
+  <ion-col> మనస్సు (1)</ion-col>
+</ion-row>
   <br><br> 
    మనస్సుకు ఎల్లప్పుడు ఇంద్రియములతో కల్గిన స్నేహమును ఏ విధముగా లేకుండా చేసుకోవలయునో, ఉదాహరించి 
   భగవంతుడు క్రింది శ్లోకమున ఈ విధముగా అంటున్నాడు.`
@@ -4740,180 +4820,186 @@ meaning:`<b>
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:` <b>
   శ్లోకముల యొక్క వివరము పట్టిక ఇలా ఉన్నది.</b> 
   <br><br>
-   
-  <div class="row">
-      <div class="col">
-          1) జీవాత్మను గురించినవి  
-      </div>
-      <div class="col">
-          =
-      </div>
-      <div class="col">
-           12
-      </div>
-  </div>
-  
-  <div class="row">
-          <div class="col">
-              2) ఆత్మను గురించినవి 
-          </div>
-          <div class="col">
-              =
-          </div>
-          <div class="col">
-              2
-          </div>
-      </div>
-      <div class="row">
-              <div class="col">
-                  3) ఆత్మ పరమాత్మల గురించినవి
-              </div>
-              <div class="col">
-                  =
-              </div>
-              <div class="col">
-                   1
-              </div>
-          </div>
+  <ion-row>
+  <ion-col>
+      1) జీవాత్మను గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      12
+  </ion-col>
+</ion-row>
 
-          <div class="row">
-                  <div class="col">
-                      4)పరమాత్మను గురించినవి
-                  </div>
-                  <div class="col">
-                      =
-                  </div>
-                  <div class="col">
-                       4
-                  </div>
-              </div>
-  <div class="row">
-          <div class="col">
-              5)కర్మయోగమును గురించినవి
-          </div>
-          <div class="col">
-              =
-          </div>
-          <div class="col">
-                  9
-          </div>
-      </div>
-      <div class="row">
-              <div class="col">
-                  6) బ్రహ్మయోగమును గురించినవి
-              </div>
-              <div class="col">
-                  =
-              </div>
-              <div class="col">
-                      14
-              </div>
-          </div> 
-          <div class="row">
-                  <div class="col">
-                      7) కర్మయోగము మరియు బ్రహ్మయోగము రెండు కలిసియున్నవి.
-                  </div>
-                  <div class="col">
-                      =
-                  </div>
-                  <div class="col">
-                          4
-                  </div>
-              </div>
-              <div class="row">
-                      <div class="col">
-                          8) ప్రకృతిలోని మనుజుల గూర్చినవి
-                      </div>
-                      <div class="col">
-                          =
-                      </div>
-                      <div class="col">
-                              7
-                      </div>
-                  </div>
-                  <div class="row">
-                          <div class="col">
-                              9) బ్రహ్మయోగము మరియు ప్రకృతి
-                          </div>
-                          <div class="col">
-                              =
-                          </div>
-                          <div class="col">
-                                  1
-                          </div>
-                      </div>    
-                      <div class="row">
-                              <div class="col">
-                                  10) ప్రకృతి మరియు పరమాత్మల గూర్చినది
-                              </div>
-                              <div class="col">
-                                  =
-                              </div>
-                              <div class="col">
-                                      1
-                              </div>
-                          </div>    
-   
-  <div class="row"><div class="col"> -------------------------------------------------</div></div>
-  <div class="row">
-          <div class="col">
-                  మొత్తము
-          </div>
-          <div class="col">
-              =
-          </div>
-          <div class="col">
-                 55
-          </div>
-      </div>    
-  
-  <div class="row"><div class="col"> -------------------------------------------------</div></div>
-  <div class="row">
-          <div class="col">
-                  వ్రాయక వదలినవి
-          </div>
-          <div class="col">
-              =
-          </div>
-          <div class="col">
-                 10
-          </div>
-      </div> 
-      <div class="row">
-              <div class="col">
-                      కొట్టివేయబడిన కల్పిత శ్లోకములు
-              </div>
-              <div class="col">
-                  =
-              </div>
-              <div class="col">
-                     7
-              </div>
-          </div>   
-          
-          <div class="row">
-                  <div class="col">
-                          సాంఖ్యయోగ శ్లోకములమొత్తము
-                  </div>
-                  <div class="col">
-                      =
-                  </div>
-                  <div class="col">
-                         72
-                  </div>
-              </div>   
+<ion-row>
+  <ion-col>
+      2) ఆత్మను గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      2
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      3) ఆత్మ పరమాత్మల గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
 
-              <div class="row">
-                      <div class="col">
-                              భావము, వివరము మర్చి వ్రాసిన శ్లోకములు
-                      </div>
-                      <div class="col">
-                          =
-                      </div>
-                      <div class="col">
-                             11,19,22,23,24,45,47
-                      </div>
-                  </div>  `
+<ion-row>
+  <ion-col>
+      4)పరమాత్మను గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      4
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      5)కర్మయోగమును గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      9
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      6) బ్రహ్మయోగమును గురించినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      14
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      7) కర్మయోగము మరియు బ్రహ్మయోగము రెండు కలిసియున్నవి.
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      4
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      8) ప్రకృతిలోని మనుజుల గూర్చినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      7
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      9) బ్రహ్మయోగము మరియు ప్రకృతి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      10) ప్రకృతి మరియు పరమాత్మల గూర్చినది
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> -------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      మొత్తము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      55
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> -------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      వ్రాయక వదలినవి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      10
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      కొట్టివేయబడిన కల్పిత శ్లోకములు
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      7
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+      సాంఖ్యయోగ శ్లోకములమొత్తము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      72
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+      భావము, వివరము మర్చి వ్రాసిన శ్లోకములు
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      11,19,22,23,24,45,47
+  </ion-col>
+</ion-row>
+  
+                  
+                  `
 },
 {
   chapterName:"కర్మ యోగము",
@@ -5937,94 +6023,94 @@ main:false, pageText:`
       బొమ్మయే పరదా మీదకు వచ్చి ఆడునట్లు, కర్మలోనున్న సంఘటనలే కర్మేంద్రియముల ద్వారా కార్యమై జరిగితీరును.  ఈ విషయము 
       చాలామందికి తెలియదు. కావున వారందరు జరుగుచున్న కార్యమునే చూడగల్గుచున్నారు. కాని వెనుకయున్న కర్మను చూడలేకపోవుచున్నారు.
        <br><br>
-    <div class="row">
-        <div class="col">
-            <b>(హాలులో చిత్రపద్ధతి)</b>
-        </div>
-        <div class="col">
-            <b>(శరీరములో జీవిత పద్ధతి)</b>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-        --
-        </div>
-        <div class="col">
-            --
-            </div>
-      </div>
-    <div class="row">
-      <div class="col">
-          <b>ఫిల్ము </b>
-      </div>
-      <div class="col">
-          <b>కర్మ</b>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            --
-        </div>
-        <div class="col">
-            --
-            </div>
-      </div>
-    <div class="row">
-      <div class="col">
-          <b>ప్రొజక్టరు</b>
-      </div>
-      <div class="col">
-          <b>గుణములు</b>
-          </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            --
-        </div>
-        <div class="col">
-            --
-            </div>
-      </div>
-    <div class="row">
-      <div class="col">
-          <b> తెర (పరదా)</b>
-    </div>
-    <div class="col">
-        <b>కర్మేంద్రియములు</b>
-  </div>
-  </div>
-  <div class="row">
-      <div class="col">
-          --
-      </div>
-      <div class="col">
-          --
-          </div>
-    </div>
-    <div class="row">
-          <div class="col">
-              <b> చిత్రము </b>
-        </div>
-        <div class="col">
-            <b>కార్యములు</b>
-      </div>
-      </div>
-      <div class="row">
-              <div class="col">
-                  --
-              </div>
-              <div class="col">
-                  --
-                  </div>
-            </div>
-  <div class="row">
-    <div class="col">
-        <b>అనుభూతి పొందువాడు ప్రేక్షకుడు</b>
-    </div>
-    <div class="col">
-        <b>అనుభూతి పొందువాడు జీవుడు</b>
-    </div>
-  </div>
+       <ion-row>
+       <ion-col>
+           <b>(హాలులో చిత్రపద్ధతి)</b>
+       </ion-col>
+       <ion-col>
+           <b>(శరీరములో జీవిత పద్ధతి)</b>
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           --
+       </ion-col>
+       <ion-col>
+           --
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           <b>ఫిల్ము </b>
+       </ion-col>
+       <ion-col>
+           <b>కర్మ</b>
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           --
+       </ion-col>
+       <ion-col>
+           --
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           <b>ప్రొజక్టరు</b>
+       </ion-col>
+       <ion-col>
+           <b>గుణములు</b>
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           --
+       </ion-col>
+       <ion-col>
+           --
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           <b> తెర (పరదా)</b>
+       </ion-col>
+       <ion-col>
+           <b>కర్మేంద్రియములు</b>
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           --
+       </ion-col>
+       <ion-col>
+           --
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           <b> చిత్రము </b>
+       </ion-col>
+       <ion-col>
+           <b>కార్యములు</b>
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           --
+       </ion-col>
+       <ion-col>
+           --
+       </ion-col>
+   </ion-row>
+   <ion-row>
+       <ion-col>
+           <b>అనుభూతి పొందువాడు ప్రేక్షకుడు</b>
+       </ion-col>
+       <ion-col>
+           <b>అనుభూతి పొందువాడు జీవుడు</b>
+       </ion-col>
+   </ion-row>
    <br><br>
     బాహ్యముగ జరుగు కార్యములను మంచివి, చెడువి అను రెండుగ విభజించవచ్చును. జరుగుచున్నవి మంచివైన, 
     చెడువైన వాటికి లోపలయున్న కర్మేయే కారణము. ఫిల్ములో ఉన్నదే పరదామీద చిత్రమైనట్లు, కర్మలో ఉన్నదే కర్మేంద్రియముల మీద కార్యమౌచున్నది. లోపలయున్న కర్మ మంచిదైన మంచి కార్యములు, చెడుదైన చెడు కార్యములు 
@@ -6450,7 +6536,7 @@ main:false, pageText:`
    కోపగించుకొని ఇలా అన్నాడట 'శుభమా అని పెళ్ళి చేస్తువుంటే కామమును విడిచి పెట్టమని చెప్పు రికార్డు పెట్టవచ్చునా కామము 
    లేకపోతే వారి పెళ్ళిదేనికి' ఈ మాట విన్నవారు వెంటనే ఆ రికార్డును తీసివేశారు. ఇచట సాధారణ మానవుడు తన తెలియని 
    తనము చేత తప్పుగ కామమనెడి పదమును అర్థము చేసుకొన్నా ఫరవాలేదు. కాని తెలిసిన జ్ఞానియే కామమంటే వేరుగ అర్థము చేసుకోవడము అజ్ఞానమే అగును. సందు దొరికితే చాలు మాయ మనలను తప్పుత్రోవ పట్టిస్తుంది. కావున జాగ్రత్తగ జ్ఞానవిషయములు 
-   పరశీలించవలెనని కోరుచున్నాము. కామమనెడి పదము భగవద్గీతలో చాలామార్లు, చాలా సందర్భములో ఉపయోగించబడినది. 
+   పరిశీలించవలెనని కోరుచున్నాము. కామమనెడి పదము భగవద్గీతలో చాలామార్లు, చాలా సందర్భములో ఉపయోగించబడినది. 
    అన్ని చోట్ల ఆశ అను అర్థమునే తీసుకోవాలని తెలుపుచున్నాము.
   `
 },
@@ -6621,135 +6707,135 @@ main:false, pageText:`
   pageNumber:125,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:` కర్మయోగమను ఈ అధ్యాయము ఇంతటితో అయిపోయింది. ఇందులో చెప్పబడిన శ్లోకములు 
   మొత్తము మరియు ఏ శ్లోకము ఏ విషయమును గురించి బోధించినది క్రింది పట్టికలో వివరముగవున్నది. 
-
-<div class="row">
-<div class="col">
-    1) అశాస్రీయ శ్లోకములు (కల్పితములు)
-</div>
-<div class="col">
-    --
-</div>
-<div class="col">
-    7
-</div>
-</div>
-<div class="row">
-<div class="col">
-    2) బ్రహ్మయోగము కర్మయోగము రెండు కలిసివున్నవి
-</div>
-<div class="col">
-    --
-</div>
-<div class="col">
-    3
-</div>
-</div>
-<div class="row">
-<div class="col">
-    3) బ్రహ్మయోగము
-</div>
-<div class="col">
-    --
-</div>
-<div class="col">
-    7
-</div>
-</div>
-<div class="row">
-<div class="col">
-    4) కర్మయోగము 
-</div>
-<div class="col">
-    --
-</div>
-<div class="col">
-    12
-</div>
-</div>
-<div class="row">
-  <div class="col">
-      5) ప్రకృతి
-  </div>
-  <div class="col">
+  <ion-row>
+  <ion-col>
+      1) అశాస్రీయ శ్లోకములు (కల్పితములు)
+  </ion-col>
+  <ion-col>
       --
-  </div>
-  <div class="col">
-      8
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-      6) ప్రకృతి, ఆత్మ
-  </div>
-  <div class="col">
+  </ion-col>
+  <ion-col>
+      7
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      2) బ్రహ్మయోగము కర్మయోగము రెండు కలిసివున్నవి
+  </ion-col>
+  <ion-col>
       --
-  </div>
-  <div class="col">
-      1
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-      7)కర్మయోగము, జీవాత్మ
-  </div>
-  <div class="col">
-      --
-  </div>
-  <div class="col">
+  </ion-col>
+  <ion-col>
       3
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-      8) బ్రహ్మయోగము, జీవాత్మ
-  </div>
-  <div class="col">
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      3) బ్రహ్మయోగము
+  </ion-col>
+  <ion-col>
       --
-  </div>
-  <div class="col">
+  </ion-col>
+  <ion-col>
+      7
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      4) కర్మయోగము
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      12
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      5) ప్రకృతి
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      8
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      6) ప్రకృతి, ఆత్మ
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
       1
-  </div>
-</div>
-<div class="row">
-    <div class="col">
-        9) జీవాత్మ 
-    </div>
-    <div class="col">
-        --
-    </div>
-    <div class="col">
-        1
-    </div>
-  </div>
-  <div class="row">
-      <div class="col">
-          మొత్తము శ్లోకములు
-      </div>
-      <div class="col">
-          -- 
-      </div>
-      <div class="col">
-          43
-      </div>
-    </div>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      7)కర్మయోగము, జీవాత్మ
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      3
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      8) బ్రహ్మయోగము, జీవాత్మ
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      9) జీవాత్మ
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      మొత్తము శ్లోకములు
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      43
+  </ion-col>
+</ion-row>
 
-    <div class="row">
-        <div class="col">
-            భావము, వివరము మార్చి వ్రాసిన శ్లోకములు
-        </div>
-        <div class="col">
-            --
-        </div>
-        <div class="col">
-            9, 21, 24, 35
-        </div>
-      </div>
-      <div class="row">
-          <div class="col" style="text-align:right">
-              <b>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
-          
-</div>
-</div>`
+<ion-row>
+  <ion-col>
+      భావము, వివరము మార్చి వ్రాసిన శ్లోకములు
+  </ion-col>
+  <ion-col>
+      --
+  </ion-col>
+  <ion-col>
+      9, 21, 24, 35
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      <b>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
+
+  </ion-col>
+</ion-row>
+  `
 },
 {
   chapterName:"జ్ఞాన యోగము",
@@ -7092,83 +7178,83 @@ main:false, pageText:`
  కొందరు నమ్మగలిగారు. కొందరు ఇప్పటికి అతను భగవంతుడని నమ్మలేక పోవుచున్నారు. ఐదవమారు 
  భగవంతునిగ వచ్చిన వాడే శ్రీకృష్ణుడు. ఎవరు నమ్మిన నమ్మకపోయిన కృష్ణుడు భగవంతుడే. <br><br>
 
-<p style="text-align: center"> <b> భగవంతుని జన్మల వివరము</b>
-
-<div class="row">
- <div class="col">
-   <b>1) దేవుని ధర్మముల ఉనికి</b>
- </div>
- <div class="col">
-      - - - 
-   </div>
-   <div class="col">
+<ion-row><ion-col class="ion-text-center"><b> భగవంతుని జన్మల వివరము</b></ion-col></ion-row>
+<ion-row>
+<ion-col>
+    <b>1) దేవుని ధర్మముల ఉనికి</b>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
     <b> భగవంతుని మొదటి జన్మ.</b>
-     </div>
-</div>
-<div class="row">
-   <div class="col">
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
     <b> 2) దేవాలయ ధర్మముల ఉనికి</b>
-   </div>
-   <div class="col">
-        - - - 
-     </div>
-     <div class="col">
-        <b>భగవంతుని రెండవ జన్మ.</b>
-       </div>
- </div>
- <div class="row">
-     <div class="col">
-       <b>3) గురు శిష్య ధర్మముల ఉనికి </b>
-     </div>
-     <div class="col">
-         - - -  
-       </div>
-       <div class="col">
-          <b>భగవంతుని మూడవ జన్మ.</b>
-         </div>
-   </div>
-   <div class="row">
-       <div class="col">
-        <b> 4) బ్రహ్మవిద్య ధర్మముల ఉనికి </b> 
-       </div>
-       <div class="col">
-          - - -
-          </div>
-          <div class="col">
-             <b> భగవంతుని నాల్గవ జన్మ</b>
-            </div>
-     </div>
-     <div class="row">
-         <div class="col">
-          <b> 5) గీత ధర్మముల ఉనికి  </b>
-         </div>
-         <div class="col">
-             - - -  
-           </div>
-           <div class="col">
-               <b>భగవంతుని ఐదవ జన్మ</b>
-             </div>
-       </div>
-       <div class="row">
-           <div class="col">
-             <b>6) అన్ని ధర్మముల ఉనికి</b>
-           </div>
-           <div class="col">
-              - - - 
-             </div>
-             <div class="col">
-                 <b>భగవంతుని ఆరవ జన్మ.</b>
-               </div>
-         </div>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
+    <b>భగవంతుని రెండవ జన్మ.</b>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+    <b>3) గురు శిష్య ధర్మముల ఉనికి </b>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
+    <b>భగవంతుని మూడవ జన్మ.</b>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+    <b> 4) బ్రహ్మవిద్య ధర్మముల ఉనికి </b>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
+    <b> భగవంతుని నాల్గవ జన్మ</b>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+    <b> 5) గీత ధర్మముల ఉనికి  </b>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
+    <b>భగవంతుని ఐదవ జన్మ</b>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+    <b>6) అన్ని ధర్మముల ఉనికి</b>
+</ion-col>
+<ion-col>
+    - - -
+</ion-col>
+<ion-col>
+    <b>భగవంతుని ఆరవ జన్మ.</b>
+</ion-col>
+</ion-row>
 
-<div class="row"><div class="col" style="text-align:center">
- <span  [ngStyle] = "{'font-size':this.globaldata.fontSize+'px'}">
- <b>ఒక్క భారత దేశములో మాత్రము భగవంతుడు పుట్టిన వివరమును </b><br>
- 
-             <b><i>ఇక్కడ తెలియజేయడమైనది.</i></b></span>
+<ion-row>
+<ion-col class="ion-text-center">
+    <span [ngStyle]="{'font-size':this.globaldata.fontSize+'px'}">
+<b>ఒక్క భారత దేశములో మాత్రము భగవంతుడు పుట్టిన వివరమును </b><br>
 
-</div>
-</div>
+            <b><i>ఇక్కడ తెలియజేయడమైనది.</i></b></span>
+
+</ion-col>
+</ion-row>
 <br><br>
  తాను ధర్మములను నెలకొల్పితే తిరిగి కొంత కాలమునకు అధర్మము చెలరేగడమును చూచిన
  భగవంతుడు, తన ఐదవ జన్మలో కొంత ప్రత్యేకతతో ధర్మములను తెలియజేయాలనుకొన్నాడు. అందువలననే తనను భగవంతునిగ ప్రకటించుకొన్నాడు. అంతేకాక సాకారముగ కనిపించు తానే కనిపించని దేవుడనని తెలియజేసి 
@@ -7863,36 +7949,60 @@ main:false, pageText:` <b>వివరము :</b> సమస్త కార్�
   కేవలము కర్మలను మాత్రము కాల్చునది. కంటికి కనిపించని ఆ అగ్ని యొక్క పేరు జ్ఞానాగ్ని. జ్ఞానాగ్నికి సాధారణ అగ్నికి చాలా తేడాలున్నాయి. 
   ఆ తేడాలువరుసగ క్రింద పట్టికలో చూస్తాము. <br><br>
 
- <div class="row">
-   <div class="col"><b><p style="text-decoration:underline">అగ్ని </b></div><div class="col"><b><p style="text-decoration:underline">జ్ఞానాగ్ని</b></div>
- </div>
-   <div class="row">
-   <div class="col"><b>1)  కంటికి కనిపించునది.</b></div><div class="col"><b>(1) కంటికి కనిపించదు.</b></div></div>
-   <div class="row">
-   <div class="col"><b>2)  కట్టెలను కాల్చును,కర్మలను కాల్చలేదు.</b></div><div class="col"><b>(2) కర్మలను కాల్చును, కట్టెలను కాల్చలేదు.</b></div></div>
-   <div class="row">
-   <div class="col"><b>3)  స్థూల శరీరమునకు వేడి కలుగజేయును.</b></div><div class="col"><b>(3) సూక్ష్మ శరీరమునకు వేడి కలుగజేయును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>4)  మంచి,చెడు వస్తువుల భేదము లేకుండ కాల్చును.</b></div><div class="col"><b>(4) పాప, పుణ్య కర్మ భేదము లేకుండ కాల్చును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>5)  ప్రకృతి సంబంధమైనది</b></div><div class="col"><b>(5) పరమాత్మ సంబంధమైనది.</b></div></div>
-   <div class="row">
-   <div class="col"><b>6)  స్థూలమునకు కనిపించును.</b></div><div class="col"><b>(6) సూక్ష్మమునకు కనిపించును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>7)  అజ్ఞానులైన వెలిగించగలరు.</b></div><div class="col"><b>(7) యోగులకు మాత్రము వెలుగును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>8)  శరీరము బయట నిలువ వుండును.</b></div><div class="col"><b>(8) శరీరము లోపల నిలువవుండును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>9)  నీటికి ఆరిపోవును, గాలికి మండును</b></div><div class="col"><b>(9) నీటికి ఆరిపోదు, గాలికి మండదు.</b></div></div>
-   <div class="row">
-   <div class="col"><b>10) ఇతరుల యొక్క వస్తువులను వేటినైన కాల్చును.</b></div><div class="col"><b>(10) ఇతరుల ప్రారబ్ధమును మాత్రము కాల్చును.</b></div></div>
-   <div class="row">
-   <div class="col"><b>11) తన శరీరములోని ఏ భాగమునైన కాల్చును.</b></div><div class="col"><b>(11) తన శరీరములో ఆగామికకర్మను సంచితకర్మను కాల్చును.</b></div>
- </div>
-  
- <div class="row"><div class="col"><b>12) ఎక్కడైన ఎప్పుడైన తయారు చేయవచ్చును. </b></div>
- <div class="col"><b>(12) యోగము చేయు సమయములోనే  తయారగును. కర్మయోగులకు  
-   శరీరము లోపల నుంచి,  బ్రహ్మయోగులకు శరీరము బయటి  నుండి చేరును. </b></div> </div>
+  <ion-row>
+  <ion-col><b><span style="text-decoration:underline">అగ్ని</span> </b></ion-col>
+  <ion-col><b><span style="text-decoration:underline">జ్ఞానాగ్ని</span> </b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>1)  కంటికి కనిపించునది.</b></ion-col>
+  <ion-col><b>(1) కంటికి కనిపించదు.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>2)  కట్టెలను కాల్చును,కర్మలను కాల్చలేదు.</b></ion-col>
+  <ion-col><b>(2) కర్మలను కాల్చును, కట్టెలను కాల్చలేదు.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>3)  స్థూల శరీరమునకు వేడి కలుగజేయును.</b></ion-col>
+  <ion-col><b>(3) సూక్ష్మ శరీరమునకు వేడి కలుగజేయును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>4)  మంచి,చెడు వస్తువుల భేదము లేకుండ కాల్చును.</b></ion-col>
+  <ion-col><b>(4) పాప, పుణ్య కర్మ భేదము లేకుండ కాల్చును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>5)  ప్రకృతి సంబంధమైనది</b></ion-col>
+  <ion-col><b>(5) పరమాత్మ సంబంధమైనది.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>6)  స్థూలమునకు కనిపించును.</b></ion-col>
+  <ion-col><b>(6) సూక్ష్మమునకు కనిపించును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>7)  అజ్ఞానులైన వెలిగించగలరు.</b></ion-col>
+  <ion-col><b>(7) యోగులకు మాత్రము వెలుగును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>8)  శరీరము బయట నిలువ వుండును.</b></ion-col>
+  <ion-col><b>(8) శరీరము లోపల నిలువవుండును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>9)  నీటికి ఆరిపోవును, గాలికి మండును</b></ion-col>
+  <ion-col><b>(9) నీటికి ఆరిపోదు, గాలికి మండదు.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>10) ఇతరుల యొక్క వస్తువులను వేటినైన కాల్చును.</b></ion-col>
+  <ion-col><b>(10) ఇతరుల ప్రారబ్ధమును మాత్రము కాల్చును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>11) తన శరీరములోని ఏ భాగమునైన కాల్చును.</b></ion-col>
+  <ion-col><b>(11) తన శరీరములో ఆగామికకర్మను సంచితకర్మను కాల్చును.</b></ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col><b>12) ఎక్కడైన ఎప్పుడైన తయారు చేయవచ్చును. </b></ion-col>
+  <ion-col><b>(12) యోగము చేయు సమయములోనే  తయారగును. కర్మయోగులకు  
+  శరీరము లోపల నుంచి,  బ్రహ్మయోగులకు శరీరము బయటి  నుండి చేరును. </b></ion-col>
+</ion-row>
 <br>
 జ్ఞానాగ్ని అను మాట విషయము అర్థమగుటకు చెప్పిన ఉపమానము గాని, వాస్తవానికి జ్ఞానాగ్నిలేదని చాలామంది చెప్పుచున్నారు. ఎవరు ఏమి చెప్పినప్పటికి, 
 గీతలో దీనిని ప్రత్యేకించి వ్రాయునప్పటికి, సత్యము కొంతకాలము కనిపించక పోయినప్పటికి, దానికి నాశనము లేదు. ఏనాటికైన అది బయట పడగలదు. 
@@ -8165,35 +8275,61 @@ main:false, pageText:` <b>వివరము :</b> సమస్త కార్�
    ద్రవ్యయజ్ఞము, ఐదు ప్రపంచ జ్ఞానములను కాల్చివేయునది జ్ఞానయజ్ఞము అని తెలియుచున్నది. ద్రవ్యయజ్ఞమునకు జ్ఞానయజ్ఞమునకు 
    గల తేడాను తర్వాత పేజీలో గమనిస్తాము.
    <br><br>
-   <div class="row"><div class="col"><p style="font-size:17px;"><b>  ద్రవ్య యజ్ఞము </b></div>
-             <div class="col"><p style="font-size:17px;"><b>జ్ఞాన యజ్ఞము </b></div></div> 
-   <div class="row"><div class="col"> 1) ద్రవ్యయజ్ఞము కడుపులో జరుగును.    </div>
-         <div class="col"> (1) జ్ఞాన యజ్ఞము తలలో జరుగును.  </div></div>                              
-   <div class="row"><div class="col"> 2) దీనిలో అనేక రకములైన ఆహార పదార్థములు కాలిపోవును.  </div>
-         <div class="col"> (2) దీనిలో అనేక రకములైన పాప పుణ్యములు కాలిపోవును. </div></div> 
-                            
- <div class="row"><div class="col"> 3) దీనిని అందరు ఆచరింతురు.  </div>
-         <div class="col">(3) దీనిని యోగులు మాత్రమే  ఆచరింతురు. </div></div> 
-   
- <div class="row"><div class="col">  4) ప్రతి దినము విధిగ తప్పనిసరిగ  చేయవలసి ఉండును.  </div>
- <div class="col"> (4) జ్ఞానయజ్ఞము విధిగ జరుగునది   కాదు. ప్రయత్నము చేస్తే జరుగును </div></div>
- 
- <div class="row"><div class="col">  5) దీనిలో పాపపుణ్యములు వచ్చును.  </div>
- <div class="col"> (5) దీనిలో పాపపుణ్యములు పోవును. </div></div> 
+   <ion-row>
+   <ion-col>
+       <span style="font-size:17px;"><b>  ద్రవ్య యజ్ఞము </b></span>
+   </ion-col>
+   <ion-col>
+       <span style="font-size:17px;"><b>జ్ఞాన యజ్ఞము </b></span>
+   </ion-col>
+</ion-row>
+<ion-row>
+   <ion-col> 1) ద్రవ్యయజ్ఞము కడుపులో జరుగును. </ion-col>
+   <ion-col> (1) జ్ఞాన యజ్ఞము తలలో జరుగును. </ion-col>
+</ion-row>
+<ion-row>
+   <ion-col> 2) దీనిలో అనేక రకములైన ఆహార పదార్థములు కాలిపోవును. </ion-col>
+   <ion-col> (2) దీనిలో అనేక రకములైన పాప పుణ్యములు కాలిపోవును. </ion-col>
+</ion-row>
 
- <div class="row"><div class="col">  6) ఇది బయటికి కనిపించునది.    </div>
- <div class="col"> (6) ఇది బయటికి కనిపించదు. </div></div> 
+<ion-row>
+   <ion-col> 3) దీనిని అందరు ఆచరింతురు. </ion-col>
+   <ion-col>(3) దీనిని యోగులు మాత్రమే ఆచరింతురు. </ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 7) దీనిలో ఉన్న అగ్ని జఠరరసములచే ఉత్పత్తియగు జఠరాగ్ని.  </div>
- <div class="col"> (7) దీనిలో ఉన్న అగ్ని జ్ఞానముచే ఉత్పత్తియగు జ్ఞానాగ్ని.</div></div> 
+<ion-row>
+   <ion-col> 4) ప్రతి దినము విధిగ తప్పనిసరిగ చేయవలసి ఉండును. </ion-col>
+   <ion-col> (4) జ్ఞానయజ్ఞము విధిగ జరుగునది కాదు. ప్రయత్నము చేస్తే జరుగును </ion-col>
+</ion-row>
 
- <div class="row"><div class="col">8) దీని అగ్ని గ్రంథి రసములతో  పుట్టును. </div>
- <div class="col"> (8) దీని అగ్ని గురూపదేశముతో పుట్టును.       </div></div> 
- <div class="row"><div class="col"> 9) ద్రవ్యయజ్ఞము ఆత్మకు ఉపయోగపడుచున్నది.</div>
- <div class="col"> (9) జ్ఞానయజ్ఞము జీవాత్మకు ఉపయోగపడుచున్నది. </div></div>
+<ion-row>
+   <ion-col> 5) దీనిలో పాపపుణ్యములు వచ్చును. </ion-col>
+   <ion-col> (5) దీనిలో పాపపుణ్యములు పోవును. </ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 10) దీనిలో నాలుగు పోషకములు  ఆహుతి అగుచున్నవి.</div>
- <div class="col">(10) దీనిలో ఐదు జ్ఞానములు ఆహుతి అగుచున్నవి.</div></div>
+<ion-row>
+   <ion-col> 6) ఇది బయటికి కనిపించునది. </ion-col>
+   <ion-col> (6) ఇది బయటికి కనిపించదు. </ion-col>
+</ion-row>
+
+<ion-row>
+   <ion-col> 7) దీనిలో ఉన్న అగ్ని జఠరరసములచే ఉత్పత్తియగు జఠరాగ్ని. </ion-col>
+   <ion-col> (7) దీనిలో ఉన్న అగ్ని జ్ఞానముచే ఉత్పత్తియగు జ్ఞానాగ్ని.</ion-col>
+</ion-row>
+
+<ion-row>
+   <ion-col>8) దీని అగ్ని గ్రంథి రసములతో పుట్టును. </ion-col>
+   <ion-col> (8) దీని అగ్ని గురూపదేశముతో పుట్టును. </ion-col>
+</ion-row>
+<ion-row>
+   <ion-col> 9) ద్రవ్యయజ్ఞము ఆత్మకు ఉపయోగపడుచున్నది.</ion-col>
+   <ion-col> (9) జ్ఞానయజ్ఞము జీవాత్మకు ఉపయోగపడుచున్నది. </ion-col>
+</ion-row>
+
+<ion-row>
+   <ion-col> 10) దీనిలో నాలుగు పోషకములు ఆహుతి అగుచున్నవి.</ion-col>
+   <ion-col>(10) దీనిలో ఐదు జ్ఞానములు ఆహుతి అగుచున్నవి.</ion-col>
+</ion-row>
 `
 },
 {
@@ -8443,95 +8579,102 @@ main:false, pageText:` <b> వివరము :</b> ఎక్కడ పొరప
   chapterName:"జ్ఞాన యోగము",
   chapterNumber:3,
   pageNumber:158,
-  verse:`చివరి పేజి`, meaning:``, main:false, pageText:` <div class="row"><div class="col"><b>
-  ఇంతటితో జ్ఞానయోగము అను అధ్యాయము ముగిసినది. ఈ అధ్యాయము లోని శ్లోకముల వివరము క్రిందగలదు. </b></div></div>
-    
-<div class="row">
-  <div class="col">1) సాకారము, నిరాకారము </div>
-  <div class="col"  >:  </div>
-  <div class="col"  > 4</div>
-</div>
+  verse:`చివరి పేజి`, meaning:``, main:false, pageText:` 
+  <ion-row>
+  <ion-col><b>
+  ఇంతటితో జ్ఞానయోగము అను అధ్యాయము ముగిసినది. ఈ అధ్యాయము లోని శ్లోకముల వివరము క్రిందగలదు. </b>
+  </ion-col>
+</ion-row>
 
-<div class="row">
-    <div class="col">2) సాకారము  </div>
-    <div class="col"  >:  </div>
-    <div class="col"  > 2</div>
-  </div>
+<ion-row>
+  <ion-col>1) సాకారము, నిరాకారము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 4</ion-col>
+</ion-row>
 
-  <div class="row">
-      <div class="col">3) సాకారము, కర్మయోగము </div>
-      <div class="col"  >:  </div>
-      <div class="col"  > 1</div>
-    </div>
+<ion-row>
+  <ion-col>2) సాకారము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
 
-    <div class="row">
-        <div class="col">4) బ్రహ్మయోగము, కర్మయోగము </div>
-        <div class="col"  >:  </div>
-        <div class="col"  > 8</div>
-      </div>
+<ion-row>
+  <ion-col>3) సాకారము, కర్మయోగము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
 
-      <div class="row">
-          <div class="col">5) బ్రహ్మయోగము  </div>
-          <div class="col"  >:  </div>
-          <div class="col"  > 2</div>
-        </div>
+<ion-row>
+  <ion-col>4) బ్రహ్మయోగము, కర్మయోగము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 8</ion-col>
+</ion-row>
 
-        <div class="row">
-            <div class="col">6) కర్మయోగము   </div>
-            <div class="col"  >:  </div>
-            <div class="col"  > 10</div>
-          </div>
+<ion-row>
+  <ion-col>5) బ్రహ్మయోగము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
 
-          <div class="row">
-              <div class="col"> 7) ప్రకృతి    </div>
-              <div class="col"  >:  </div>
-              <div class="col"  > 1</div>
-            </div>
+<ion-row>
+  <ion-col>6) కర్మయోగము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 10</ion-col>
+</ion-row>
 
-            <div class="row">
-                <div class="col">8)జీవాత్మ, పరమాత్మ  </div>
-                <div class="col"  >:  </div>
-                <div class="col"  > 2</div>
-              </div>
+<ion-row>
+  <ion-col> 7) ప్రకృతి </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
 
-              <div class="row">
-                  <div class="col">9) ప్రకృతి, కర్మయోగము, బ్రహ్మయోగము </div>
-                  <div class="col"  >:  </div>
-                  <div class="col"  > 1</div>
-                </div>
+<ion-row>
+  <ion-col>8)జీవాత్మ, పరమాత్మ </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
 
-                <div class="row">
-                    <div class="col"> 10) జీవాత్మ    </div>
-                    <div class="col"  >:  </div>
-                    <div class="col"  > 1</div>
-                  </div>
+<ion-row>
+  <ion-col>9) ప్రకృతి, కర్మయోగము, బ్రహ్మయోగము </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
 
-                  <div class="row">
-                      <div class="col">11) పరమాత్మ   </div>
-                      <div class="col"  >:  </div>
-                      <div class="col"  > 1</div>
-                    </div>
+<ion-row>
+  <ion-col> 10) జీవాత్మ </ion-col>
+  <ion-col>: </ion-col>
+  <ion-col> 1</ion-col>
+  </ion-row>
 
-                    <div class="row">
-                        <div class="col">12) అశాస్త్రీయమైనవి </div>
-                        <div class="col"  >:  </div>
-                        <div class="col"  > 9</div>
-                      </div>
+  <ion-row>
+      <ion-col>11) పరమాత్మ </ion-col>
+      <ion-col>: </ion-col>
+      <ion-col> 1</ion-col>
+  </ion-row>
 
-                      <div class="row">
-                          <div class="col"> మొత్తము శ్లోకములు </div>
-                          <div class="col"  >:  </div>
-                          <div class="col"  > 42</div>
-                        </div>
-                        <div class="row">
-                            <div class="col">భావము, వివరము మార్చి వ్రాసిన శ్లోకములు  </div>
-                            <div class="col"  >- </div>
-                            <div class="col"  > 5, 6, 7, 8, 13, 17, 33.</div>
-                          </div>
-                          <div class="row">
-                               
-                              <div class="col" style="text-align:left;font-size:20px" ><b> శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></div>
-                            </div>`
+  <ion-row>
+      <ion-col>12) అశాస్త్రీయమైనవి </ion-col>
+      <ion-col>: </ion-col>
+      <ion-col> 9</ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col> మొత్తము శ్లోకములు </ion-col>
+      <ion-col>: </ion-col>
+      <ion-col> 42</ion-col>
+  </ion-row>
+  <ion-row>
+      <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+      <ion-col>- </ion-col>
+      <ion-col> 5, 6, 7, 8, 13, 17, 33.</ion-col>
+  </ion-row>
+  <ion-row>
+
+      <ion-col style="text-align:left;font-size:20px"><b> శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b>
+      </ion-col>
+  </ion-row>
+                            
+                            `
 },
 {
   chapterName:"కర్మ సన్యాస యోగము",
@@ -9234,97 +9377,104 @@ main:false, pageText:`<b>
   verse:`చివరి పేజి`, 
   meaning:``, main:false, pageText:`<b>  ఇంతటితో కర్మసన్న్యాస యోగము అను ఈ అధ్యాయము సమాప్తమైనది. ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద వ్రాయబడినది.
   </b>
-  <div class="row"> 
-       <div class="col">
-           1) కర్మయోగము, బ్రహ్మయోగము
-       </div> 
-       <div class="col">
-       =
-       </div> 
-       <div class="col">
-         5
-       </div>               
- </div>
- <div class="row"> 
-     <div class="col">
-         2) కర్మయోగము   
-     </div> 
-     <div class="col">
-     =
-     </div> 
-     <div class="col">
-       7
-     </div>               
-</div>
-<div class="row"> 
-   <div class="col">
-       3) బ్రహ్మయోగము  
-   </div> 
-   <div class="col">
-   =
-   </div> 
-   <div class="col">
-        13
-   </div>               
-</div>
-<div class="row"> 
- <div class="col">
-     4) ప్రకృతి
- </div> 
- <div class="col">
- =
- </div> 
- <div class="col">
-   2
- </div>               
-</div>
-<div class="row"> 
-<div class="col">
-   5) ఆత్మ
-</div> 
-<div class="col">
-=
-</div> 
-<div class="col">
- 1
-</div>               
-</div>
+  <ion-row>
+  <ion-col>
+      1) కర్మయోగము, బ్రహ్మయోగము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      5
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      2) కర్మయోగము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      7
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      3) బ్రహ్మయోగము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      13
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      4) ప్రకృతి
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      2
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>
+      5) ఆత్మ
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
 
-<div class="row"> 
- <div class="col">
-     6) ఆత్మజ్ఞానము
- </div> 
- <div class="col">
- =
- </div> 
- <div class="col">
-   1
- </div>               
-</div>
-  
-<div class="row"> 
- <div class="col">
-     మొత్తము శ్లోకములు
- </div> 
- <div class="col">
- =
- </div> 
- <div class="col">
-   29
- </div>               
-</div>
- 
-<div class="row"> 
- <div class="col">
-     భావము, వివరము మార్చి వ్రాసిన శ్లోకములు
- </div> 
- <div class="col">
- -
- </div> 
- <div class="col">
-     6, 18.
- </div>               
-</div>`
+<ion-row>
+  <ion-col>
+      6) ఆత్మజ్ఞానము
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+      మొత్తము శ్లోకములు
+  </ion-col>
+  <ion-col>
+      =
+  </ion-col>
+  <ion-col>
+      29
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+      భావము, వివరము మార్చి వ్రాసిన శ్లోకములు
+  </ion-col>
+  <ion-col>
+      -
+  </ion-col>
+  <ion-col>
+      6, 18.
+  </ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+    <b>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
+
+</ion-col>
+</ion-row>
+  `
 },
 {
   chapterName:"ఆత్మ సంయమ యోగము",
@@ -9728,8 +9878,10 @@ main:true, pageText:`<b>వివరము :</b>  ఈ శ్లోకముల�
 మధ్యలో ఉన్న ఆధారమును ఆత్మ అనుకుందాము.  తర్వాత పేజీలో బొమ్మను
 గమనించుము.
 <br><br>
-<div class="row"><div class="col" style="text-align: center">
-<img src="assets/img/atmasamyamatakkeda.png"/></div></div>
+<ion-row><ion-col class="ion-text-center">
+<img src="assets/img/atmasamyamatakkeda.png"/> 
+</ion-col>
+</ion-row>
 <br><br>
              తక్కెడలో రెండువైపులనున్న రెండు పల్లెములకు మధ్యలో సమాన
 దూరములో ఉన్న ఆధారము రెండు పల్లెములకు సమానమని తక్కెడలో తెలిసినట్లే
@@ -11282,32 +11434,65 @@ pageText:`
   శ్లోకములు ఎవరిని గూర్చి ఉన్నవో ఆ వివరము క్రింద చూడలేరు.</b>
   
     <br><br>
+    <ion-row>
+    <ion-col>1) కర్మయోగము</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>1</ion-col>
+</ion-row>
 
-  <div class="row"> <div class="col">1)   కర్మయోగము</div> <div class="col">=</div> <div class="col">1</div> </div>  
-  
-  <div class="row"> <div class="col">2)   కర్మయోగము, బ్రహ్మయోగము</div> <div class="col">=</div> <div class="col">2</div> </div>  
-  
-  <div class="row"> <div class="col">3)   బ్రహ్మయోగము</div> <div class="col">=</div> <div class="col">30</div> </div> 
-  
-  <div class="row"> <div class="col">4)    కల్పితము</div> <div class="col">=</div> <div class="col">1</div> </div> 
-  
-  <div class="row"> <div class="col">5)   జీవాత్మ, ఆత్మ, పరమాత్మ</div> <div class="col">=</div> <div class="col">6</div> </div> 
-  
-  <div class="row"> <div class="col">6)    జీవాత్మ</div> <div class="col">=</div> <div class="col">7</div> </div> 
-  
-  <div class="row"> <div class="col">---------------------------------------------------------------</div></div>
-  <div class="row"> <div class="col">మొత్తము శ్లోకములు</div> <div class="col">=</div> <div class="col">47</div> </div> 
-  <div class="row"> <div class="col">--------------------------------------------------------------</div></div>
-  
-  
-  <div class="row"> <div class="col">భావము, వివరము మార్చి వ్రాసిన శ్లోకములు</div> <div class="col">-</div> <div class="col">1, 3, 5, 6, 32, 41.</div> </div>   
-  <br><br>
-  
-  
-  <div class="row"> <div class="col" style="font-size:15px"> ఇట్లు  </div></div>
-  <div class="row"> <div class="col" style="font-size:17px"> ఇందూ ధర్మ ప్రదాత</div></div>
-  <div class="row"> <div class="col"style="font-size:17px"> సంచలనాత్మక రచయిత, త్రైత సిద్ధాంత ఆదికర్త</div></div>
-  <div class="row"> <div class="col" style="font-size:18px"> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</div></div>
+<ion-row>
+    <ion-col>2) కర్మయోగము, బ్రహ్మయోగము</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>2</ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col>3) బ్రహ్మయోగము</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>30</ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col>4) కల్పితము</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>1</ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col>5) జీవాత్మ, ఆత్మ, పరమాత్మ</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>6</ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col>6) జీవాత్మ</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>7</ion-col>
+</ion-row>
+
+<ion-row>
+    <ion-col>---------------------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+    <ion-col>మొత్తము శ్లోకములు</ion-col>
+    <ion-col>=</ion-col>
+    <ion-col>47</ion-col>
+</ion-row>
+<ion-row>
+    <ion-col>--------------------------------------------------------------</ion-col>
+</ion-row>
+
+
+<ion-row>
+    <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు</ion-col>
+    <ion-col>-</ion-col>
+    <ion-col>1, 3, 5, 6, 32, 41.</ion-col>
+</ion-row>
+ 
+ 
+<ion-row>
+    <ion-col><b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b></ion-col>
+</ion-row>
   `
 },
 {
@@ -12369,27 +12554,70 @@ main:true, pageText:`
   పరమాత్మను కూడ కనిపించు దేవతలలో ఒక్కనిగ పోల్చుకొనుచున్నారు. పరమాత్మ
   దేవతలకే దేవుడని, అందరివలె కనిపించు వాడుకాదని తెలియలేకున్నారు. కనిపించు
   దేవతలకు, కనిపించని పరమాత్మకు ఏ ఏ భేదములున్నవో క్రింద చూడుము.
-  
-
   <b>
-  <div class="row"> <div class="col">దేవతలు</div><div class="col"> పరమాత్మ </div></div>
+  <ion-row> <ion-col>దేవతలు</ion-col><ion-col> పరమాత్మ </ion-col>
+  </ion-row>
 </b>
-                     <div class="row"> <div class="col"> 1) దేవతలు కనిపించు ఆకారమున్నవారు.  </div>  <div class="col">     (1) పరమాత్మ ఆకారమే లేనివాడు.</div></div>
-            <div class="row"> <div class="col"> 2) దేవతలు వివిధ పేర్లు కలవారు.     </div>  <div class="col">             (2) పరమాత్మ ఏ పేరు లేనివాడు.</div></div>
-                <div class="row"> <div class="col"> 3) దేవతలకు మరణము కలదు.   </div>  <div class="col">                 (3) పరమాత్మకు మరణము లేదు.</div></div>
-                    <div class="row"> <div class="col"> 4) దేవతలకు నాశనము కలదు.   </div>  <div class="col">                 (4) నాశనములేనివాడు పరమాత్మ.</div></div>
-                        <div class="row"> <div class="col"> 5) పురుషదేవతలు, స్త్రీదేవతలుకలరు.   </div>  <div class="col">       (5) పరమాత్మ స్త్రీకాదు, పురుషుడుకాదు.</div></div>
-                            <div class="row"> <div class="col">  6) ఒకచోటునుండి మరొక చోటుకు  సూక్ష్మముగ పోగలరు. </div>  <div class="col">  (6) అంతటనున్నవాడు. పోవలసిన పనేలేదు.</div></div>
-                                    <div class="row"> <div class="col"> 7) ప్రతిమే దేహముగ గలవారు.  </div>  <div class="col">                  (7) ప్రత్యేకించి ఎట్టి దేహము లేదు.</div></div>
-                                    <div class="row"> <div class="col">8) వీరు కూడ తపము యోగము ఆచరించుదురు.</div><div class="col">     (8) ఏవి ఆచరించడు.</div></div>
-                                    <div class="row"> <div class="col">9) జీవాత్మలుగ ఉన్నవారు.                    </div><div class="col">      (9) పరమాత్మగ ఉన్నవాడు.</div></div>
-                                    <div class="row"> <div class="col">10) ధనికులు బీదవారు కలరు.                  </div><div class="col">   (10) ఆయన ఏదీ కాదు.</div></div>
-                                    <div class="row"> <div class="col">11) మాంత్రికులకు భయపడుదురు వశమౌదురు.              </div><div class="col"> (11) ఎవరికీ భయపడడు  ఎవరికీ వశము కాడు.</div></div>
-                                  <div class="row"> <div class="col">12) ప్రళయములో లయమై పోవుదురు.          </div><div class="col">  (12) ప్రళయములో కూడ మిగిలి ఉన్నవాడు.</div></div>
-                                  <div class="row"> <div class="col">13) ఒక్కచోట ఉండి, ఒక్కచోటనే చూడగల్గువారు.               </div><div class="col">     (13) విశ్వవాపి, అంతటా చూస్తున్నాడు.</div></div>
-                                  <div class="row"> <div class="col">14) వీరికి కష్ట సుఖములున్నవి.                </div><div class="col">     (14) కష్టసుఖములకు అతీతుడు.</div></div>
-                                  <div class="row"> <div class="col">15) ఎవరైనా పలానా దేవుడని  గుర్తించగలరు.                </div><div class="col">     (15) యోగులకు మాత్రము గుర్తింపు కలవాడు.</div></div>
-                                     
+<ion-row>
+  <ion-col> 1) దేవతలు కనిపించు ఆకారమున్నవారు. </ion-col>
+  <ion-col> (1) పరమాత్మ ఆకారమే లేనివాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 2) దేవతలు వివిధ పేర్లు కలవారు. </ion-col>
+  <ion-col> (2) పరమాత్మ ఏ పేరు లేనివాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 3) దేవతలకు మరణము కలదు. </ion-col>
+  <ion-col> (3) పరమాత్మకు మరణము లేదు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 4) దేవతలకు నాశనము కలదు. </ion-col>
+  <ion-col> (4) నాశనములేనివాడు పరమాత్మ.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 5) పురుషదేవతలు, స్త్రీదేవతలుకలరు. </ion-col>
+  <ion-col> (5) పరమాత్మ స్త్రీకాదు, పురుషుడుకాదు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 6) ఒకచోటునుండి మరొక చోటుకు సూక్ష్మముగ పోగలరు. </ion-col>
+  <ion-col> (6) అంతటనున్నవాడు. పోవలసిన పనేలేదు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 7) ప్రతిమే దేహముగ గలవారు. </ion-col>
+  <ion-col> (7) ప్రత్యేకించి ఎట్టి దేహము లేదు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>8) వీరు కూడ తపము యోగము ఆచరించుదురు.</ion-col>
+  <ion-col> (8) ఏవి ఆచరించడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>9) జీవాత్మలుగ ఉన్నవారు. </ion-col>
+  <ion-col> (9) పరమాత్మగ ఉన్నవాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>10) ధనికులు బీదవారు కలరు. </ion-col>
+  <ion-col> (10) ఆయన ఏదీ కాదు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>11) మాంత్రికులకు భయపడుదురు వశమౌదురు. </ion-col>
+  <ion-col> (11) ఎవరికీ భయపడడు ఎవరికీ వశము కాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>12) ప్రళయములో లయమై పోవుదురు. </ion-col>
+  <ion-col> (12) ప్రళయములో కూడ మిగిలి ఉన్నవాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>13) ఒక్కచోట ఉండి, ఒక్కచోటనే చూడగల్గువారు. </ion-col>
+  <ion-col> (13) విశ్వవాపి, అంతటా చూస్తున్నాడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>14) వీరికి కష్ట సుఖములున్నవి. </ion-col>
+  <ion-col> (14) కష్టసుఖములకు అతీతుడు.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>15) ఎవరైనా పలానా దేవుడని గుర్తించగలరు. </ion-col>
+  <ion-col> (15) యోగులకు మాత్రము గుర్తింపు కలవాడు.</ion-col>
+</ion-row>                          
 
       `
 },
@@ -12572,32 +12800,72 @@ main:true, pageText:`
   pageNumber:256,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:` <b> ఇంతటితో విజ్ఞాన యోగమను అధ్యాయము సమాప్తము. ఈ అధ్యాయములోని శ్లోకములు ఇలా ఉన్నవి.</b>
   <br><br>
-  
- <div class="row"> <div class="col"> 1) జీవాత్మ, పరమాత్మ </div>      <div class="col">=</div>             <div class="col">11</div> </div>
-  
- <div class="row"><div class="col">2) జీవాత్మ </div>                                 <div class="col">=</div> <div class="col">6</div> </div>  
-  
- <div class="row"><div class="col"> 3) ప్రకృతి </div>                                  <div class="col">=</div>     <div class="col"> 1</div></div>
-  
- <div class="row"><div class="col"> 4) ప్రకృతి, పరమాత్మ</div>                <div class="col">=</div>     <div class="col"> 2</div></div>
-  
- <div class="row"><div class="col">  5) పరమాత్మ</div>                             <div class="col">=</div>     <div class="col"> 8</div></div>
-  
- <div class="row"><div class="col">   6) జీవాత్మ, సాకారము</div>             <div class="col">=</div>      <div class="col">1 </div></div>
-  
- <div class="row"><div class="col">  7) ప్రకృతి, జీవాత్మ</div>                  <div class="col">=</div>        <div class="col">1 </div></div>
-  
-  <div class="row"><div class="col">----------------------------------------------</div></div>
-  
-  <div class="row"><div class="col">  మొత్తము శ్లోకములు</div>               <div class="col">=</div>      <div class="col"> 30</div></div>
-  
-  <div class="row"><div class="col">----------------------------------------------</div></div>
-  
-  <div class="row"><div class="col">భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </div>  <div class="col">-</div> <div class="col"> 5,11, 25.</div> </div>
-  <div class="row"><div class="col"><br><br><b>ఇట్లు</b> </div></div>
-  <div class="row"><div class="col"> <b>ఇందూ ధర్మ ప్రదాత</b> </div></div>
-  <div class="row"><div class="col"><b>సంచలనాత్మక రచయిత, త్రైత సిద్ధాంత ఆదికర్త</b> </div></div>
-  <div class="row"><div class="col" style="font-size:20px"> <b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b> </div></div>     
+  <ion-row>
+  <ion-col> 1) జీవాత్మ, పరమాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>11</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>2) జీవాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 3) ప్రకృతి </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 4) ప్రకృతి, పరమాత్మ</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 5) పరమాత్మ</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col> 8</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 6) జీవాత్మ, సాకారము</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 7) ప్రకృతి, జీవాత్మ</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>----------------------------------------------</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> మొత్తము శ్లోకములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col> 30</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>----------------------------------------------</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 5,11, 25.</ion-col>
+</ion-row>
+ 
+<ion-row>
+  <ion-col> <b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b>
+  </ion-col>
+</ion-row>
   `
 },
 {
@@ -13772,36 +14040,102 @@ main:true, pageText:`
   ఇంతటితో అక్షర పరబ్రహ్మ యోగమను అధ్యాయము సమాప్తము. ఈ
 అధ్యాయములోని శ్లోకముల వివరములు క్రింద గలవు.</b>
   <br><br>
+  <ion-row>
+  <ion-col> 1) ప్రకృతి, ఆత్మ, పరమాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
- <div class="row">  <div class="col">  1)        ప్రకృతి, ఆత్మ, పరమాత్మ </div>         <div class="col">=</div>        <div class="col">1</div></div>
+<ion-row>
+  <ion-col> 2) ఆత్మ, పరమాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>3</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 2)       ఆత్మ, పరమాత్మ </div>                    <div class="col">=</div>     <div class="col">3</div></div>
+<ion-row>
+  <ion-col> 3) ప్రకృతి, పరమాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 3)       ప్రకృతి, పరమాత్మ </div>                     <div class="col">=</div>       <div class="col">1</div></div>
+<ion-row>
+  <ion-col> 4) ఆత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 4)       ఆత్మ </div>                                    <div class="col">=</div>      <div class="col">1</div></div>
+<ion-row>
+  <ion-col> 5) జీవాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>5</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 5)       జీవాత్మ    </div>                              <div class="col">=</div>       <div class="col">5</div></div>
+<ion-row>
+  <ion-col> 6) ఆత్మ, సాకారము </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 6)       ఆత్మ, సాకారము  </div>                    <div class="col">=</div>       <div class="col">1</div></div>
+<ion-row>
+  <ion-col> 7) పరమాత్మ </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>8</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 7)       పరమాత్మ     </div>                           <div class="col">=</div>         <div class="col">8</div></div>
+<ion-row>
+  <ion-col>
+      8) పరమాత్మ, జీవాత్మ
+  </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 8)       పరమాత్మ, జీవాత్మ    </div>                <div class="col">=</div>        <div class="col">1</div></div>
+<ion-row>
+  <ion-col>
+      9) జీవాత్మ, మోక్షము
+  </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>3</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 9)       జీవాత్మ, మోక్షము    </div>                  <div class="col">=</div>         <div class="col">3</div></div>
+<ion-row>
+  <ion-col>
+      10) జీవాత్మ, ఆత్మ, పరమాత్మ
+  </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>4</ion-col>
+</ion-row>
 
- <div class="row"><div class="col"> 10)    జీవాత్మ, ఆత్మ, పరమాత్మ  </div>          <div class="col">=</div>      <div class="col">4</div></div>
+<ion-row>
+  <ion-col>-------------------------------------</ion-col>
+</ion-row>
 
- <div class="row"><div class="col">-------------------------------------</div></div>
+<ion-row>
+  <ion-col>
+      మొత్తము శ్లోకములు
+  </ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>28</ion-col>
+</ion-row>
 
-<div class="row"><div class="col"> మొత్తము శ్లోకములు    </div>          <div class="col">=</div>    <div class="col">28</div></div>
+<ion-row>
+  <ion-col>---------------------------------------</ion-col>
+</ion-row>
 
-<div class="row"><div class="col">---------------------------------------</div></div>
+<ion-row>
+  <ion-col>
+      భావము, వివరము మార్చి వ్రాసిన శ్లోకములు
+  </ion-col>
+  <ion-col>---</ion-col>
+  <ion-col>4, 13, 23, 24, 25.
+  </ion-col>
+</ion-row>
 
-<div class="row"><div class="col"> భావము, వివరము మార్చి వ్రాసిన శ్లోకములు  </div>    <div class="col">---</div><div class="col">4, 13, 23, 24, 25.</div></div>
-
-<div class="row"><div class="col" > శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</div></div>
+<ion-row>
+  <ion-col><b> 
+      శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
+  </ion-col>
+</ion-row>
 `
 },
 {
@@ -14169,30 +14503,46 @@ main:true, pageText:`
 నాల్గవదైన కృతయుగముతో ప్రపంచము మొదలు పెట్టబడినది.  నాల్గుయుగములు 250
 మార్లు జరిగినట్లయితే వేయి యుగములగును.
 <br><br><b> 
+<ion-row><ion-col class="ion-text-center">
+
 నాలుగుయుగముల లెక్కప్రకారము మొత్తము సంవత్సరములు
-<br><br>
-<div class="row">
-<div class="col"> 1)  కలియుగము </div> <div class="col"> = </div> <div class="col"> 4,32,000</div>
-</div>
-<div class="row">
-<div class="col"> 2) ద్వాపరయుగము </div> <div class="col"> = </div> <div class="col">8,64,000</div>
-</div>
+</ion-col></ion-row>
+<br>
+<ion-row>
+<ion-col> 1) కలియుగము </ion-col>
+<ion-col> = </ion-col>
+<ion-col> 4,32,000</ion-col>
+</ion-row>
+<ion-row>
+<ion-col> 2) ద్వాపరయుగము </ion-col>
+<ion-col> = </ion-col>
+<ion-col>8,64,000</ion-col>
+</ion-row>
 
-<div class="row">
-<div class="col">  3)  త్రేతాయుగము </div> <div class="col"> = </div> <div class="col">12,96,000 </div>
-</div>
-<div class="row">
-<div class="col">   4)  కృతయుగమ </div> <div class="col"> = </div> <div class="col">17,28,000 </div>
-</div>
+<ion-row>
+<ion-col> 3) త్రేతాయుగము </ion-col>
+<ion-col> = </ion-col>
+<ion-col>12,96,000 </ion-col>
+</ion-row>
+<ion-row>
+<ion-col> 4) కృతయుగమ </ion-col>
+<ion-col> = </ion-col>
+<ion-col>17,28,000 </ion-col>
+</ion-row>
 
-<div class="row">
-<div class="col">  మొత్తము 4  యుగములు</div> <div class="col"> = </div> <div class="col">43,20,000 </div>
-</div>
+<ion-row>
+<ion-col> మొత్తము 4 యుగములు</ion-col>
+<ion-col> = </ion-col>
+<ion-col>43,20,000 </ion-col>
+</ion-row>
 
-<div class="row">
-<div class="col">  మొత్తము కాలము 43,20,000 సంవత్సరములు</div> 
-</div>
-</b>
+<ion-row>
+<ion-col> మొత్తము కాలము</ion-col>
+<ion-col> = </ion-col>
+<ion-col> 43,20,000 సంవత్సరములు </ion-col>
+</ion-row>
+ 
+</b> <br>
 
 నాలుగు యుగములు 250 మార్లు జరిగిన 43,20,000x250 = 108,00,00,000 మొత్తము
 సంవత్సరములగును.  పరమాత్మ పగలు 108 కోట్ల సంవత్సరములు 108 ఉపగుణములకు
@@ -15413,23 +15763,72 @@ main:true, pageText:`
   chapterName:"రాజవిద్యా రాజగుహ్య యోగము",
   chapterNumber:8,
   pageNumber:316,
-  verse:`చివరి పేజి`, meaning:``, main:false, pageText:`<b>
-  ఇందులోని శ్లోకముల వివరము క్రిందగలదు.</b><br><br>
+  verse:`చివరి పేజి`, meaning:``, main:false, pageText:`
+  
+  <ion-row>
+  <ion-col class="ion-text-center">
+      <b>
+  ఇందులోని శ్లోకముల వివరము క్రిందగలదు.</b>
+  </ion-col>
+</ion-row>
+<br>
 
-  <div class="row"> <div class="col">  1)     ధర్మములు</div> <div class="col">- </div>  <div class="col"> 3</div>  </div>
-  <div class="row"> <div class="col">  2)      పరమాత్మ </div> <div class="col">- </div>  <div class="col"> 17</div>  </div>
-  <div class="row"> <div class="col">   3)      పరమాత్మ,  సాకారము </div> <div class="col">- </div>  <div class="col"> 2</div>  </div>
-  <div class="row"> <div class="col"> 4)      పరమాత్మ, జీవాత్మ </div> <div class="col">- </div>  <div class="col"> 8</div>  </div>
-  <div class="row"> <div class="col">  5)      జీవాత్మ, ప్రకృతి</div> <div class="col">- </div>  <div class="col"> 1</div>  </div>
-  <div class="row"> <div class="col">  6)       పరమాత్మ, కర్మయోగము</div> <div class="col">- </div>  <div class="col"> 2</div>  </div>
-  <div class="row"> <div class="col">  7)       నిరాకారము-సాకారము</div> <div class="col">- </div>  <div class="col"> 1</div>  </div>
-    <div class="row"> <div class="col"> -------------------------------------------------</div></div>
-    <div class="row"> <div class="col">మొత్తము శ్లోకములు</div> <div class="col">-</div> <div class="col">34</div> </div>
-     <div class="row"> <div class="col"> -------------------------------------------------</div></div>
-     <div class="row"> <div class="col"> భావము, వివరము  మార్చి  వ్రాసిన  శ్లోకములు</div><div class="col">-</div><div class="col">13,22,24,25,26.</div></div>
-
-
-
+<ion-row>
+  <ion-col> 1) ధర్మములు</ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 3</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 2) పరమాత్మ </ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 17</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 3) పరమాత్మ, సాకారము </ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 4) పరమాత్మ, జీవాత్మ </ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 8</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 5) జీవాత్మ, ప్రకృతి</ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 6) పరమాత్మ, కర్మయోగము</ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 7) నిరాకారము-సాకారము</ion-col>
+  <ion-col>- </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> -------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>34</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> -------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> భావము, వివరము మార్చి వ్రాసిన శ్లోకములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>13,22,24,25,26.</ion-col>
+</ion-row>
+<ion-row>
+<ion-col><b> 
+    శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
+</ion-col>
+</ion-row>
 
               `
 },
@@ -16217,46 +16616,50 @@ pageText:` <b> వివరము : </b>పరమాత్మ విషయము
   verse:`చివరి పేజి`, 
   meaning:``, 
   main:false, 
-  pageText:`<br><br>
-  ఇంతటితో విభూతి యోగమను ఈ అధ్యాయము సమాప్తము. ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద చూడుము.
-<br><br>
-<div class="row"  >
-<div class="col" >1) పరమాత్మ </div>
-<div class="col" >:</div>
-<div class="col" >33</div>
-</div>
-<div class="row"  >
-<div class="col" >2) ఆత్మజ్ఞానము</div>
-<div class="col" >:</div>
-<div class="col" >1</div>
-</div>
-<div class="row"  >
-<div class="col" >3) సాకారము  </div>
-<div class="col" >:</div>
-<div class="col" >1</div>
-</div>
+  pageText:`
+  <ion-row>
+  <ion-col class="ion-text-center"> <b>ఇంతటితో విభూతి యోగమను ఈ అధ్యాయము సమాప్తము. ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద చూడుము.</b> </ion-col>
 
-<div class="row"  >
-<div class="col" >4) అర్జునుడు అడిగినవి  </div>
-<div class="col" >:</div>
-<div class="col" >7</div>
-</div>
+</ion-row>
 
-<div class="row"  >
-<div class="col" >మొత్తము శ్లోకములు  </div>
-<div class="col" >:</div>
-<div class="col" >42</div>
-</div>
+<ion-row>
+  <ion-col>1) పరమాత్మ </ion-col>
+  <ion-col>:</ion-col>
+  <ion-col>33</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>2) ఆత్మజ్ఞానము</ion-col>
+  <ion-col>:</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>3) సాకారము </ion-col>
+  <ion-col>:</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
-<div class="row">
-<div class="col" >భావము, వివరము మార్చి వ్రాసిన శ్లోకములు  </div>
-<div class="col" >-</div>
-<div class="col" >6</div>
-</div>
+<ion-row>
+  <ion-col>4) అర్జునుడు అడిగినవి </ion-col>
+  <ion-col>:</ion-col>
+  <ion-col>7</ion-col>
+</ion-row>
 
-<div class="row" style="font-size:18px" >
-<div class="col" >శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు   </div>
-</div>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు </ion-col>
+  <ion-col>:</ion-col>
+  <ion-col>42</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col><b>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></ion-col>
+</ion-row>
+  
  `
 },
 {
@@ -17418,19 +17821,64 @@ meaning:`<b> భావము : </b>మొదలు, నడుమ, చివర�
   pageNumber:374,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:`<b> ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద చూడవచ్చును.</b>
   <br><br>
-  
-  <div class="row"> <div class="col">1) ధర్మములు </div> <div class="col">-</div> <div class="col">1</div> </div>
-  <div class="row"> <div class="col"> 2) పరమాత్మ </div> <div class="col">-</div> <div class="col">4</div></div>
-  <div class="row"> <div class="col"> 3) నిరాకారము (విశ్వరూపము</div> <div class="col">-</div> <div class="col">26</div> </div>
-  <div class="row"> <div class="col">4) పరమాత్మ, బ్రహ్మయోగము </div> <div class="col">-</div> <div class="col">1</div>  </div>
-  <div class="row"> <div class="col"> 5) భక్తియోగము, బ్రహ్మయోగము,  కర్మయోగము</div> <div class="col">-</div> <div class="col">1</div>  </div>
-  <div class="row"> <div class="col"> 6) అశాస్త్రాయమైనవి</div> <div class="col">-</div> <div class="col">10</div> </div>
-  <div class="row"> <div class="col">7) సాకార, నిరాకారములు</div> <div class="col">-</div> <div class="col">2</div>  </div>
-  <div class="row"> <div class="col">8) సాకారము</div> <div class="col">-</div> <div class="col">4</div>  </div>
-  <div class="row"> <div class="col">9)పరమాత్మ- నిరాకారము</div> <div class="col">-</div> <div class="col">6</div>  </div>
-  <div class="row"> <div class="col">మొత్తము శ్లోకములు</div> <div class="col">-</div> <div class="col">55</div>  </div>
-  <div class="row"> <div class="col">భావము, వివరము మార్చి వ్రాసిన శ్లోకములు</div> <div class="col">-</div> <div class="col">23, 25, 27, 39.</div>  </div>
-  <div class="row"><div class="col" style="text-align:right;font-weight:bold">శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</div></div>
+  <ion-row>
+  <ion-col>1) ధర్మములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 2) పరమాత్మ </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>4</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 3) నిరాకారము (విశ్వరూపము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>26</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>4) పరమాత్మ, బ్రహ్మయోగము </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 5) భక్తియోగము, బ్రహ్మయోగము, కర్మయోగము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 6) అశాస్త్రాయమైనవి</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>10</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>7) సాకార, నిరాకారములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>8) సాకారము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>4</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>9)పరమాత్మ- నిరాకారము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>55</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు</ion-col>
+  <ion-col>-</ion-col> 
+  <ion-col>23, 25, 27, 39.</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><strong>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</strong></ion-col>
+</ion-row>
      
 `
 },
@@ -17968,56 +18416,57 @@ main:false, pageText:`<b>
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:` <b> 
   ఇంతటితో  భక్తి  యోగమనబడు  ఈ  అధ్యాయము  సమాప్తము.  ఈ
   అధ్యాయములోని  శ్లోకముల  వివరము  క్రిందగలదు  చూడండి.</b><br><br>
-  
-  <div class="row" >
-  <div class="col" >1)        కర్మయోగము</div>
-  <div class="col" >-</div>
-  <div class="col" >6</div>
-  </div>
-  <div class="row" >
-  <div class="col" >2)        బ్రహ్మయోగము</div>
-  <div class="col" >-</div>
-  <div class="col" >6</div>
-  </div>
-  <div class="row" >
-  <div class="col" >3)        భక్తియోగము</div>
-  <div class="col" >-</div>
-  <div class="col" >2</div>
-  </div>       
-  <div class="row" >
-  <div class="col" >4)        బ్రహ్మయోగము,  కర్మయోగము</div>
-  <div class="col" >-</div>
-  <div class="col" >3</div>
-  </div>
-  <div class="row" >
-  <div class="col" >5)        కర్మ,  బ్రహ్మ,  భక్తియోగములు</div>
-  <div class="col" >-</div>
-  <div class="col" >2</div>
-  </div> 
-  <div class="row" >
-  <div class="col" >6)        మోక్షము</div>
-  <div class="col" >-</div>
-  <div class="col" >1</div>
-  </div>   
-  
-  <div class="row" >
-  <div class="col" >-----------------------------------</div>
-  
-  </div> 
-  <div class="row" >
-  <div class="col" > మొత్తము   శ్లోకములు</div>
-  <div class="col" >=</div>
-  <div class="col" >20</div>
-  </div>  
-  
-  <div class="row" >
-  <div class="col" >-----------------------------------</div>
-  
-  </div> 
-  <div class="row" >
-  <div class="col" >శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</div>
-  
-  </div>  
+   
+  <ion-row>
+  <ion-col>1) కర్మయోగము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>2) బ్రహ్మయోగము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>3) భక్తియోగము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>4) బ్రహ్మయోగము, కర్మయోగము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>3</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>5) కర్మ, బ్రహ్మ, భక్తియోగములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>6) మోక్షము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>-----------------------------------</ion-col>
+
+</ion-row>
+<ion-row>
+  <ion-col> మొత్తము శ్లోకములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>20</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>-----------------------------------</ion-col>
+
+</ion-row>
+<ion-row>
+  <ion-col><b>శ్రీశ్రీశ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b></ion-col>
+
+</ion-row>
+
         `
 },
 {
@@ -18469,45 +18918,45 @@ main:false, pageText:`<b>
 స్పర్శ,  రుచి ఒక గుంపు అని తెలియవలెను.
 <br><br>
 <b>
-<div class="row"> 
-<div class="col">మహాభూతములని పిలువబడు జీవాత్మ,  ఆత్మలు  </div> 
-<div class="col"> -</div>
-<div class="col"> 2</div>
+<ion-row> 
+<ion-col>మహాభూతములని పిలువబడు జీవాత్మ,  ఆత్మలు  </ion-col> 
+<ion-col> -</ion-col>
+<ion-col> 2</ion-col>
 
-</div>
-<div class="row"> 
-<div class="col"> అవ్యక్తమైన అంతరంగములు  </div> 
-<div class="col"> -</div>
-<div class="col"> 9</div>
+</ion-row>
+<ion-row> 
+<ion-col> అవ్యక్తమైన అంతరంగములు  </ion-col> 
+<ion-col> -</ion-col>
+<ion-col> 9</ion-col>
 
-</div>
-<div class="row"> 
-<div class="col">కనిపించు ఇంద్రియములు </div> 
-<div class="col"> -</div>
-<div class="col"> 10</div>
+</ion-row>
+<ion-row> 
+<ion-col>కనిపించు ఇంద్రియములు </ion-col> 
+<ion-col> -</ion-col>
+<ion-col> 10</ion-col>
 
-</div>
-<div class="row"> 
-<div class="col"> కనిపించని ఇంద్రియములు  </div> 
-<div class="col"> -</div>
-<div class="col"> 5</div>
+</ion-row>
+<ion-row> 
+<ion-col> కనిపించని ఇంద్రియములు  </ion-col> 
+<ion-col> -</ion-col>
+<ion-col> 5</ion-col>
 
-</div>
-<div class="row"> 
-<div class="col"> ---------------------------------------  </div> 
+</ion-row>
+<ion-row> 
+<ion-col> ---------------------------------------  </ion-col> 
 
-</div>
-<div class="row"> 
-<div class="col">సజీవ శరీరములో మొత్తము భాగములు  </div> 
-<div class="col"> -</div>
-<div class="col"> 26</div>
+</ion-row>
+<ion-row> 
+<ion-col>సజీవ శరీరములో మొత్తము భాగములు  </ion-col> 
+<ion-col> -</ion-col>
+<ion-col> 26</ion-col>
 
-</div>
+</ion-row>
 </b>
-<div class="row"> 
-<div class="col"> ---------------------------------------  </div> 
+<ion-row>
+<ion-col> --------------------------------------- </ion-col>
 
-</div>
+</ion-row>
 <br><br>
 ఈ విధముగ క్షేత్రమనునది 24 భాగముల చేత మరియు రెండు ఆత్మల
 చేత కలిసివుంటున్నది.  అంతేకాక ప్రేమ అసూయలను గుణములు,
@@ -19611,74 +20060,88 @@ main:false, pageText:`<b>
             <br><br>
             ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద చూడవచ్చును.
             <br><br>
-  
-          <div class="row"> <div class="col">1)          ప్రకృతి, పరమాత్మ (పురుషుడు)  </div>
-          <div class="col">-</div>
-          <div class="col"> 11</div>
-        </div>              
+            <ion-row>
+            <ion-col>1) ప్రకృతి, పరమాత్మ (పురుషుడు) </ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 11</ion-col>
+        </ion-row>
         
-        <div class="row"> <div class="col"> 2)           ప్రకృతి </div>
-        <div class="col">-</div>
-        <div class="col"> 2</div>
-      
-      </div>   
-      <div class="row"> <div class="col">  3)           ఆత్మజ్ఞానము </div>
-      <div class="col">-</div>
-      <div class="col"> 5</div>
-    
-    </div>   
-    
-    <div class="row"> <div class="col">4)           పరమాత్మ</div>
-    <div class="col">-</div>
-    <div class="col"> 11</div>
-  
-  </div>   
-   
-  <div class="row"> <div class="col">5)           ప్రకృతి,  జీవాత్మ</div>
-  <div class="col">-</div>
-  <div class="col"> 2</div>
-  
-  </div>   
-   
-  <div class="row"> <div class="col"> 6)           జీవాత్మ,  ఆత్మ,  పరమాత్మ</div>
-  <div class="col">-</div>
-  <div class="col"> 2</div>
-  
-  </div>   
-   
-  <div class="row"> <div class="col">7)           భక్తి,  బ్రహ్మ,  కర్మయోగములు</div>
-  <div class="col">-</div>
-  <div class="col"> 1</div>
-  
-  </div>   
-   
-  <div class="row"> <div class="col"> 8)           జీవుడు,  మోక్షము</div>
-  <div class="col">-</div>
-  <div class="col"> 1</div>
-  
-  </div>   
-  <div class="row"> <div class="col">---------------------------------------</div>
-  </div>  
-           
-  <div class="row"> <div class="col"> మొత్తము శ్లోకములు</div>
-  <div class="col">-</div>
-  <div class="col">35</div>
-  
-  </div>
-  
-  <div class="row"> <div class="col">---------------------------------------</div>
-  </div>
-  
-  
-  
-  <div class="row"> <div class="col"> భావము,  వివరము  మార్చి  వ్రాసిన  శ్లోకములు </div>
-  <div class="col">-</div>
-  <div class="col">2,6</div>
-  
-  </div>
-  
-  <div class="row"> <div class="col"><b> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b></div>
-  </div>`
+        <ion-row>
+            <ion-col> 2) ప్రకృతి </ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 2</ion-col>
+        
+        </ion-row>
+        <ion-row>
+            <ion-col> 3) ఆత్మజ్ఞానము </ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 5</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col>4) పరమాత్మ</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 11</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col>5) ప్రకృతి, జీవాత్మ</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 2</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col> 6) జీవాత్మ, ఆత్మ, పరమాత్మ</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 2</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col>7) భక్తి, బ్రహ్మ, కర్మయోగములు</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 1</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col> 8) జీవుడు, మోక్షము</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col> 1</ion-col>
+        
+        </ion-row>
+        <ion-row>
+            <ion-col>---------------------------------------</ion-col>
+        </ion-row>
+        
+        <ion-row>
+            <ion-col> మొత్తము శ్లోకములు</ion-col>
+            <ion-col>-</ion-col>
+            <ion-col>35</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col>---------------------------------------</ion-col>
+        </ion-row>
+        
+        
+        
+        <ion-row>
+            <ion-col> భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+            <ion-col>-</ion-col>
+            <ion-col>2,6</ion-col>
+        
+        </ion-row>
+        
+        <ion-row>
+            <ion-col><b> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b></ion-col>
+        </ion-row>
+
+  `
 },
 {
   chapterName:"గుణత్రయ విభాగ యోగము",
@@ -20437,31 +20900,82 @@ main:false, pageText:``
   pageNumber:449,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:`<b> ఇంతటితో గుణత్రయ విభాగయోగమను ఈ అధ్యాయము సమాప్తమైనది.
   ఈ అధ్యాయములోని శ్లోకముల వివరము క్రింద గలదు.</b>
-  
-  <div class="row"><div class="col">1)            జ్ఞానము</div><div class="col">-</div><div class="col">2</div></div>
+  <ion-row>
+  <ion-col>1) జ్ఞానము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
 
-  <div class="row"><div class="col">2)           ప్రకృతి,  పరమాత్మ</div><div class="col">-</div><div class="col">2</div></div>
+<ion-row>
+  <ion-col>2) ప్రకృతి, పరమాత్మ</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
 
-  <div class="row"><div class="col">3)           జీవుడు,  మూడు గుణములు</div><div class="col">-</div><div class="col">8</div></div>
+<ion-row>
+  <ion-col>3) జీవుడు, మూడు గుణములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>8</ion-col>
+</ion-row>
 
-  <div class="row"><div class="col">4)           జీవుడు,  సాత్త్వికము</div><div class="col">-</div><div class="col">3</div></div>
+<ion-row>
+  <ion-col>4) జీవుడు, సాత్త్వికము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>3</ion-col>
+</ion-row>
 
-<div class="row"><div class="col"> 5)           జీవుడు,  రాజసము</div><div class="col">-</div><div class="col">2</div></div>
+<ion-row>
+  <ion-col> 5) జీవుడు, రాజసము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
 
-<div class="row"><div class="col">6)           జీవుడు,  తామసము </div><div class="col">-</div><div class="col">2</div></div>
+<ion-row>
+  <ion-col>6) జీవుడు, తామసము </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
 
-<div class="row"><div class="col"> 7)           జీవుడు,  రాజస,  తామసము</div><div class="col">-</div><div class="col">1</div></div>
+<ion-row>
+  <ion-col> 7) జీవుడు, రాజస, తామసము</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
 
-<div class="row"><div class="col">8)           కర్మయోగి</div><div class="col">-</div><div class="col">5</div></div>
+<ion-row>
+  <ion-col>8) కర్మయోగి</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>5</ion-col>
+</ion-row>
 
-<div class="row"><div class="col">9)           సాకార,  నిరాకారము</div><div class="col">-</div><div class="col">2</div></div>
-<div class="row"><div class="col">--------------------------------------------------------------------------------------</div></div>
-<div class="row"><div class="col">మొత్తము శ్లోకములు</div><div class="col">-</div><div class="col">27</div></div>
-<div class="row"><div class="col">--------------------------------------------------------------------------------------</div></div>
+<ion-row>
+  <ion-col>9) సాకార, నిరాకారము
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>--------------------------------------------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>27</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>--------------------------------------------------------------------------------------</ion-col>
+</ion-row>
 <br>
-<div class="row"><div class="col"><b>బ్రహ్మ కాల కర్మ గుణచక్రములోని కర్మచక్రమును తర్వాత పేజీలో చూడవచ్చును.</b></div></div>
-<div class="row"><div class="col" style="text-align:center">
-<img src="assets/img/devudimudratelugu.png"/></div></div>
+<ion-row>
+  <ion-col><b>బ్రహ్మ కాల కర్మ గుణచక్రములోని కర్మచక్రమును తర్వాత పేజీలో చూడవచ్చును.</b></ion-col>
+</ion-row>
+<ion-row>
+  <ion-col style="text-align:center">
+      <img src="assets/img/devudimudratelugu.png" /></ion-col>
+</ion-row>
+
+
 <br>
 
 
@@ -21498,21 +22012,63 @@ main:false, pageText:``
   pageNumber:470,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:`<b>ఇంతటితో పురుషోత్తమ ప్రాప్తి యోగమను ఈ అధ్యాయము సమాప్తమైనది. ఇందులోని శ్లోకముల వివరము 
   క్రింద ఇవ్వబడినది.</b><br><br>
-  <div class="row">  <div class="col">1) ప్రకృతి, పురుషులు </div> <div class="col"> -  </div> <div class="col">  3</div> </div>
-  <div class="row">  <div class="col">2) పరమాత్మ </div> <div class="col"> -  </div> <div class="col">  1</div> </div>
-  <div class="row">  <div class="col">3) ఆత్మ, ప్రకృతి </div> <div class="col"> -  </div> <div class="col">  1</div> </div>
-  <div class="row">  <div class="col">4) జీవాత్మ </div> <div class="col"> -  </div> <div class="col">  2</div> </div>
-  <div class="row">  <div class="col">5) ఆత్మ </div> <div class="col"> -  </div> <div class="col">  3</div> </div>
-  <div class="row">  <div class="col"> 6) జీవాత్మ, ఆత్మ </div> <div class="col"> -  </div> <div class="col">  1</div> </div>
-  <div class="row">  <div class="col">  7) జీవాత్మ, ఆత్మ, పరమాత్మ </div> <div class="col"> -  </div> <div class="col">  1</div> </div>
-  
-  <div class="row"> <div class="col"> -------------------------------------------------------</div></div>
-  <div class="row">  <div class="col">  మొత్తము శ్లోకములు </div> <div class="col"> -  </div> <div class="col">  20</div> </div>
-  
-  <div class="row"> <div class="col"> -------------------------------------------------------</div></div>
-  <div class="row">  <div class="col"> భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </div> <div class="col"> -  </div> <div class="col"> 2,14, 15,16,17</div> </div>
-  
- <div class="row"><div class="col" style="text-align:right;font-weight:bold">శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</div></div> 
+  <ion-row>
+  <ion-col>1) ప్రకృతి, పురుషులు </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 3</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>2) పరమాత్మ </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>3) ఆత్మ, ప్రకృతి </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>4) జీవాత్మ </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>5) ఆత్మ </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 3</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 6) జీవాత్మ, ఆత్మ </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> 7) జీవాత్మ, ఆత్మ, పరమాత్మ </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 1</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> -------------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> మొత్తము శ్లోకములు </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 20</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> -------------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 2,14, 15,16,17</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col><b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b></ion-col>
+</ion-row>
    
  `
 },
@@ -22353,26 +22909,64 @@ pageText:`<b>
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:`<b>      ఇంతటితో దైవాసుర సంపద్విభాగ యోగమును ఈ అధ్యాయము సమాప్తమైనది. ఇందులోని శ్లోకముల వివరము 
   క్రింద చూడుము.</b><br><br>
   
-  
-  <div class="row">  <div class="col"> 1)  దైవగుణములు </div><div class="col">-</div> <div class="col"> 3</div></div>
-  
-  <div class="row">  <div class="col">2) అసురగుణములు </div><div class="col">-</div> <div class="col">13 </div></div>
-  
-  <div class="row">  <div class="col"> 3)జీవాత్మ, పరమాత్మ</div><div class="col">-</div><div class="col"> 2</div></div>
-  
-  <div class="row">  <div class="col"> 4)దైవ అసుర గుణములు</div><div class="col">-</div><div class="col"> 2</div></div>
-  
-  <div class="row">  <div class="col"> 5) జీవాత్మ </div><div class="col">-</div><div class="col"> 2</div></div>
-  
-    <div class="row">  <div class="col"> 6) ప్రకృతి</div><div class="col">-</div><div class="col"> 2</div></div>
-    <div class="row">  <div class="col"> ---------------------------------------------------- </div></div>
-  
-        <div class="row">  <div class="col"> మొత్తము శ్లోకములు </div><div class="col">-</div><div class="col"> 24</div></div>
-  
-        <div class="row">  <div class="col"> ----------------------------------------------------  </div></div>
-            <div class="row">  <div class="col">భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </div><div class="col">-</div><div class="col">7,8,9 </div></div>
-  
-          <div class="row">  <div class="col" style="font-size:20px;text-align:left"><b>  శ్రీ శ్రీ శ్రీ  ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></div></div>
+  <ion-row>
+  <ion-col> 1) దైవగుణములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 3</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>2) అసురగుణములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>13 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 3)జీవాత్మ, పరమాత్మ</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 4)దైవ అసుర గుణములు</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 5) జీవాత్మ </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 6) ప్రకృతి</ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 2</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> ---------------------------------------------------- </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> మొత్తము శ్లోకములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 24</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> ---------------------------------------------------- </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకములు </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>7,8,9 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col><b>  శ్రీ శ్రీ శ్రీ  ఆచార్య ప్రబోధానంద యోగీశ్వర్లు </b></ion-col>
+</ion-row>
+
 
     `
 },
@@ -23181,27 +23775,64 @@ pageText:`
   pageNumber:513,
   verse:`చివరి పేజి`, meaning:``, main:false, pageText:` <b> ఈ పదహారవ అధ్యాయములో చెప్పబడిన శ్లోకముల వివరములు క్రింద
   చూడవచ్చును. </b>
-  
-  <div class="row"> <div class="col">1)               గుణములు</div> <div class="col">=</div>  <div class="col">6</div> </div> 
-  
-  <div class="row"> <div class="col"> 2)               సాత్త్విక గుణము</div> <div class="col">=</div>  <div class="col"> 4</div> </div> 
-  
-  <div class="row"> <div class="col">3)               రాజస గుణము</div> <div class="col">=</div>  <div class="col">4</div> </div>  
-  
-  <div class="row"> <div class="col">4)               తామస గుణము</div> <div class="col">=</div>  <div class="col">4</div> </div>                              -
-  
-  <div class="row"> <div class="col">5)               తపములు</div> <div class="col">=</div>  <div class="col">3</div> </div>  
-  
-  
-  <div class="row"> <div class="col"> 6)               ప్రకృతి-గుణములు</div> <div class="col">=</div>  <div class="col">1</div> </div>                        -
-  
-  
-  <div class="row"> <div class="col">7)               కల్పితములు</div> <div class="col">=</div>  <div class="col">6</div> </div>  
-  <div class="row"> <div class="col">  ----------------------------------------</div></div>
-  <div class="row"> <div class="col">మొత్తము శ్లోకములు</div> <div class="col">=</div>  <div class="col">28</div> </div>  
-  <div class="row"> <div class="col">  ----------------------------------------</div></div>
-  
-  <div class="row"> <div class="col" style="font-size:18px"><b> శ్రీ శ్రీ శ్రీ  ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b> </div></div>
+  <ion-row>
+  <ion-col>1) గుణములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 2) సాత్త్విక గుణము</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col> 4</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>3) రాజస గుణము</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>4</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>4) తామస గుణము</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>4</ion-col>
+</ion-row> -
+
+<ion-row>
+  <ion-col>5) తపములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>3</ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col> 6) ప్రకృతి-గుణములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>1</ion-col>
+</ion-row> -
+
+
+<ion-row>
+  <ion-col>7) కల్పితములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>6</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> ----------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు</ion-col>
+  <ion-col>=</ion-col>
+  <ion-col>28</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col> ----------------------------------------</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col><b> శ్రీ శ్రీ శ్రీ  ఆచార్య ప్రబోధానంద యోగీశ్వరులు</b> </ion-col>
+</ion-row>
 
 `
 },
@@ -24928,98 +25559,246 @@ pageText:`
   <br><br><b> 
   ఈ  చివరి  అధ్యాయములోని  శ్లోకముల  వివరములు  క్రింద  గలవు.</b>
   <br><br>
-  
-  <div class="row"> <div class="col"> 1.           కర్మ సన్న్యాసము, కర్మ త్యాగము  </div>       <div class="col"> -  </div>        <div class="col">2</div>    </div>
-  
-  <div class="row"><div class="col"> 2.            సాకారము,  నిరాకారము </div>                   <div class="col"> -  </div>     <div class="col">1 </div>    </div>   
-  
-  <div class="row"><div class="col">3.            కర్మయోగి,  బ్రహ్మయోగి</div>                      <div class="col"> -  </div> <div class="col">1 </div> </div>
-  
-  
-  <div class="row"><div class="col">4.            కర్మయోగము</div>
-  <div class="col"> -  </div>           <div class="col">7 </div>   </div>
-  
-  <div class="row"><div class="col"> 5.             యోగము</div>
-  <div class="col"> -  </div>         <div class="col">4 </div>    </div> 
-  
-  <div class="row"><div class="col">6.             ప్రకృతి</div>
-  <div class="col"> -  </div>         <div class="col">5 </div>   </div>
-  
-  <div class="row"><div class="col">7.             పరమాత్మ</div>
-  <div class="col"> -  </div>          <div class="col">2 </div>   </div> 
-  
-  <div class="row"><div class="col">8.             జ్ఞానము</div>
-  <div class="col"> -  </div>            <div class="col">1 </div>  </div>
-  
-  <div class="row"> <div class="col"> 9.             గుణములు</div>
-  <div class="col"> -  </div>           <div class="col">4 </div>   </div>
-  
-  <div class="row"> <div class="col">10.           జీవుడు</div>
-  <div class="col"> -  </div>            <div class="col">1 </div>  </div>
-  
-  <div class="row"> <div class="col"> 11.            యోగము,  వియోగము</div>                       
-  <div class="col"> -  </div> <div class="col">1 </div> </div>
-  
-  
-  <div class="row"> <div class="col"> 12.             సాత్త్వికము</div>
-  <div class="col"> -  </div>         <div class="col">1 </div> </div>
-  
-  <div class="row"> <div class="col"> 13.             మోక్షము</div>
-  <div class="col"> -  </div>          <div class="col">1 </div> </div>
-  
-  <div class="row"> <div class="col">14.              గీతా  సారాంశము</div>
-  <div class="col"> -  </div>            <div class="col">3 </div> </div>
-  
-  <div class="row"><div class="col">  15.        సాత్త్విక  జ్ఞానము</div> 
-  <div class="col"> - </div> <div class="col"> 1 </div></div>      
-   <div class="row"><div class="col">16.        రాజస  జ్ఞానము                     </div> 
-   <div class="col">-</div>          <div class="col"> 1 </div></div>
-     <div class="row"><div class="col">17.         తామస  జ్ఞానము                   </div> 
-     <div class="col">-</div>           <div class="col"> 1 </div></div>
-       <div class="row"><div class="col">18.         సాత్త్విక  కర్మ                         </div> 
-       <div class="col">-</div>           <div class="col"> 1 </div></div>
-         <div class="row"><div class="col">19.          రాజస  కర్మ                          </div> 
-         <div class="col">-</div>            <div class="col"> 1 </div></div>
-           <div class="row"><div class="col">20.         తామస  కర్మ                          </div> 
-           <div class="col">-</div>           <div class="col"> 1 </div></div>
-             <div class="row"><div class="col">21.         సాత్త్విక  కర్త                           </div> 
-             <div class="col">-</div> <div class="col">1</div></div>
-  
-     
-             <div class="row"><div class="col">22.          రాజస  కర్త                            </div> 
-     <div class="col">-</div>             <div class="col"> 1 </div></div>
-       <div class="row"><div class="col">23.          తామస కర్త                            </div> 
-       <div class="col">-</div>            <div class="col"> 1 </div></div>
-         <div class="row"><div class="col">24.          సాత్త్విక  బుద్ధి                        </div> 
-         <div class="col">-</div> <div class="col"> 1 </div></div>
-         <div class="row"><div class="col">25.          రాజస  బుద్ధి                          </div> 
-         <div class="col">-</div>             <div class="col"> 1 </div></div>
-           <div class="row"><div class="col">26.          తామస  బుద్ధి                         </div> 
-          
-           <div class="col">-</div>             <div class="col"> 1 </div></div>
-             <div class="row"><div class="col">27.           సాత్త్విక  ధృతి                       </div> 
-             <div class="col"></div>             <div class="col"> 1 </div></div>
-              
-             <div class="row"><div class="col">28.           రాజస  ధృతి                         </div> 
-               
-               <div class="col">-</div>             <div class="col"> 1 </div></div>
-                 <div class="row"><div class="col">29.           తామస  ధృతి                        </div> 
-                 <div class="col">-</div>             <div class="col"> 1 </div></div>
-                   <div class="row"><div class="col">30.           సాత్త్విక  సుఖము                   </div> 
-                   <div class="col">-</div>            <div class="col"> 1 </div></div>
-                     <div class="row"><div class="col">31.           రాజస  సుఖము                     </div> 
-                     <div class="col">-</div>             <div class="col"> 1 </div></div>
-                       <div class="row"><div class="col">32.           తామస  సుఖము                    </div> 
-                       <div class="col">-</div>             <div class="col"> 1 </div></div>
-                         <div class="row"><div class="col">33.           కల్పిత  శ్లోకములు                  </div> 
-                         <div class="col">-</div>          <div class="col"> 14 </div></div>  
-                           <div class="row"><div class="col">34.           వర్జించిన శ్లోకములు                </div> 
-                           <div class="col">-</div>            <div class="col"> 12 </div></div>
-                             <div class="row"><div class="col">------------------------------------------------</div></div>
-                               <div class="row"><div class="col">మొత్తము  శ్లోకములు               </div> <div class="col">-</div>           <div class="col"> 78 </div></div> 
-                                 <div class="row"><div class="col">-------------------------------------------------</div></div>
-                                   <div class="row"><div class="col">భావము,  వివరము  మార్చి  వ్రాసిన  శ్లోకము  </div> <div class="col">-</div> <div class="col"> 2 </div></div> 
-                                     <div class="row"><div class="col" style="text-align:left;font-weight:bold"> శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</div></div>
+  <ion-row>
+  <ion-col> 1. కర్మ సన్న్యాసము, కర్మ త్యాగము </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>2</ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 2. సాకారము, నిరాకారము </ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>3. కర్మయోగి, బ్రహ్మయోగి</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col>4. కర్మయోగము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>7 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 5. యోగము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>4 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>6. ప్రకృతి</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>5 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>7. పరమాత్మ</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>2 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>8. జ్ఞానము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 9. గుణములు</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>4 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>10. జీవుడు</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 11. యోగము, వియోగము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col> 12. సాత్త్వికము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 13. మోక్షము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>14. గీతా సారాంశము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col>3 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col> 15. సాత్త్విక జ్ఞానము</ion-col>
+  <ion-col> - </ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>16. రాజస జ్ఞానము </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>17. తామస జ్ఞానము </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>18. సాత్త్విక కర్మ </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>19. రాజస కర్మ </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>20. తామస కర్మ </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>21. సాత్త్విక కర్త </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col>22. రాజస కర్త </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>23. తామస కర్త </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>24. సాత్త్విక బుద్ధి </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col> 1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>25. రాజస బుద్ధి </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>26. తామస బుద్ధి </ion-col>
+
+  <ion-col>-</ion-col>
+  <ion-col>
+      1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>27. సాత్త్విక ధృతి </ion-col>
+  <ion-col></ion-col>
+  <ion-col>
+      1 </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>28. రాజస ధృతి
+  </ion-col>
+
+  <ion-col>-</ion-col>
+  <ion-col>
+      1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>29. తామస ధృతి
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      1 </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>30. సాత్త్విక సుఖము
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>31. రాజస సుఖము
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>32. తామస సుఖము
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      1
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>33. కల్పిత శ్లోకములు
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      14
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>34. వర్జించిన శ్లోకములు
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      12
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>మొత్తము శ్లోకములు
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      78
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>-------------------------------------------------</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col>భావము, వివరము మార్చి వ్రాసిన శ్లోకము
+  </ion-col>
+  <ion-col>-</ion-col>
+  <ion-col>
+      2
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col><b>
+      శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు</b>
+  </ion-col>
+</ion-row>
 
 
 `
@@ -25044,29 +25823,47 @@ pageText:`
   నమ్మవద్దండి. జాగ్రత్తగ అర్థము చేసుకొని ఒక అవగాహనకు రావలెనని పాఠకులను కోరుచున్నాము. మేము 
   ఏ విధముగ ఎన్ని చెప్పినప్పటికి ఎవరికున్న శ్రద్ధనుబట్టి వారికి ఇందులోని జ్ఞానము అర్థముకాగలదని చివరిగ
   చెప్పుచున్నాము.
-  <div class="row" >  <div class="col" style="text-align: center"> <b>   
+
+  <ion-row>
+  <ion-col class="ion-text-center"> <b>   
       ఇట్లు 
-  </b> </div> </div>
-  <div class="row">  <div class="col"  style="text-align: center"> <b>   
+  </b> </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col class="ion-text-center"> <b>   
       ఇందూ ధర్మప్రదాత 
-    </b> </div> </div>
-    <div class="row">  <div class="col"  style="text-align: center"> <b>   
+    </b> </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col class="ion-text-center"> <b>   
         సంచలనాత్మక రచయిత, త్రైత సిద్ధాంత ఆదికర్త 
-      </b> </div> </div>
-      <div class="row" style="font-size:21px;text-align:center">  <div class="col"> <b>   
+      </b> </ion-col>
+</ion-row>
+<ion-row style="font-size:21px;text-align:center">
+  <ion-col> <b>   
           శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వర్లు
-        </b> </div> </div>
+        </b> </ion-col>
+</ion-row>
 
-        <div class="row"> <div class="col" style="text-align: center"> *********************************  </div> </div>
-        <div class="row" style="font-size:21px;text-align:center">  <div class="col"> <b>   
+<ion-row>
+  <ion-col class="ion-text-center"> ********************************* </ion-col>
+</ion-row>
+<ion-row style="font-size:21px;text-align:center">
+  <ion-col> <b>   
             http://www.thraithashakam.org
-          </b> </div> </div>
-        <div class="row"> <div class="col" style="text-align: center"> *********************************  </div> </div>
+          </b> </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col class="ion-text-center"> ********************************* </ion-col>
+</ion-row>
 
-        <div class="row" style="font-size:16px;text-align:center">  <div class="col"> <b><i>   
+<ion-row style="font-size:16px;text-align:center">
+  <ion-col> <b><i>   
             అసత్యమును వేయిమంది చెప్పినా, అది సత్యము కాదు<br>
             సత్యమును వేయిమంది కాదనినా, అది అసత్యము కాదు</i>
-          </b> </div> </div>
+          </b> </ion-col>
+</ion-row>
+
     `
 }
 

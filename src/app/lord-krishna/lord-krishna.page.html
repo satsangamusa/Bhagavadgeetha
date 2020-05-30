@@ -19,26 +19,23 @@
   <ion-grid>
     <ion-row>
       <ion-col class="ion-text-center" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
+        <br>
         <b>శ్రీ కృష్ణ భగవాన్</b>&nbsp; <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-
-        <ion-card class="custom-card-image">
-
+         
           <ion-row>
-            <ion-col>
-              <img class="displayed" style="width:100%" src="assets/images/krishnashtami.png" />
+            <ion-col class="ion-text-center">
+              <img    src="assets/images/krishnashtami.png" />
             </ion-col>
           </ion-row>
-
-        </ion-card>
+        
         <br>
-        <ion-card class="custom-card">
+        <ion-card class="custom-card" (click)="this.global.fontSize=this.global.fontSize==15?20:15" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
 
-          <ion-card-content (click)="this.global.fontSize=this.global.fontSize==15?20:15" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
-
+         
 
             <ion-row>
               <ion-col> జన్మ దినము: </ion-col>
@@ -135,7 +132,7 @@
                 శ్రీకృష్ణుడి మీద భక్తి భావం పెంచుకుందాం. గోపి మరియు గోపికలు గతంలోనేకాక నేడు కూడా ఉన్నారని రుజువు చేద్దాం.
               </ion-col>
             </ion-row>
-          </ion-card-content>
+          
         </ion-card>
           <div *ngIf="this.global.networkStatus=='ONLINE'">
           <ion-row *ngFor="let video of videos">
