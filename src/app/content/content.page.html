@@ -22,13 +22,15 @@
   </ion-row>
   <ion-row>
     <ion-col class="ion-text-center" >
-        <ion-icon *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1" name="arrow-back"
-          class="align-icon"></ion-icon>
+        
+        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1" >☜</span>
+
+         
         &nbsp; <b><span style="font-size:20px"> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>&nbsp;
         <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
         &nbsp;
-        <ion-icon *ngIf="this.global.currentPage<=568" (click)="this.global.currentPage=this.global.currentPage+1" name="arrow-forward"
-          class="align-icon"></ion-icon>
+        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage<=568" (click)="this.global.currentPage=this.global.currentPage+1" >☞</span>
+        
     </ion-col>
   </ion-row>
  
@@ -59,7 +61,7 @@
             <ion-col class="ion-text-center">
               <div class="viditem">
                 <a class="vid-img-container" style="">
-                  <iframe class="vidimg"  height="350" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'"
+                  <iframe class="vidimg"  height="310" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'"
                    allowfullscreen></iframe>
                 </a>
               </div>

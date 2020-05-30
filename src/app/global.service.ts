@@ -6031,14 +6031,7 @@ main:false, pageText:`
            <b>(శరీరములో జీవిత పద్ధతి)</b>
        </ion-col>
    </ion-row>
-   <ion-row>
-       <ion-col>
-           --
-       </ion-col>
-       <ion-col>
-           --
-       </ion-col>
-   </ion-row>
+    <br>
    <ion-row>
        <ion-col>
            <b>ఫిల్ము </b>
@@ -6049,10 +6042,10 @@ main:false, pageText:`
    </ion-row>
    <ion-row>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
    </ion-row>
    <ion-row>
@@ -6065,10 +6058,10 @@ main:false, pageText:`
    </ion-row>
    <ion-row>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
    </ion-row>
    <ion-row>
@@ -6081,10 +6074,10 @@ main:false, pageText:`
    </ion-row>
    <ion-row>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
    </ion-row>
    <ion-row>
@@ -6097,10 +6090,10 @@ main:false, pageText:`
    </ion-row>
    <ion-row>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
        <ion-col>
-           --
+       <span style="font-size:24px">☟</span>
        </ion-col>
    </ion-row>
    <ion-row>
