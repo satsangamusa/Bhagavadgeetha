@@ -41,7 +41,39 @@
 
       <ion-card class="custom-card" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
  
-          <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
+        <!--for geetham geetha do this change
+        
+        <div *ngIf="this.global.geetha[this.global.currentPage].main==false" class="ns">
+          <ion-row>
+            <ion-col  *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
+             <b> <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'" style="font-size:20px"> </span></b>
+            </ion-col>
+            <ion-col   *ngIf="this.global.geetha[this.global.currentPage].verse!='చివరి పేజి'">
+              <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+            </ion-col>
+          </ion-row>
+          <ion-row >
+              <ion-col   *ngIf="this.global.geetha[this.global.currentPage].verse!='చివరి పేజి'">
+                <span [innerHTML]="this.global.geetha[this.global.currentPage].teluguVerse | safe:'html'"> </span>
+              </ion-col>
+            </ion-row>
+        </div>
+           <div class="ms" *ngIf="this.global.geetha[this.global.currentPage].main==true">
+            <ion-row >
+              <ion-col >
+                <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+              </ion-col>
+            </ion-row>
+            <ion-row >
+              <ion-col >
+                <span [innerHTML]="this.global.geetha[this.global.currentPage].teluguVerse | safe:'html'"> </span>
+              </ion-col>
+            </ion-row>
+          </div>
+        -->  
+        
+        
+        <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
 
             <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
              <b> <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'" style="font-size:20px"> </span></b>
@@ -67,7 +99,7 @@
               </div>
 
             </ion-col>
-
+ 
             <!--ion-col class="ion-text-center">
   
                   <iframe width="560" height="315" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'" frameborder="0" allowfullscreen></iframe>
@@ -97,4 +129,17 @@
       </ion-card>
     </ion-col>
   </ion-row>
+  <ion-row>
+    <ion-col class="ion-text-right" >
+        <span class="align-icon" style="font-size:30px;margin-right:8px;color:gold;" 
+        *ngIf="this.global.currentPage<=568" 
+        (click)="goToTop()" >☞</span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+    <br>
+    </ion-col>
+  </ion-row>
+  
 </ion-content>
