@@ -309,3 +309,14 @@ margin:15px 0;
 padding:2px;
 
 }
+* {
+        
+  -webkit-user-select: text;
+  
+  -moz-user-select: text;
+  
+  -ms-user-select: text;
+  
+  user-select: text;
+  
+  }

@@ -111,7 +111,5 @@ export class AppComponent implements OnInit {
       this.global.currentPage=page.component;
       this.router.navigateByUrl(page.url);
     }
-    
-
   }
 }
