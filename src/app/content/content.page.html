@@ -41,7 +41,7 @@
 
       <ion-card class="custom-card" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
  
-        <!--for geetham geetha do this change
+        <!--for geetham geetha do this change  
         
         <div *ngIf="this.global.geetha[this.global.currentPage].main==false" class="ns">
           <ion-row>
@@ -65,14 +65,14 @@
               </ion-col>
             </ion-row>
             <ion-row >
-              <ion-col >
+              <ion-col   *ngIf="this.global.geetha[this.global.currentPage].verse!='చివరి పేజి'">
                 <span [innerHTML]="this.global.geetha[this.global.currentPage].teluguVerse | safe:'html'"> </span>
               </ion-col>
             </ion-row>
           </div>
-        -->  
+          -->  
         
-        
+        <!-- without telugu poems-->
         <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
 
             <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
@@ -88,11 +88,12 @@
             </ion-col>
           </ion-row>
 
+ 
           <ion-row *ngIf="this.global.geetha[this.global.currentPage].videoId!=null && this.global.networkStatus=='ONLINE' ">
             
             <ion-col class="ion-text-center">
               <div class="viditem">
-                <a class="vid-img-container" style="">
+                <a class="vid-img-container">
                   <iframe class="vidimg"  height="310" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'"
                    allowfullscreen></iframe>
                 </a>

@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
     };
     this.menuItems[2]=
     {
-      title:'నిలయము',
+      title:'ఆకరము',
       url: 'home',
       icon:'home',
       subs:null

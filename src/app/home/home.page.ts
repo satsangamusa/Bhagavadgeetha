@@ -24,7 +24,7 @@ export class HomePage implements OnInit {
   }
   ionViewDidEnter(){
     console.log('entered into home page');
-    for(let i=1;i<=65;i++)
+    for(let i=1;i<=51;i++)
     this.images.push(i);
   }
   slidesDidLoad(slides: IonSlides) {
