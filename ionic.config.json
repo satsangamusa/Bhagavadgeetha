@@ -1,0 +1,7 @@
+{
+  "name": "Bhagavadgeetha",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
