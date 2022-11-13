@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'org.thraithashakam.bhagavadgeetha.telugu',
+  appId: 'org.threesouls.telugu.bhagavadgeetha',
   appName: 'భగవద్గీత',
   webDir: 'www',
   bundledWebRuntime: false,
