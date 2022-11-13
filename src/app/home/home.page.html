@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+        <img src="assets/images/telugulogo.png" height="50">
+      </ion-buttons>
+      <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+      <ion-buttons slot="end">
+          <img src="assets/img/swami.jpeg" height="50">
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-content-color">
+      
+     
+         <ion-grid> 
+     
+             <ion-row>
+                 <ion-col >
+                     <ion-slides [options]="sliderConfig" #mySlider pager="true" 
+                     (ionSlidesDidLoad)="slidesDidLoad(mySlider)">
+                         <ion-slide *ngFor="let image of images" >
+                             <ion-card>
+                                 <ion-card-content>
+                                   <img  src="assets/img/slides/{{image}}.jpg">
+                                 </ion-card-content>
+                             </ion-card>
+                         </ion-slide>
+                       </ion-slides>
+                 </ion-col>
+               </ion-row>
+     
+         </ion-grid>
+     </ion-content>
+     
