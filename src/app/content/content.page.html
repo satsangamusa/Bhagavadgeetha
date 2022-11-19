@@ -16,20 +16,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-content-color">
+<ion-content class="ion-content-color" id="content-container">
   <ion-row>
     <ion-col><br></ion-col>
   </ion-row>
   <ion-row>
     <ion-col class="ion-text-center" >
         
-        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1" >☜</span>
+        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
 
          
         &nbsp; <b><span style="font-size:20px"> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>&nbsp;
         <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
         &nbsp;
-        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage<=571" (click)="this.global.currentPage=this.global.currentPage+1" >☞</span>
+        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage<=571" (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
         
     </ion-col>
   </ion-row>
@@ -87,13 +87,23 @@
               <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
             </ion-col>
           </ion-row>
-          <ion-row *ngIf="this.global.geetha[this.global.currentPage].videoId!=null && this.global.networkStatus=='ONLINE' ">
+          
+          <ion-row *ngIf="this.global.networkStatus==='ONLINE' ">
             
-            <ion-col class="ion-text-center">
+           
+            <ion-col class="ion-text-center" *ngIf="this.global.geetha[this.global.currentPage].videoId">
+             
+              <!--div class="video-item">
+								<a class="video-image-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
+									<img class="play-image" src="/assets/img/playbutton.png">
+									<img class="video-image" [src]="imgUrl">
+								</a>
+							</div-->  
+           
               <div class="viditem">
-                <a class="vid-img-container">
-                  <iframe class="vidimg"  height="310" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'"
-                   allowfullscreen></iframe>
+                <a class="vid-img-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
+                    <img class="playimg" src="assets/img/playbutton.png">
+                    <img class="vidimg" src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg">
                 </a>
               </div>
 

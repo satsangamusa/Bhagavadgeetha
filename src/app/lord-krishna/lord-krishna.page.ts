@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalService } from 'src/app/global.service';
 import { SettingsModalPage } from 'src/app/settings-modal/settings-modal.page';
 import { PopoverController } from '@ionic/angular';
+import { Browser } from '@capacitor/browser';
 
 @Component({
   selector: 'app-lord-krishna',
@@ -14,8 +15,13 @@ export class LordKrishnaPage implements OnInit {
 
   ngOnInit() {
   }
+
+  playVideo(id:string){
+    let link ='https://www.youtube.com/watch?v='+id
+     Browser.open({url:link});
+  }
+  
   async openSettings(){
-    
   const popover = await this.pop.create({
     component: SettingsModalPage,
     cssClass: 'custom-popover',

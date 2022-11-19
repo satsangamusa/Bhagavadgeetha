@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Browser } from '@capacitor/browser';
 import { GlobalService } from 'src/app/global.service';
 
 @Component({
@@ -12,7 +13,10 @@ export class VideosPage implements OnInit {
 
   ngOnInit() {
   }
-
+  playVideo(id:string){
+    let link ='https://www.youtube.com/watch?v='+id
+     Browser.open({url:link});
+  }
   videos: any = [
     {
       title: "బ్రహ్మ విద్య",

@@ -22,11 +22,11 @@
       <ion-row *ngFor="let video of videos">
           <ion-col class="ion-text-center">
 
+          
             <div class="viditem">
-              <a class="vid-img-container">
-                  <iframe  class="vidimg" style="min-width:400px" height="290" 
-                  [src]="video.id | safe:'resourceUrl'" 
-                  frameborder="0" allowfullscreen></iframe>
+              <a class="vid-img-container" (click)="playVideo(video.id)">
+                  <img class="playimg" src="assets/img/playbutton.png">
+                  <img class="vidimg" src="http://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
               </a>
             </div>
              
