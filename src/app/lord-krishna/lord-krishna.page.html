@@ -134,7 +134,7 @@
             </ion-row>
           
         </ion-card>
-          <div *ngIf="this.global.networkStatus=='ONLINE'">
+          <div *ngIf="this.global.networkStatus==='ONLINE'">
           <ion-row *ngFor="let video of videos">
             <ion-col>
               <ion-row *ngIf="video.title!=null">
@@ -149,7 +149,7 @@
                     <div class="viditem">
                       <a class="vid-img-container" (click)="playVideo(video.id)">
                           <img class="playimg" src="assets/img/playbutton.png">
-                          <img class="vidimg" src="http://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
+                          <img class="vidimg" src="https://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
                       </a>
                     </div>
 
@@ -159,7 +159,7 @@
             </ion-col>
           </ion-row>
         </div>
-        <div *ngIf="this.global.networkStatus=='OFFLINE'">
+        <div *ngIf="this.global.networkStatus==='OFFLINE'">
           <ion-row>
             <ion-col class="ion-text-center">
               <b>శ్రీ కృష్ణ భగవాన్ గురించి వీడియోలను వీక్షించుటకు  మీకు ఇంటర్నెట్ అందుబాటులో లేదు.</b>

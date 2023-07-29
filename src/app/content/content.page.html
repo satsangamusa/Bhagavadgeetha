@@ -3,20 +3,20 @@
     <ion-buttons slot="start">
       <ion-menu-toggle>
         <ion-button>
-          <ion-icon slot="icon-only" name="menu"></ion-icon>
+          <ion-icon  name="menu"></ion-icon>
         </ion-button>
       </ion-menu-toggle>
       <img src="assets/images/telugulogo.png" height="50">
     </ion-buttons>
-    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
-
+    <ion-title><b>త్రైత సిద్ధాంత<br>భగవద్గీత</b></ion-title>
     <ion-buttons slot="end">
       <img src="assets/img/swami.jpeg" height="50">
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-content-color" id="content-container">
+
+<ion-content class="ion-content-color">
   <ion-row>
     <ion-col><br></ion-col>
   </ion-row>
@@ -103,7 +103,7 @@
               <div class="viditem">
                 <a class="vid-img-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
                     <img class="playimg" src="assets/img/playbutton.png">
-                    <img class="vidimg" src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg">
+                    <img class="vidimg" src="https://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg">
                 </a>
               </div>
 

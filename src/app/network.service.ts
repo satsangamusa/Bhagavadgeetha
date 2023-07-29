@@ -1,48 +1,50 @@
 import { Injectable } from '@angular/core';
-import { Network } from '@awesome-cordova-plugins/network/ngx';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { ToastController, Platform } from '@ionic/angular';
+import { Network } from '@capacitor/network';
  
-export enum ConnectionStatus {
-  Online,
-  Offline
-}
- Network
+import { ToastController, Platform } from '@ionic/angular';
+import { GlobalService } from './global.service';
+ 
+ 
+ 
 @Injectable({
   providedIn: 'root'
 })
 export class NetworkService {
  
-  private status: BehaviorSubject<ConnectionStatus> = new BehaviorSubject(ConnectionStatus.Offline);
- 
-  constructor(private network: Network, private toastController: ToastController, private plt: Platform) {
-    this.plt.ready().then(() => {
-      this.initializeNetworkEvents();
-      let status =  this.network.type !== 'none' ? ConnectionStatus.Online : ConnectionStatus.Offline;
-      this.status.next(status);
-    });
+  connectionStatus:any=false;
+  constructor(
+    private toastController: ToastController, private plt: Platform, public global:GlobalService) {
+      this.plt.ready().then(() => {
+        this.initializeNetworkEvents();
+      });
   }
  
   public initializeNetworkEvents() {
- 
-    this.network.onDisconnect().subscribe(() => {
-      if (this.status.getValue() === ConnectionStatus.Online) {
-        console.log('WE ARE OFFLINE');
-        this.updateNetworkStatus(ConnectionStatus.Offline);
-      }
-    });
- 
-    this.network.onConnect().subscribe(() => {
-      if (this.status.getValue() === ConnectionStatus.Offline) {
-        console.log('WE ARE ONLINE');
-        this.updateNetworkStatus(ConnectionStatus.Online);
-      }
-    });
+    if(Network){
+      
+      Network.getStatus().then(status=>{
+        console.log(status)
+        this.connectionStatus = status.connected;
+        this.updateNetworkStatus(status.connected);
+      });
+    }
+     
+    Network.addListener("networkStatusChange", st=>{
+      this.connectionStatus=st.connected;
+      console.log(' when status changed :: ',  this.connectionStatus)
+      this.updateNetworkStatus(this.connectionStatus)
+     
+    })
   }
  
-  private async updateNetworkStatus(status: ConnectionStatus) {
-    this.status.next(status);
-    let connection = status == ConnectionStatus.Offline ? 'Offline' : 'Online';
+
+  private async updateNetworkStatus(status: boolean) {
+    if(status===true){
+      this.global.networkStatus="ONLINE";
+    }else{
+      this.global.networkStatus="OFFLINE";
+    }
+    let connection = status===true ?  'Online' :'Offline';
     let toast = this.toastController.create({
       message: `You are now ${connection}`,
       duration: 3000,
@@ -50,12 +52,5 @@ export class NetworkService {
     });
     toast.then(toast => toast.present());
   }
- 
-  public onNetworkChange(): Observable<ConnectionStatus> {
-    return this.status.asObservable();
-  }
- 
-  public getCurrentNetworkStatus(): ConnectionStatus {
-    return this.status.getValue();
-  }
+
 }

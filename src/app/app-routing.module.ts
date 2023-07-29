@@ -39,7 +39,7 @@ const routes: Routes = [
   {
     path: 'quick-search',
     loadChildren: () => import('./quick-search/quick-search.module').then( m => m.QuickSearchPageModule)
-  }
+  } 
 ];
 
 @NgModule({

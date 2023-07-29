@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
+    namespace "org.thraithashakam.bhagavadgeetha.telugu"
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "org.thraithashakam.bhagavadgeetha.telugu"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 50
+        versionCode 52
         versionName "1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {

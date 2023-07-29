@@ -18,7 +18,7 @@
 <ion-content class="ion-content-color">
 
   <ion-grid>
-    <div *ngIf="this.global.networkStatus=='ONLINE'">
+    <div *ngIf="this.global.networkStatus==='ONLINE'">
       <ion-row *ngFor="let video of videos">
           <ion-col class="ion-text-center">
 
@@ -26,7 +26,7 @@
             <div class="viditem">
               <a class="vid-img-container" (click)="playVideo(video.id)">
                   <img class="playimg" src="assets/img/playbutton.png">
-                  <img class="vidimg" src="http://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
+                  <img class="vidimg" src="https://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
               </a>
             </div>
              
@@ -34,7 +34,7 @@
           </ion-col>
         </ion-row>
       </div>
-      <div *ngIf="this.global.networkStatus=='OFFLINE'">
+      <div *ngIf="this.global.networkStatus==='OFFLINE'">
         <ion-row>
           <ion-col class="ion-text-center">
             <b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు స్వామివారి ఆధ్యాత్మిక ప్రసంగముల వీడియోలను వీక్షించుటకు  మీకు ఇంటర్నెట్ అందుబాటులో లేదు.</b>

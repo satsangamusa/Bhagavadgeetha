@@ -19,7 +19,7 @@ export class KrishnaPipe implements PipeTransform {
       case 'resourceUrl':
         return this._sanitizer.bypassSecurityTrustResourceUrl('//www.youtube.com/embed/'+value);
       default:
-        return null;
+        return "";
     }
   }
 }

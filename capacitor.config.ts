@@ -11,11 +11,7 @@ const config: CapacitorConfig = {
     ]
 },
   bundledWebRuntime: false,
-  plugins:{
-    SplashScreen:{
-      launchShowDuration: 4
-    }
-  }
+  
 };
 
 export default config;

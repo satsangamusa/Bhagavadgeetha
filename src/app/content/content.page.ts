@@ -2,7 +2,6 @@ import { Component, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular
 import { GlobalService } from 'src/app/global.service';
 import { PopoverController, IonContent } from '@ionic/angular';
 import { SettingsModalPage } from 'src/app/settings-modal/settings-modal.page';
-import { YoutubeVideoPlayer } from '@awesome-cordova-plugins/youtube-video-player/ngx';
 import {Browser} from '@capacitor/browser';
 
 @Component({
@@ -11,7 +10,8 @@ import {Browser} from '@capacitor/browser';
   styleUrls: ['./content.page.scss'],
 })
 export class ContentPage implements OnInit{
-  @ViewChild(IonContent) content: IonContent;
+  @ViewChild(IonContent)
+  content!: IonContent;
 
   
   player:any;
