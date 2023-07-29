@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { GlobalService } from 'src/app/global.service';
 import { PopoverController, IonContent } from '@ionic/angular';
 import { SettingsModalPage } from 'src/app/settings-modal/settings-modal.page';
