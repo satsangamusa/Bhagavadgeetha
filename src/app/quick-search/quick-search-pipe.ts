@@ -19,7 +19,7 @@ export class QSPipe implements PipeTransform {
       case 'resourceUrl':
         return this._sanitizer.bypassSecurityTrustResourceUrl(value);
       default:
-        return null;
+        return "";
     }
   }
 }

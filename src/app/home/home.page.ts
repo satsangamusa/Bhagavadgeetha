@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { GlobalService } from 'src/app/global.service';
-import { NavParams, ModalController, IonSlides } from '@ionic/angular';
+import Swiper from 'swiper';
+import { IonicSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,26 +9,29 @@ import { NavParams, ModalController, IonSlides } from '@ionic/angular';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
+  @ViewChild('swiper')
+  swiperRef!: ElementRef;
+  swiper?: Swiper;
   images:any=[];
-  sliderConfig = {
-    slidesPerView: 1,
-    centeredSlides: true,
-    initialSlide: 1,
-    loop: true,
-    spaceBetween: 20
-  };
-  @ViewChild('mySlider',{}) slider: IonSlides;
-  constructor(public global:GlobalService) { }
+  swiperModules = [IonicSlides];
+  constructor(public global:GlobalService) {
+   
+   }
 
   ngOnInit() {
   }
+  swiperReady() {
+    this.swiper = this.swiperRef?.nativeElement.swiper;
+  }
+ 
   ionViewDidEnter(){
     for(let i=1;i<=48;i++)
     this.images.push(i);
   }
-  slidesDidLoad(slides: IonSlides) {
-    slides.startAutoplay();
+  swiperSlideChanged(e: any) {
+    console.log('changed: ', e);
+
+   
   }
 
 }

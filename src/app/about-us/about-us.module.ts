@@ -11,7 +11,6 @@ import { SettingsModalPage } from 'src/app/settings-modal/settings-modal.page';
 import { SettingsModalPageModule } from 'src/app/settings-modal/settings-modal.module';
 
 @NgModule({
-  entryComponents:[SettingsModalPage],
   imports: [
     CommonModule,
     FormsModule,

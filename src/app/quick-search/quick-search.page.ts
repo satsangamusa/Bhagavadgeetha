@@ -44,12 +44,12 @@ export class QuickSearchPage implements OnInit {
   { chapterName: "17. మోక్ష సన్యాస యోగము", chapterNumber: "17", pages: [] }
 ];
 
- goToChapter(counter){
+ goToChapter(counter:any){
    this.counter=counter;
    this.newItem=this.global.geetha[counter]; 
  }
   
- openSearchShlokaContent(page){
+ openSearchShlokaContent(page: string | number){
    this.counter=page;
    this.newItem=this.global.geetha[page]; 
  }
@@ -60,7 +60,7 @@ export class QuickSearchPage implements OnInit {
       }
   }
 }
-goToContentPage(cc) {
+goToContentPage(cc: { pageNumber: number; }) {
   console.log(cc);
   this.global.navigationFrom="quick-search";
   this.global.currentPage=cc.pageNumber;
