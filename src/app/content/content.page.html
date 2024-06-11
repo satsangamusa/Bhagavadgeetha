@@ -8,7 +8,7 @@
       </ion-menu-toggle>
       <img src="assets/images/telugulogo.png" height="50">
     </ion-buttons>
-    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత<br>భగవద్గీత</b></ion-title>
+    <ion-title class="ion-text-center" style="font-family: mandali;"><b>త్రైత సిద్ధాంత<br>భగవద్గీత</b></ion-title>
     <ion-buttons slot="end">
       <img src="assets/img/swami.jpeg" height="50">
     </ion-buttons>
@@ -21,28 +21,30 @@
     <ion-col><br></ion-col>
   </ion-row>
   <ion-row>
-    <ion-col class="ion-text-center" >
-        
-        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
+    <ion-col class="ion-text-right" size="2">
 
-         
-        &nbsp; <b><span style="font-size:20px"> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>&nbsp;
-        <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
-        &nbsp;
-        <span class="align-icon" style="font-size:30px;" *ngIf="this.global.currentPage<=571" (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
-        
-    </ion-col>
+        <span   style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
+      </ion-col>
+      <ion-col class="ion-text-center" size="6" style="margin-top: 10px;">
+        <b><span style="font-family: mandali" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>
+        </ion-col>
+        <ion-col class="ion-text-left" size="2" style="margin-top: 12px;">
+          <ion-icon name="settings" (click)="openSettings()" class="align-icon"></ion-icon>
+          </ion-col>
+        <ion-col class="ion-text-left" size="2">
+        <span   style="font-size:30px;" *ngIf="this.global.currentPage<=571" (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
+        </ion-col>
+
   </ion-row>
- 
+
 
   <ion-row >
-    <ion-col>
+    <ion-col [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
 
 
-      <ion-card class="custom-card" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
- 
-        <!--for geetham geetha do this change  
-        
+
+        <!--for geetham geetha do this change
+
         <div *ngIf="this.global.geetha[this.global.currentPage].main==false" class="ns">
           <ion-row>
             <ion-col  *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
@@ -70,36 +72,36 @@
               </ion-col>
             </ion-row>
           </div>
-          -->  
-        
+          -->
+
         <!-- without telugu poems-->
         <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
 
             <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
-             <b> <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'" style="font-size:20px"> </span></b>
+             <b> <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span></b>
             </ion-col>
             <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse!='చివరి పేజి'">
-              <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+              <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
             </ion-col>
           </ion-row>
           <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==true">
             <ion-col class="ms">
-              <span [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+              <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
             </ion-col>
           </ion-row>
-          
+
           <ion-row *ngIf="this.global.networkStatus==='ONLINE' ">
-            
-           
+
+
             <ion-col class="ion-text-center" *ngIf="this.global.geetha[this.global.currentPage].videoId">
-             
+
               <!--div class="video-item">
 								<a class="video-image-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
 									<img class="play-image" src="/assets/img/playbutton.png">
 									<img class="video-image" [src]="imgUrl">
 								</a>
-							</div-->  
-           
+							</div-->
+
               <div class="viditem">
                 <a class="vid-img-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
                     <img class="playimg" src="assets/img/playbutton.png">
@@ -108,9 +110,9 @@
               </div>
 
             </ion-col>
- 
+
             <!--ion-col class="ion-text-center">
-  
+
                   <iframe width="560" height="315" [src]="this.global.geetha[this.global.currentPage].videoId | safe:'resourceUrl'" frameborder="0" allowfullscreen></iframe>
                   <div class="viditem">
                       <a class="vid-img-container" target="_blank" href="https://www.youtube.com/watch?v={{this.global.geetha[this.global.currentPage].videoId}}">
@@ -118,30 +120,27 @@
                           <img class="vidimg" src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg" data-src="http://img.youtube.com/vi/{{this.global.geetha[this.global.currentPage].videoId}}/hqdefault.jpg">
                       </a>
                     </div>
-  
+
               </ion-col-->
           </ion-row>
 
           <ion-row>
             <ion-col>
-              <span [innerHTML]="this.global.geetha[this.global.currentPage].meaning | safe:'html'"> </span>
+              <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].meaning | safe:'html'"> </span>
 
             </ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>
-              <span [innerHTML]="this.global.geetha[this.global.currentPage].pageText | safe:'html'"> </span>
-
-
+            <ion-col >
+              <span style ="font-family: mandali;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'  [innerHTML]="this.global.geetha[this.global.currentPage].pageText | safe:'html'"> </span>
             </ion-col>
           </ion-row>
-      </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col class="ion-text-right" >
-        <span class="align-icon" style="font-size:30px;margin-right:8px;color:gold;" 
-        *ngIf="this.global.currentPage<=571" 
+        <span class="align-icon" style="font-size:30px;margin-right:8px;color:gold;"
+        *ngIf="this.global.currentPage<=571"
         (click)="goToTop()" >☞</span>
     </ion-col>
   </ion-row>
@@ -150,5 +149,5 @@
     <br>
     </ion-col>
   </ion-row>
-  
+
 </ion-content>

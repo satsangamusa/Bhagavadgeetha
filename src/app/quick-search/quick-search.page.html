@@ -8,7 +8,7 @@
       </ion-menu-toggle>
       <img src="assets/images/telugulogo.png" height="50">
     </ion-buttons>
-    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+    <ion-title class="ion-text-center" style="font-family: mandali;"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
     <ion-buttons slot="end">
       <img src="assets/img/swami.jpeg" height="50">
     </ion-buttons>
@@ -19,59 +19,72 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col style="font-size:17px" class="ion-text-center">
+      <ion-col style="font-family: mandali;" class="ion-text-center" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
         <b>శ్లోకాలు తెలుగు  పదాలతో వెతకండి</b>
+        <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
       </ion-col>
     </ion-row>
+
     <ion-row>
-      <ion-col>
-        <ion-card class="custom-card">
-          <ion-card-content>
-            <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-searchbar [style.color]='this.global.fontColor' [debounce]="100" [(ngModel)]="searchTerm"
+          (ngModelChange)="handleChange($event)"  show-clear-button="always" style="font-family: NTR;"
+          placeholder="శ్లోకములను వెతకండి"></ion-searchbar>
+          <ion-list lines="none" *ngIf="filteredVerses?.length>0">
+
+            <ion-item *ngFor="let verse of filteredVerses"  lines="none" detail (click)="selectedVerse(verse)">
+              <ion-label style="font-family: NTR;" [style.color]='this.global.fontColor'><b>{{ verse.title }}</b></ion-label>
+            </ion-item>
+          </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="searchMessage">
+      <ion-col style="font-size:17px;font-family: mandali;color:maroon" [ngStyle]="{'font-size':this.global.fontSize+'px'}" class="ion-text-center">
+        <b> {{searchMessage}}</b>
+      </ion-col>
+    </ion-row>
+
+            <!--ion-row>
               <ion-col>
                 <input type="text" placeholder="తెలుగు పదం అందివ్వండి" class="form-control-input" [(ngModel)]="searchTerm" />
-                <ion-button shape="round" fill="outline" (click)="searchWord()">వెతకండి</ion-button>
+                <ion-button shape="round" fill="outline" (click)="searchWord()" style="font-family: mandali;">వెతకండి</ion-button>
               </ion-col>
             </ion-row>
             <ion-row>
               <ion-col>
                 <span style="color:maroon"><b>{{searchMessage}}</b></span>
               </ion-col>
-            </ion-row>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+            </ion-row-->
+
+
+
     <ion-row>
       <ion-col>
         <div *ngIf="organized.length>0">
 
-          <ion-card style="margin:auto;color:black">
-            <ion-card-content>
               <ion-row *ngFor="let sd of organized">
                 <ion-col *ngIf="sd.pages.length>0">
                   <ion-row>
                     <ion-col class="ion-text-center"> <b>
-                          <span style="border-radius:10px;font-size:18px;">{{sd.chapterName}}</span></b>                      </ion-col>
+                          <span style="border-radius:10px;font-family:Mandali" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>{{sd.chapterName}}</span></b>                      </ion-col>
                   </ion-row>
                   <ion-row *ngFor="let pg of sd.pages">
                     <ion-col>
                       <ion-card >
-                        <ion-card-content>
+
                           <ion-row>
-                            <ion-col (click)="goToContentPage(pg)">
-                              <b><span [innerHtml]="this.global.geetha[pg.pageNumber].verse | safe:'html'"></span></b>
+                            <ion-col (click)="goToContentPage(pg)" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
+                              <b><span style="font-family: NTR;" [innerHtml]="this.global.geetha[pg.pageNumber].verse | safe:'html'"></span></b>
                             </ion-col>
                           </ion-row>
-                        </ion-card-content> 
+
                       </ion-card>
                     </ion-col>
                   </ion-row>
                 </ion-col>
               </ion-row>
 
-            </ion-card-content>
-          </ion-card>
+
 
 
         </div>

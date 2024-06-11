@@ -1,17 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { GlobalService } from 'src/app/global.service';
-import { SettingsModalPage } from 'src/app/settings-modal/settings-modal.page';
-import { PopoverController } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
 import { Browser } from '@capacitor/browser';
+import { IonButton, IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRow, IonSearchbar, IonTitle, IonToolbar, ModalController } from '@ionic/angular/standalone';
+import { GlobalService } from 'src/app/global.service';
+import { ContentPipe } from '../content-pipe';
+import { SettingsModalPage } from '../settings-modal/settings-modal.page';
 
 @Component({
   selector: 'app-lord-krishna',
   templateUrl: './lord-krishna.page.html',
   styleUrls: ['./lord-krishna.page.scss'],
+  standalone: true,
+  providers:[ModalController],
+  imports:[ContentPipe,SettingsModalPage,IonCard, CommonModule,IonCol,IonIcon,IonHeader,IonMenuButton,IonMenu,IonMenuToggle,IonToolbar,IonTitle,IonButton,IonButtons,IonContent,IonRow,IonGrid,IonSearchbar,IonList,IonItem,IonLabel],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LordKrishnaPage implements OnInit {
 
-  constructor(public global:GlobalService,public pop:PopoverController) { }
+  constructor(public global:GlobalService,public modalController:ModalController) { }
 
   ngOnInit() {
   }
@@ -20,15 +26,15 @@ export class LordKrishnaPage implements OnInit {
     let link ='https://www.youtube.com/watch?v='+id
      Browser.open({url:link});
   }
-  
-  async openSettings(){
-  const popover = await this.pop.create({
-    component: SettingsModalPage,
-    cssClass: 'custom-popover',
-    translucent: true
-  });
-  return await popover.present();
-}
+
+
+  async openSettings() {
+    const modal:HTMLIonModalElement = await this.modalController.create({
+      component: SettingsModalPage
+    });
+
+    await modal.present();
+  }
   videos:any=[
     {
       'title':'శ్రీ కృష్ణుడు ధరించిన నెమలి పించము వెనుక రహస్యము తెలుసుకొనుటకు ఈ క్రింది వీడియోను చూడగలరు',
@@ -61,7 +67,7 @@ export class LordKrishnaPage implements OnInit {
     {
       'title':'',
       'id':'ra8g0jffYUg'
-    } 
+    }
   ];
 
 }

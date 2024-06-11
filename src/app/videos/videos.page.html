@@ -8,38 +8,61 @@
         </ion-menu-toggle>
         <img src="assets/images/telugulogo.png" height="50">
       </ion-buttons>
-      <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+      <ion-title  style="font-family: mandali;" class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
       <ion-buttons slot="end">
           <img src="assets/img/swami.jpeg" height="50">
         </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
-<ion-content class="ion-content-color">
+  <ion-content class="ion-content-color">
+    <ion-grid [style.color]='this.globaldata.fontColor' [style.background-color]='this.globaldata.bgColor'
+      [ngStyle]="{'font-size':this.globaldata.fontSize+'px'}">
+      <br>
+      <ion-row>
+        <ion-col class="ion-text-center" style="font-size: 20px;font-family: ponnala;">
+          <b>స్వామి వారి ప్రసంగములు</b>
+          <ion-icon aria-hidden="true"  [ios]="'settings'" [md]="'settings'"   (click)="presentModal()"></ion-icon>
 
-  <ion-grid>
-    <div *ngIf="this.global.networkStatus==='ONLINE'">
-      <ion-row *ngFor="let video of videos">
-          <ion-col class="ion-text-center">
+        </ion-col>
+      </ion-row>
+      <br>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <ion-searchbar [style.color]='this.globaldata.fontColor' show-clear-button="always" style="font-family: NTR;"
+          placeholder="పాటను వెతకండి" [(ngModel)]="gvvSearchText" [debounce]="100" (ionInput)="handleChange($event)"></ion-searchbar>
+            <ion-list lines="none" *ngIf="filteredAudios?.length>0">
+              <ion-item *ngFor="let audio of filteredAudios"  lines="none" detail (click)="selectedAudio(audio)">
+                <ion-label style="font-family: NTR;" [style.color]='this.globaldata.fontColor'><b>{{ audio.title }}</b></ion-label>
+              </ion-item>
+            </ion-list>
+        </ion-col>
+      </ion-row>
 
-          
-            <div class="viditem">
-              <a class="vid-img-container" (click)="playVideo(video.id)">
-                  <img class="playimg" src="assets/img/playbutton.png">
-                  <img class="vidimg" src="https://img.youtube.com/vi/{{video.id}}/hqdefault.jpg">
-              </a>
-            </div>
-             
 
-          </ion-col>
-        </ion-row>
-      </div>
-      <div *ngIf="this.global.networkStatus==='OFFLINE'">
-        <ion-row>
-          <ion-col class="ion-text-center">
-            <b>శ్రీ శ్రీ శ్రీ ఆచార్య ప్రబోధానంద యోగీశ్వరులు స్వామివారి ఆధ్యాత్మిక ప్రసంగముల వీడియోలను వీక్షించుటకు  మీకు ఇంటర్నెట్ అందుబాటులో లేదు.</b>
-          </ion-col>
-        </ion-row>
-      </div>
-  </ion-grid>
-</ion-content>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <span class="ion-text-wrap" style="font-size: 20px;font-family: ponnala;"><b>{{currentAudio?.title}}</b></span>
+              </ion-col>
+            </ion-row>
+            <ion-card>
+            <ion-row>
+              <ion-col  id="videoId" style=" display: flex;justify-content: center;align-items: center;">
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center"> <ion-icon aria-hidden="true"  [ios]="'caret-forward-circle-outline'" [md]="'caret-forward-circle-outline'" style="font-size: xx-large;" (click)="veryFirst()" [style.color]='this.globaldata.fontColor'></ion-icon> </ion-col>
+              <ion-col class="ion-text-center"> <ion-icon aria-hidden="true"  [ios]="'caret-forward'" [md]="'caret-forward'"  (click)="first(currentAudio)" style="font-size: xx-large;" [style.color]='this.globaldata.fontColor'></ion-icon></ion-col>
+              <ion-col class="ion-text-center"> <ion-icon aria-hidden="true" [ios]="'shuffle'" [md]="'shuffle'"  (click)="shuffle()" style="font-size: xx-large;" [style.color]='this.globaldata.fontColor'></ion-icon></ion-col>
+              <ion-col class="ion-text-center"><ion-icon aria-hidden="true" [ios]="'caret-back'" [md]="'caret-back'" (click)="last(currentAudio)" style="font-size: xx-large;" [style.color]='this.globaldata.fontColor'></ion-icon></ion-col>
+              <ion-col class="ion-text-center"><ion-icon aria-hidden="true"  [ios]="'caret-back-circle-outline'" [md]="'caret-back-circle-outline'"   (click)="veryLast()" style="font-size: xx-large;" [style.color]='this.globaldata.fontColor'></ion-icon></ion-col>
+            </ion-row>
+          </ion-card>
+          <ion-row *ngIf="currentAudio?.ytUrl">
+            <ion-col class="ion-text-center">
+                <ion-button *ngIf="currentAudio?.ytUrl" shape="round" fill="outline"  style="font-family: ponnala;"  (click)="gotoYouTube(currentAudio?.ytUrl)">
+                  <img src="assets/images/yt.png" width="40px"></ion-button>
+            </ion-col>
+          </ion-row>
+    </ion-grid>
+  </ion-content>

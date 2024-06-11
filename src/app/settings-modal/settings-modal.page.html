@@ -1,20 +1,124 @@
-<ion-content class="ion-content-color">
-    
-      <ion-row>
-        <ion-col class="ion-text-center">
-          <span><h3><b>అక్షరముల ఆకార మార్పులు</b></h3></span>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+      <img src="assets/images/telugulogo.png" height="50">
+    </ion-buttons>
+    <ion-title class="ion-text-center" style="font-family: mandali;"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+    <ion-buttons slot="end">
+      <img src="assets/img/swami.jpeg" height="50">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content  [fullscreen]="true" class="ion-content-color" style="font-size: 1.5em;font-family: ponnala;">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="text-center" style="font-size:25px;text-align: center;" [style.color]='this.globaldata.fontColor'><b>అక్షర ఆకార అమరికలు</b>&nbsp;
+        <ion-icon (click)="closeModal()" style="text-align:end;font-size:25px;margin:auto" name="close">Close</ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="custom-card">
+          <ion-card-header>
+            <ion-row>
+              <ion-col style="font-size: 1.5em;font-family: ponnala;" [style.color]='this.globaldata.fontColor'>
+                <span><b>అక్షర ఆకారము</b></span>
+              </ion-col>
+            </ion-row>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-row>
+              <ion-col  [ngStyle]="{'font-size':this.globaldata.fontSize+'px'}" style="font-size: 1.5em;font-family: ponnala;">
+                <span [style.color]='this.globaldata.fontColor'  [style.background-color]="this.globaldata.bgColor">భగవద్గీత</span>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="font-size:20px">
+                <ion-icon aria-hidden="true"  [ios]="'remove-circle-outline'" [md]="'remove-circle-outline'"  [style.color]='this.globaldata.fontColor' (click)="reduceFont()"></ion-icon>
+                &nbsp;&nbsp;
+                <ion-icon aria-hidden="true"  [ios]="'add-circle-outline'" [md]="'add-circle-outline'"  [style.color]='this.globaldata.fontColor' (click)="increaseFont()"></ion-icon>
+              </ion-col>
 
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col class="ion-text-center">
-           <span [ngStyle]="{'font-size':global.fontSize+'px'}"><b>ఆత్మ</b></span>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-            <ion-range min="15" max="40" step="1" snaps="true" [(ngModel)]="global.fontSize" color="secondary"></ion-range>
-        </ion-col>
-      </ion-row>
-    
-    </ion-content>
+            </ion-row>
+
+
+            <ion-row>
+              <ion-col style="font-size: 1.5em;font-family: ponnala;" [style.color]='this.globaldata.fontColor'> అక్షర ఆకారము మార్చండి: </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="15"  max="50" step="1" type="number"  (ionChange)="setGlobalText($event)"></ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="font-size: 1.5em;font-family: ponnala;" [style.color]='this.globaldata.fontColor'> వెనుక రంగులు మార్చండి:      </ion-col>
+
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="number"   (ionChange)="applyColors('red',$event)"> </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="number" (ionChange)="applyColors('green',$event)"> </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="number"   (ionChange)="applyColors('blue',$event)"> </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="font-size: 1.5em;font-family: ponnala;" [style.color]='this.globaldata.fontColor'> <span>అక్షరము రంగులు</span> </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="range"  (ionChange)="applyColors('fontRed',$event)" > </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="number"  (ionChange)="applyColors('fontGreen',$event)"> </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-range min="0" max="255" step="1" type="number"  (ionChange)="applyColors('fontBlue',$event)"> </ion-range>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+
+
+          </ion-card-content>
+        </ion-card>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-button shape="round" fill="outline" [style.color]='this.globaldata.fontColor' style="font-family: ponnala;" (click)="resetColor()"><b>మొదటి అమరికలు</b></ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  </ion-content>
+

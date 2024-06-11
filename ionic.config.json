@@ -1,7 +1,7 @@
 {
-  "name": "భగవద్గీత",
+  "name": "Bhagavadgeetha",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular-standalone"
 }

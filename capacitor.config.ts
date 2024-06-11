@@ -1,17 +1,9 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'org.thraithashakam.bhagavadgeetha.telugu',
-  appName: 'భగవద్గీత',
-  webDir: 'www',
-  "server": {
-    "allowNavigation": [
-        "https://*youtube.com/*"
-       
-    ]
-},
-  bundledWebRuntime: false,
-  
+  appId: 'org.threesouls.telugu.bhagavadgeetha',
+  appName: 'Bhagavadgeetha',
+  webDir: 'www/browser'
 };
 
 export default config;

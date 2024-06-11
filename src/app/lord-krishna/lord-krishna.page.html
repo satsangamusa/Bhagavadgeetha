@@ -8,7 +8,7 @@
       </ion-menu-toggle>
       <img src="assets/images/telugulogo.png" height="50">
     </ion-buttons>
-    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+    <ion-title class="ion-text-center" style="font-family: mandali;"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
     <ion-buttons slot="end">
       <img src="assets/img/swami.jpeg" height="50">
     </ion-buttons>
@@ -18,24 +18,23 @@
 <ion-content class="ion-content-color">
   <ion-grid>
     <ion-row>
-      <ion-col class="ion-text-center" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
+      <ion-col class="ion-text-center" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
         <br>
         <b>శ్రీ కృష్ణ భగవాన్</b>&nbsp; <ion-icon name="settings-outline" (click)="openSettings()" class="align-icon"></ion-icon>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-         
+
           <ion-row>
             <ion-col class="ion-text-center">
               <img    src="assets/images/krishnashtami.png" />
             </ion-col>
           </ion-row>
-        
-        <br>
-        <ion-card class="custom-card" (click)="this.global.fontSize=this.global.fontSize==15?20:15" [ngStyle]="{'font-size':this.global.fontSize+'px'}">
 
-         
+        <br>
+
+         <span style="font-family: mandali;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
 
             <ion-row>
               <ion-col> జన్మ దినము: </ion-col>
@@ -132,14 +131,13 @@
                 శ్రీకృష్ణుడి మీద భక్తి భావం పెంచుకుందాం. గోపి మరియు గోపికలు గతంలోనేకాక నేడు కూడా ఉన్నారని రుజువు చేద్దాం.
               </ion-col>
             </ion-row>
-          
-        </ion-card>
+          </span>
           <div *ngIf="this.global.networkStatus==='ONLINE'">
           <ion-row *ngFor="let video of videos">
             <ion-col>
               <ion-row *ngIf="video.title!=null">
                 <ion-col class="ion-text-center">
-                  <span><b>{{video.title}}</b></span>
+                  <span style="font-family: mandali;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'><b>{{video.title}}</b></span>
                 </ion-col>
               </ion-row>
               <ion-row>
@@ -153,25 +151,25 @@
                       </a>
                     </div>
 
-                   
-                  </ion-col>  
+
+                  </ion-col>
                 </ion-row>
             </ion-col>
           </ion-row>
         </div>
         <div *ngIf="this.global.networkStatus==='OFFLINE'">
           <ion-row>
-            <ion-col class="ion-text-center">
+            <ion-col class="ion-text-center" style="font-family: mandali;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
               <b>శ్రీ కృష్ణ భగవాన్ గురించి వీడియోలను వీక్షించుటకు  మీకు ఇంటర్నెట్ అందుబాటులో లేదు.</b>
             </ion-col>
           </ion-row>
         </div>
 
-        
+
 
       </ion-col>
     </ion-row>
 
-    
+
   </ion-grid>
 </ion-content>

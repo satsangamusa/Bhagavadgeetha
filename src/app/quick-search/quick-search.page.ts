@@ -1,20 +1,37 @@
-import { Component, OnInit } from '@angular/core';
-import { GlobalService } from 'src/app/global.service';
+import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { IonButton, IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRow, IonSearchbar, IonTitle, IonToolbar, ModalController } from '@ionic/angular/standalone';
+import { GlobalService } from 'src/app/global.service';
+import { ContentPipe } from '../content-pipe';
+import { SettingsModalPage } from '../settings-modal/settings-modal.page';
 
 @Component({
   selector: 'app-quick-search',
   templateUrl: './quick-search.page.html',
   styleUrls: ['./quick-search.page.scss'],
+  standalone: true,
+  providers:[ModalController],
+  imports: [SettingsModalPage,IonCard,FormsModule,ContentPipe, CommonModule,IonCol,IonIcon,IonHeader,IonMenuButton,IonMenu,IonMenuToggle,IonToolbar,IonTitle,IonButton,IonButtons,IonContent,IonRow,IonGrid,IonSearchbar,IonList,IonItem,IonLabel],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class QuickSearchPage implements OnInit {
 
-  constructor(public global:GlobalService,
+  constructor(public global:GlobalService,public modalController:ModalController,
   public router:Router) { }
 
- 
+
+  async openSettings() {
+    const modal:HTMLIonModalElement = await this.modalController.create({
+      component: SettingsModalPage
+    });
+
+    await modal.present();
+  }
   ngOnInit() {
   }
+  filteredVerses:any;
  counter:any=0;
  newItem:any=null;
  searchedVerses:any=[];
@@ -44,14 +61,18 @@ export class QuickSearchPage implements OnInit {
   { chapterName: "17. మోక్ష సన్యాస యోగము", chapterNumber: "17", pages: [] }
 ];
 
+selectedVerse(verse:any){
+  console.log(verse);
+}
+
  goToChapter(counter:any){
    this.counter=counter;
-   this.newItem=this.global.geetha[counter]; 
+   this.newItem=this.global.geetha[counter];
  }
-  
+
  openSearchShlokaContent(page: string | number){
    this.counter=page;
-   this.newItem=this.global.geetha[page]; 
+   this.newItem=this.global.geetha[page];
  }
  emptyVerses() {
   if (this.organized.length > 0) {
@@ -66,7 +87,34 @@ goToContentPage(cc: { pageNumber: number; }) {
   this.global.currentPage=cc.pageNumber;
   this.router.navigateByUrl('content');
 }
- public searchWord() {
+handleChange(event:any){
+  this.emptyVerses();
+  this.organized = this.emptyOrganized;
+  this.versesCount = 0;
+  this.searchedVerses = [];
+  this.searchMessage = null;
+  if (this.searchTerm.length < 2 || this.searchTerm == '') {
+      this.searchMessage = 'కనీసం రెండు తెలుగు అక్షరములు ఇవ్వండి';
+  }
+  if (this.searchTerm != null && this.searchTerm.trim() && this.searchTerm.length >= 2) {
+    for (var i = 31; i < this.global.geetha.length; i++) {
+        if (this.global.geetha[i].verse != null &&
+            this.global.geetha[i].verse.indexOf(this.searchTerm) > 0) {
+            this.searchedVerses.push(this.global.geetha[i]);
+            this.organized[this.global.geetha[i].chapterNumber].pages.push(this.global.geetha[i]);
+        }
+    }
+    if (this.searchedVerses.length == 0) {
+        this.searchMessage =   ` మీరు ఇచ్చిన '${this.searchTerm}' పదానికి శ్లోకములు లభించలేదు.`;
+    }
+    if(this.searchedVerses.length >0){
+      this.versesCount = this.searchedVerses.length;
+      this.searchMessage = ` మీరు ఇచ్చిన '${this.searchTerm}' అనే పదమును వెతుకగా లభించిన శ్లోకములు`;
+    }
+
+}
+}
+public searchWord() {
   this.emptyVerses();
   this.organized = this.emptyOrganized;
   this.versesCount = 0;
@@ -80,14 +128,9 @@ goToContentPage(cc: { pageNumber: number; }) {
           if (this.global.geetha[i].verse != null &&
               this.global.geetha[i].verse.indexOf(this.searchTerm) > 0) {
               this.searchedVerses.push(this.global.geetha[i]);
-              console.log(this.global.geetha[i].chapterName);
-              console.log(this.global.geetha[i].chapterNumber);
               this.organized[this.global.geetha[i].chapterNumber].pages.push(this.global.geetha[i]);
           }
       }
-      console.log(this.searchedVerses); 
-      console.log('organized');
-      console.log(this.organized[1]);
       if (this.searchedVerses.length == 0) {
           this.searchMessage = "ఈ పదానికి శ్లోకములు లభించలేదు. ";
       }
@@ -95,9 +138,9 @@ goToContentPage(cc: { pageNumber: number; }) {
         this.versesCount = this.searchedVerses.length;
         this.searchMessage = "'"+this.searchTerm+"' అనే పదమును వెతుకగా లభించిన శ్లోకములు  ";
       }
-      
+
   }
-   
+
 };
 }
 

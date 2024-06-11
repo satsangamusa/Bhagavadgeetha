@@ -8,315 +8,248 @@
  * For more information on global stylesheets, visit the documentation:
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
- @import "swiper/scss";
+
 /* Core CSS required for Ionic components to work properly */
-@import "~@ionic/angular/css/core.css";
+@import "@ionic/angular/css/core.css";
 
 /* Basic CSS for apps built with Ionic */
-@import "~@ionic/angular/css/normalize.css";
-@import "~@ionic/angular/css/structure.css";
-@import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
-@import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
-@import "~@ionic/angular/css/text-alignment.css";
-@import "~@ionic/angular/css/text-transformation.css";
-@import "~@ionic/angular/css/flex-utils.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
 
+@font-face {
+    font-family: Mandali;
+    src: url("assets/fonts/Mandali-Regular.otf") format("opentype");
+}
 
+@font-face {
+    font-family: NTR;
+    src: url("assets/fonts/NTR.ttf") format("opentype");
+}
 
-.container {
-    margin:auto
-  
-  }
-  .flex-row {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-  }
-  .app, app-dashboard, app-root {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  div {
-    display: block;
-  }   
-  
-  .custom-icon-class{
-    font-size:60px;
-    border-radius:40px;
-    color:white;
-   
-  }
-  .custom-icon-class:hover{
-    color:#071f40;
-    border-radius:40px;
-    background:white;
-    animation: shake 0.5s;
-    
-  }
-  .custom-icon-col-class{
-    border-radius:10px;
-    min-width:350px;
-    background:#071f40;
-     
-    ion-col{
-        margin: 20px;
-    }
-  }
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-    } 
-    
-    .ion-content-color {
-        --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
-        --color:white;
-    }
-    .green {
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        color: #FFFFFF;
-        background-color: #4CAF50;
-        text-decoration: none !important;
-        text-align: center;
-        cursor: pointer;
-        min-width:50px;
-        font-weight: bold;
-        font-size: 11px;
-        border-radius: 5px;
-        margin-bottom: 16px!important;
-        white-space: nowrap;
-    }
-    
-    .blue {
-        background-color: #1569E6;
-        border: none;
-        display: inline-block;
-        padding: 8px 16px;
-        vertical-align: middle;
-        overflow: hidden;
-        color: #FFFFFF;
-        min-width:50px;
-        font-size: 11px;
-        font-weight: bold;
-        text-decoration: none !important;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-bottom: 16px!important;
-        white-space: nowrap;
-    }
-
-    :host ::ng-deep #table  {
-        // color: hotpink;
-        border-collapse: collapse;
-         border-color: blue;
-         > thead > tr > th{
-             border: 0.5px solid black;
-         }
-         > tbody > tr > td{
-             border: 0.5px solid black;
-             font-size:12px;
-         }
-         
-         > tbody > tr:nth-child(even) {background: #e4e5e6
-            
-        }
-         > tbody > tr:nth-child(odd) {background: #FFF}
-     
-       }
-     
-  .orders-item{
-   color: black;
-   --background:#fefefe;
-   margin:2px;
-   font-weight:400;
-   font-size:14px;
+@font-face {
+    font-family: ponnala;
+    src: url("assets/fonts/ponnala.ttf") format("opentype");
 }
 
 
-.form-control-input {
-  display: block;
- 
-  padding: 0.375rem 0.75rem;
-  font-size: 13px;
-  position: relative;
- 
-  max-width:250px;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 1.25rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
- }
 
- .form-control-text-area{
-  display: block;
-  
-  padding: 0.375rem 0.75rem;
-  font-size: 13px;
-  position: relative;
-  
-  border-radius: 1.25rem;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-   
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+* {
+    text-align: justify;
+    user-select: auto;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+
+}
+p{
+  text-align: justify;
+  user-select: auto;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  text-indent:20px;
+}
+
+.poem {
+  text-align: center;
+}
+.pt {
+  display: inline-block;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.poemtext {
+  display: inline-block;
+  text-align: left;
+}
+.poemtext2 {
+  display: inline-block;
+  text-align: left;
+  font-family:NTR;
+  font-weight: bold;
+}
+.pt2 {
+  display: inline-block;
+  text-align: left;
+  font-family:NTR;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+.ntrfont {
+  font-family:NTR;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 25px;
+  font-family:Mandali;
+}
+ion-card{
+    background-color: whitesmoke;
+}
+
+
+
+.poem {
+  text-align: center;
+  }
+
+  .poemtext {
+  display: inline-block;
+  text-align: left;
+  padding: 1em;
+  }
+
+  p {
+  text-indent: 25px;
+  font-family:Mandali;
+  }
+  .chapter-heading {
+    font-style: bold;
+    color: black;
+    cursor: pointer;
+
+  }
+
+  .chapter-heading:hover {
+    background: linear-gradient(grey, blue);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  ion-content {
+    user-select: text;
+  }
+
+  ion-footer {
+    background-color: #222;
   }
 
 
-  //for video images
+  div .col {
+    font-size: 18px;
+  }
 
+  .selectable,
+  p,
+  span {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
 
-  .viditem
-  {
-        
-    
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    font-family: "Mandali", sans-serif;
+  .ms {
+    font-style: italic;
+    text-align: left;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
     font-weight: bold;
- 
+    font-family: mandali;
   }
-  .vid-img-container
-  {
-    position:relative;
-    display: block;
-    text-decoration: none;
-    transition:0.3s;
-    filter:drop-shadow(0 0 1px black);
+
+  .ns {
+    text-align: left;
+    font-weight: bold;
+
   }
-  .vid-img-container img
-  {
-    width:100%;
-    display: block;
-    transition: 0.3s;
+  .testBlink {
+    opacity: 0;
+    animation: blinking 1s infinite;
   }
-  .playimg
-  {
+
+  @keyframes blinking {
+    from,
+    5% {
+      opacity: 1;
+      color: white;
+    }
+    100%,
+    to {
+      opacity: 2;
+      color: gold;
+    }
+  }
+
+
+  .test {
+    background: transparent !important;
+    color: transparent !important;
+    background-color: transparent !important;
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    -webkit-backface-visibility: visible;
+  }
+  #speeches-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: min(2.5%, 2rem);
+    box-shadow: 0px 0px 4px 0px black;
+    background: white;
+  }
+  .viditem {
+    box-shadow: 0px 0px 1px 0px rgb(70 70 70);
+    width: 100%;
+    padding: 4vh 0.5rem;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .vid-img-container {
+    width: 90%;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .playimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    visibility: hidden;
-    filter: opacity(0%);
-  }
-  .vidimg
-  {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    border-radius: 15px;
-    width:100%;
-  }
-  .vid-img-container:hover .playimg
-  {
-    visibility:visible;
-    filter:opacity(100%);
-    transform:scale(0.95);
-  }
-  .vid-img-container:hover .vidimg
-  {
-    filter:grayscale(100%);
-    transform: scale(0.97);
+    transition: 0.2s;
   }
 
-  ion-card{
-    --color:black;
+  .vidimg {
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px black;
+    border: 2px solid white;
+  }
+
+  .video-name-container {
+    margin-top: 1rem;
+    font-size: calc(1em + 0.5vw);
+    text-align: center;
+  }
+  .video-number {
+    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans Telugu', sans-serif;
+  }
+  .video-name {
+    font-family: 'Noto Sans Telugu', sans-serif;
+  }
+  #content-container {
+    flex-grow: 1;
   }
 
 
 
-
-
-  .main-blinker {
-    animation: main-blinker-animation 1.5s linear infinite;
-  }
-  
-  @keyframes main-blinker-animation {  
-      
-    40% { color: rgb(0, 0, 255); }
-    100%{font-weight:600}
-    50%{font-size:17px;}
-  }
-  
-  .kalpitham-blinker {
-    animation: kalpitham-blinker-animation 1.5s linear infinite;
-  }
-  
-  @keyframes kalpitham-blinker-animation {  
-     
-    80% { color: pink; }
-    100%{font-weight:400}
-    100%{opacity:1}
-    50%{font-size:17px;}
-  }
-
-  .custom-popover .popover-content{
-    top: 60px !important;
-    width: 300px;
-}
-.align-icon {
-  position: relative;
-  top: 4px;
-  left: 2px;
-  font-size:20px;
-  color:white;
-}
-.icon-color {
-  
-  color:royalblue;
-}
-
-.custom-card{
-  
-background:lightgrey;
-color:black;
-border-radius:10px;
-margin:15px 0;
-padding:2px;
-
-}
-* {
-        
-  -webkit-user-select: text;
-  
-  -moz-user-select: text;
-  
-  -ms-user-select: text;
-  
-  user-select: text;
-  
-  }

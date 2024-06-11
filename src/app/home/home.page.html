@@ -8,7 +8,7 @@
       </ion-menu-toggle>
       <img src="assets/images/telugulogo.png" height="50">
     </ion-buttons>
-    <ion-title class="ion-text-center"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
+    <ion-title class="ion-text-center" style="font-family: mandali;"><b>త్రైత సిద్ధాంత <br> భగవద్గీత</b></ion-title>
 
     <ion-buttons slot="end">
       <img src="assets/img/swami.jpeg" height="50">
@@ -17,30 +17,25 @@
 </ion-header>
 
   <ion-content class="ion-content-color">
-    <swiper-container #swiper [modules]="swiperModules"
-    (afterinit)="swiperReady()"
-    (slidechange)="swiperSlideChanged($event)"
+    <swiper-container
     [loop]="true"
-    effect="flip"
-    [zoom]="true"
- 
+    [flip]="true"
+    [autoplay]="{delay:3500}"
+    #slider
     [pagination]="true">
-      <swiper-slide *ngFor="let image of images"> 
+      <swiper-slide *ngFor="let image of images">
         <div class="swiper-zoom-container">
           <img  src="assets/img/slides/{{image}}.jpg">
         </div>
-        <ion-card>
-        
-      </ion-card>
       </swiper-slide>
-     
+
     </swiper-container>
-     
-         <!--ion-grid> 
-     
+
+         <!--ion-grid>
+
              <ion-row>
                  <ion-col >
-                     <ion-slides [options]="sliderConfig" #mySlider pager="true" 
+                     <ion-slides [options]="sliderConfig" #mySlider pager="true"
                      (ionSlidesDidLoad)="slidesDidLoad(mySlider)">
                          <ion-slide *ngFor="let image of images" >
                              <ion-card>
@@ -52,7 +47,6 @@
                        </ion-slides>
                  </ion-col>
                </ion-row>
-     
+
          </ion-grid-->
      </ion-content>
-     

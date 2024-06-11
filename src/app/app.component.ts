@@ -1,34 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, UrlTree } from '@angular/router';
+import { Capacitor } from '@capacitor/core';
 import { SplashScreen } from '@capacitor/splash-screen';
 import { StatusBar, Style } from '@capacitor/status-bar';
-import { GlobalService } from 'src/app/global.service';
-import { Router, UrlTree } from '@angular/router';
+import { IonApp, IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonNote, IonRouterLink, IonRouterOutlet, IonSplitPane } from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { addCircleOutline, archiveOutline, archiveSharp, book, bookmarkOutline, bookmarkSharp, caretBack, caretBackCircleOutline, caretForward, caretForwardCircleOutline, close, closeCircle, closeCircleSharp, closeOutline, documentSharp, documentText, heartOutline, heartSharp, home, information, list, mailOutline, mailSharp, menu, mic, paperPlaneOutline, paperPlaneSharp, removeCircleOutline, search, settings, settingsOutline, shareSharp, shuffle, trashOutline, trashSharp, videocam, videocamSharp, warningOutline, warningSharp } from 'ionicons/icons';
 import { NetworkService } from 'src/app/network.service';
 import { register } from 'swiper/element/bundle';
-import { Capacitor } from '@capacitor/core';
-
+import { GlobalService } from './global.service';
+register();
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss']
+  styleUrls: ['app.component.scss'],
+  standalone: true,
+  providers:[GlobalService],
+  imports: [RouterLink, RouterLinkActive, CommonModule, IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterLink, IonRouterOutlet],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+
+  constructor(
+    public global:GlobalService,
+    public router:Router,
+    private networkService: NetworkService,) {
+      addIcons({ mailOutline,search,book,home,settingsOutline,documentText,videocamSharp,shareSharp,information,caretBack,documentSharp,close,closeCircle,closeCircleSharp,closeOutline,removeCircleOutline,addCircleOutline,shuffle,settings,caretBackCircleOutline,caretForwardCircleOutline,caretForward,mic,videocam,menu, list,mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp });
+      this.initializeApp();
+  }
+
   menuItems:any=[];
   sh:any=0;
   sm:any=0;
-  constructor(
-    private platform: Platform,
-    public global:GlobalService,
-    public router:Router,
-    private networkService: NetworkService,
-  ) {
-    this.initializeApp();
-  }
 
-  initializeApp() { 
-    this.platform.ready().then(async () => {
+
+ async initializeApp() {
       this.networkService.initializeNetworkEvents();
       document.body.setAttribute('data-theme', 'light');
       document.body.classList.toggle('dark', false);
@@ -40,14 +47,13 @@ export class AppComponent implements OnInit {
         StatusBar.setStyle({
           style: Style.Default
         });
-        
+
       }
-  
-    });
+
   }
- 
+
   ngOnInit() {
-    
+
     register();
     this.menuItems[0]={
       title:'శ్లోకాలు వెతకండి',
@@ -100,10 +106,10 @@ export class AppComponent implements OnInit {
     {
       title:'పంచండి',
       url: 'share',
-      icon:'share',
+      icon:'share-sharp',
       subs:null
     };
-     
+
   }
   goToChapter(page: { subs: null; component: number; url: string | UrlTree; }){
 
