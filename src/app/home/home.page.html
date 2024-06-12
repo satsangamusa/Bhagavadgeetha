@@ -18,18 +18,26 @@
 
   <ion-content class="ion-content-color">
     <swiper-container
+    [modules]="swiperModules"
+    [slidesPerView]="1"
+    slideShadows="true"
+   flip="true"
     [loop]="true"
-    [flip]="true"
-    [autoplay]="{delay:3500}"
-    #slider
-    [pagination]="true">
-      <swiper-slide *ngFor="let image of images">
+    pagination="true"
+    multipleActiveThumbs="true"
+    #swiper
+    >
+    @for(image of images;track image){
+      <swiper-slide>
         <div class="swiper-zoom-container">
           <img  src="assets/img/slides/{{image}}.jpg">
         </div>
       </swiper-slide>
-
+    }
     </swiper-container>
+
+
+
 
          <!--ion-grid>
 

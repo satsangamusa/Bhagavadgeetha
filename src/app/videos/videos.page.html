@@ -31,11 +31,15 @@
         <ion-col class="ion-text-center">
           <ion-searchbar [style.color]='this.globaldata.fontColor' show-clear-button="always" style="font-family: NTR;"
           placeholder="పాటను వెతకండి" [(ngModel)]="gvvSearchText" [debounce]="100" (ionInput)="handleChange($event)"></ion-searchbar>
-            <ion-list lines="none" *ngIf="filteredAudios?.length>0">
-              <ion-item *ngFor="let audio of filteredAudios"  lines="none" detail (click)="selectedAudio(audio)">
-                <ion-label style="font-family: NTR;" [style.color]='this.globaldata.fontColor'><b>{{ audio.title }}</b></ion-label>
-              </ion-item>
+          @if(filteredAudios?.length>0){
+            <ion-list lines="none">
+              @for(audio of audios;track audio){
+                <ion-item   lines="none" detail (click)="selectedAudio(audio)">
+                  <ion-label style="font-family: NTR;" [style.color]='this.globaldata.fontColor'><b>{{ audio.title }}</b></ion-label>
+                </ion-item>
+              }
             </ion-list>
+          }
         </ion-col>
       </ion-row>
 
@@ -58,11 +62,14 @@
               <ion-col class="ion-text-center"><ion-icon aria-hidden="true"  [ios]="'caret-back-circle-outline'" [md]="'caret-back-circle-outline'"   (click)="veryLast()" style="font-size: xx-large;" [style.color]='this.globaldata.fontColor'></ion-icon></ion-col>
             </ion-row>
           </ion-card>
-          <ion-row *ngIf="currentAudio?.ytUrl">
-            <ion-col class="ion-text-center">
-                <ion-button *ngIf="currentAudio?.ytUrl" shape="round" fill="outline"  style="font-family: ponnala;"  (click)="gotoYouTube(currentAudio?.ytUrl)">
-                  <img src="assets/images/yt.png" width="40px"></ion-button>
-            </ion-col>
-          </ion-row>
+          @if(currentAudio?.ytUrl){
+            <ion-row>
+              <ion-col class="ion-text-center">
+                  <ion-button shape="round" fill="outline"  style="font-family: ponnala;"  (click)="gotoYouTube(currentAudio?.ytUrl)">
+                    <img src="assets/images/yt.png" width="40px"></ion-button>
+              </ion-col>
+            </ion-row>
+          }
+
     </ion-grid>
   </ion-content>

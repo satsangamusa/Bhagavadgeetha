@@ -30,6 +30,12 @@ export class GlobalService {
   selectedGVAudio: any = null;
   selectedGGAudio: any = null;
   clickedSongDetails:boolean=false;
+  red:number = 255;
+  green:number = 255;
+  blue:number = 255;
+  fontRed:number = 0;
+  fontGreen:number = 0;
+  fontBlue:number = 0;
   geetha: any = [
     {
       chapterName: "రచయిత ముందు మాట",
@@ -37,8 +43,7 @@ export class GlobalService {
       videoId: 'YL9AHyXaulo',
       pageNumber: 0,
       verse: ``, meaning: ``, main: false, pageText:
-        `
-        <p>
+        ` <p>
         భూమి మీద గల జీవరాసులలో మనిషి అన్నిటికంటే ఎక్కువ బుద్ధి బలము కలవాడు. బుద్ధిలో అన్నిటికంటే గొప్పవాడైన మానవుడు,
           అన్ని రంగములలో అతి సూక్ష్మాతి సూక్ష్మముగా యోచించగల్గుచున్నాడు. కాని ఒకే ఒక ఆధ్యాత్మికరంగములో మాత్రము హీనాతిహీనముగా వెనుకబడి
           ఉన్నాడు. ఉదాహరణకు ఒక న్యాయవాది(అడ్వకేట్) ఉన్నాడనుకొందాము. అతడు అన్యాయవరుని వైపు వాదించుటకు ఒప్పుకొని, తన బుద్ధిచేత

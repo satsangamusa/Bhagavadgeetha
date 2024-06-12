@@ -30,19 +30,26 @@
         <ion-searchbar [style.color]='this.global.fontColor' [debounce]="100" [(ngModel)]="searchTerm"
           (ngModelChange)="handleChange($event)"  show-clear-button="always" style="font-family: NTR;"
           placeholder="శ్లోకములను వెతకండి"></ion-searchbar>
-          <ion-list lines="none" *ngIf="filteredVerses?.length>0">
+          @if(filteredVerses?.length>0){
+            <ion-list lines="none">
+              @for(verse of filteredVerses;track verse){
+                <ion-item  lines="none" detail (click)="selectedVerse(verse)">
+                  <ion-label style="font-family: NTR;" [style.color]='this.global.fontColor'><b>{{ verse.title }}</b></ion-label>
+                </ion-item>
+              }
+            </ion-list>
+          }
 
-            <ion-item *ngFor="let verse of filteredVerses"  lines="none" detail (click)="selectedVerse(verse)">
-              <ion-label style="font-family: NTR;" [style.color]='this.global.fontColor'><b>{{ verse.title }}</b></ion-label>
-            </ion-item>
-          </ion-list>
       </ion-col>
     </ion-row>
-    <ion-row *ngIf="searchMessage">
-      <ion-col style="font-size:17px;font-family: mandali;color:maroon" [ngStyle]="{'font-size':this.global.fontSize+'px'}" class="ion-text-center">
-        <b> {{searchMessage}}</b>
-      </ion-col>
-    </ion-row>
+    @if(searchMessage){
+      <ion-row>
+        <ion-col style="font-size:17px;font-family: mandali;color:maroon" [ngStyle]="{'font-size':this.global.fontSize+'px'}" class="ion-text-center">
+          <b> {{searchMessage}}</b>
+        </ion-col>
+      </ion-row>
+    }
+
 
             <!--ion-row>
               <ion-col>
@@ -60,34 +67,38 @@
 
     <ion-row>
       <ion-col>
-        <div *ngIf="organized.length>0">
+        @if(organized.length>0){
+            @for(sd of organized;track sd){
 
-              <ion-row *ngFor="let sd of organized">
-                <ion-col *ngIf="sd.pages.length>0">
+              <ion-row>
+                @if(sd.pages.length>0){
+
+                <ion-col>
                   <ion-row>
                     <ion-col class="ion-text-center"> <b>
                           <span style="border-radius:10px;font-family:Mandali" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>{{sd.chapterName}}</span></b>                      </ion-col>
                   </ion-row>
-                  <ion-row *ngFor="let pg of sd.pages">
-                    <ion-col>
-                      <ion-card >
-
-                          <ion-row>
-                            <ion-col (click)="goToContentPage(pg)" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
-                              <b><span style="font-family: NTR;" [innerHtml]="this.global.geetha[pg.pageNumber].verse | safe:'html'"></span></b>
-                            </ion-col>
-                          </ion-row>
-
-                      </ion-card>
-                    </ion-col>
-                  </ion-row>
+                  @for(pg of sd.pages;track pg){
+                    <ion-row>
+                      <ion-col>
+                        <ion-card >
+                            <ion-row>
+                              <ion-col (click)="goToContentPage(pg)" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
+                                <b><span style="font-family: NTR;" [innerHtml]="this.global.geetha[pg.pageNumber].verse | safe:'html'"></span></b>
+                              </ion-col>
+                            </ion-row>
+                        </ion-card>
+                      </ion-col>
+                    </ion-row>
+                  }
                 </ion-col>
+              }
               </ion-row>
 
+            }
 
+            }
 
-
-        </div>
       </ion-col>
     </ion-row>
   </ion-grid>

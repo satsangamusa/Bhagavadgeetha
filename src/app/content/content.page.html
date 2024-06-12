@@ -17,22 +17,29 @@
 
 
 <ion-content class="ion-content-color">
-  <ion-row>
+  <ion-row [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
     <ion-col><br></ion-col>
   </ion-row>
-  <ion-row>
-    <ion-col class="ion-text-right" size="2">
+  <ion-row [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'>
 
-        <span   style="font-size:30px;" *ngIf="this.global.currentPage>0" (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
+    <ion-col class="ion-text-right" size="2" style="margin-top: -5px;">
+      @if(this.global.currentPage>0){
+        <span   style="font-size:30px;" (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
+      }
       </ion-col>
+
       <ion-col class="ion-text-center" size="6" style="margin-top: 10px;">
         <b><span style="font-family: mandali" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>
         </ion-col>
+
         <ion-col class="ion-text-left" size="2" style="margin-top: 12px;">
           <ion-icon name="settings" (click)="openSettings()" class="align-icon"></ion-icon>
           </ion-col>
-        <ion-col class="ion-text-left" size="2">
-        <span   style="font-size:30px;" *ngIf="this.global.currentPage<=571" (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
+
+        <ion-col class="ion-text-left" size="2" style="margin-top: -5px;">
+          @if(this.global.currentPage<=571){
+        <span   style="font-size:30px;"  (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
+          }
         </ion-col>
 
   </ion-row>
@@ -75,25 +82,39 @@
           -->
 
         <!-- without telugu poems-->
-        <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==false">
-
-            <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse=='చివరి పేజి'" class="ion-text-center">
-             <b> <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span></b>
-            </ion-col>
-            <ion-col class="ns" *ngIf="this.global.geetha[this.global.currentPage].verse!='చివరి పేజి'">
+        @if(this.global.geetha[this.global.currentPage].main===false){
+          <ion-row>
+            @if(this.global.geetha[this.global.currentPage].verse==='చివరి పేజి'){
+              <ion-col class="ns" class="ion-text-center">
+                <b> <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span></b>
+              </ion-col>
+            }
+           @if(this.global.geetha[this.global.currentPage].verse!=='చివరి పేజి'){
+            <ion-col class="ns">
+              <div class="poem">
+                <div class="poemtext">
               <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+              </div></div>
             </ion-col>
+           }
           </ion-row>
-          <ion-row *ngIf="this.global.geetha[this.global.currentPage].main==true">
-            <ion-col class="ms">
-              <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
-            </ion-col>
-          </ion-row>
-
-          <ion-row *ngIf="this.global.networkStatus==='ONLINE' ">
+        }
 
 
-            <ion-col class="ion-text-center" *ngIf="this.global.geetha[this.global.currentPage].videoId">
+          @if(this.global.geetha[this.global.currentPage].main===true){
+            <ion-row>
+              <ion-col class="ms">
+                <div class="poem">
+                  <div class="poemtext">
+                    <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+                  </div>
+                </div>
+              </ion-col>
+            </ion-row>
+          }
+          @if(nw.connectionStatus===true && this.global.geetha[this.global.currentPage].videoId){
+          <ion-row>
+            <ion-col class="ion-text-center">
 
               <!--div class="video-item">
 								<a class="video-image-container" (click)="playVideo(this.global.geetha[this.global.currentPage].videoId)">
@@ -123,13 +144,16 @@
 
               </ion-col-->
           </ion-row>
+        }
+          @if(this.global.geetha[this.global.currentPage]?.meaning){
+            <ion-row>
+              <ion-col>
+                <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].meaning | safe:'html'"> </span>
 
-          <ion-row>
-            <ion-col>
-              <span style="font-family: mandali;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].meaning | safe:'html'"> </span>
+              </ion-col>
+            </ion-row>
+          }
 
-            </ion-col>
-          </ion-row>
           <ion-row>
             <ion-col >
               <span style ="font-family: mandali;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor'  [innerHTML]="this.global.geetha[this.global.currentPage].pageText | safe:'html'"> </span>
@@ -137,13 +161,13 @@
           </ion-row>
     </ion-col>
   </ion-row>
-  <ion-row>
-    <ion-col class="ion-text-right" >
-        <span class="align-icon" style="font-size:30px;margin-right:8px;color:gold;"
-        *ngIf="this.global.currentPage<=571"
-        (click)="goToTop()" >☞</span>
-    </ion-col>
-  </ion-row>
+  @if(this.global.currentPage<=571){
+    <ion-row>
+      <ion-col class="ion-text-right" >
+          <span class="align-icon" style="font-size:30px;margin-right:8px;color:gold;" (click)="goToTop()" >☞</span>
+      </ion-col>
+    </ion-row>
+  }
   <ion-row>
     <ion-col>
     <br>

@@ -4,6 +4,7 @@ import { Browser } from '@capacitor/browser';
 import { IonButton, IonButtons, IonCard, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonLabel, IonList, IonMenu, IonMenuButton, IonMenuToggle, IonRow, IonSearchbar, IonTitle, IonToolbar, ModalController } from '@ionic/angular/standalone';
 import { GlobalService } from 'src/app/global.service';
 import { ContentPipe } from '../content-pipe';
+import { NetworkService } from '../network.service';
 import { SettingsModalPage } from '../settings-modal/settings-modal.page';
 
 @Component({
@@ -17,7 +18,7 @@ import { SettingsModalPage } from '../settings-modal/settings-modal.page';
 })
 export class LordKrishnaPage implements OnInit {
 
-  constructor(public global:GlobalService,public modalController:ModalController) { }
+  constructor(public global:GlobalService,public modalController:ModalController,public nw:NetworkService) { }
 
   ngOnInit() {
   }

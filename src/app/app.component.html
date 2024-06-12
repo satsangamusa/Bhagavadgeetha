@@ -2,48 +2,55 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        <ion-list id="inbox-list">
+        <ion-list id="inbox-list" [style.background-color]='this.global.bgColor'>
           <ion-row>
             <ion-col class="ion-text-center">
               <img width="180px" src="assets/images/telugulogo.png">
             </ion-col>
           </ion-row>
-          <ion-row *ngFor="let m of menuItems; let i = index">
+          @for(m of menuItems;track m; let i = $index){
+          <ion-row [style.background-color]='this.global.bgColor' style="padding-left: 10px;">
             <ion-col class="ion-content-color">
-                <ion-item  (click)="global.mainItem = i;global.selectedItem=-1;goToChapter(m);sm=sm==1?0:1"
+                <div  (click)="global.mainItem = i;global.selectedItem=-1;goToChapter(m);sm=sm==1?0:1"
+
                 lines="none" detail="false"  [class.selected]="global.mainItem == i ">
                 <ion-icon aria-hidden="true" slot="start" [ios]="m.icon" [md]="m.icon" [style.color]='this.global.fontColor'></ion-icon>
-                <ion-label class="ion-text-wrap" [style.background-color]='this.global.bgColor' [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" style="font-family: NTR;"><b>{{ m.title }}</b></ion-label>
-                </ion-item>
-                <div *ngIf="global.mainItem == i && sm==1" >
-                    <ion-row  *ngFor="let s of m.subs;let j = index">
+                &nbsp;
+                <ion-label class="ion-text-wrap"  [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" style="font-family: NTR;"><b>{{ m.title }}</b></ion-label>
+            </div><br>
+                @if(global.mainItem === i && sm===1){
+                  @for(s of m.subs;track s;let j = $index){
+                    <ion-row>
                         <ion-col style="margin-left:5px">
-                            <ion-item (click)="global.selectedItem = j;global.subItem=-1;goToChapter(s); sh=sh==1?0:1"
+                            <div (click)="global.selectedItem = j;global.subItem=-1;goToChapter(s); sh=sh==1?0:1"
                             lines="none" detail="false" [class.main-blinker]="j==1" [class.selected]="global.selectedItem == j && global.mainItem == i ">
                             <ion-icon aria-hidden="true" slot="start" name="document-text" [style.color]='this.global.fontColor'></ion-icon>
-                            <ion-label class="ion-text-wrap" [style.background-color]='this.global.bgColor' [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}"  style="font-family: NTR;"><b>{{ s.title }}</b></ion-label>
-                            </ion-item>
-
-                            <div *ngIf="global.selectedItem == j && sh==1">
-                                <ion-row  *ngFor="let ss of s.subs;let k = index">
+                            <ion-label class="ion-text-wrap" [style.background-color]='this.global.bgColor' [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}"   style="font-family: NTR;"><b>{{ s.title }}</b></ion-label>
+                            </div><br>
+                            @if(global.selectedItem === j && sh===1){
+                              @for(ss of s.subs;track ss; let k = $index){
+                                <ion-row>
                                     <ion-col style="margin-left:5px">
-                                        <ion-item (click)="global.subItem = k;goToChapter(ss);"
+                                        <div (click)="global.subItem = k;goToChapter(ss);"
                                         lines="none" detail="false"
                                         [ngStyle]="{'color':ss.color === 'pink' ? 'pink' : '' }"
                                         [class.main-blinker]="j!=1 && ss.blink=='testBlink'"
                                         [class.selected]="global.subItem == k && global.mainItem == i && global.selectedItem == j ">
                                         <ion-label class="ion-text-wrap" [style.background-color]='this.global.bgColor' [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" style="font-family: NTR;"><b> {{ ss.shloka }}</b></ion-label>
-                                        </ion-item>
+                                        </div>
 
                                     </ion-col>
                                   </ion-row>
-                                </div>
-
+                                }
+                              }
                         </ion-col>
                       </ion-row>
-                    </div>
+                    }
+                  }
+
             </ion-col>
           </ion-row>
+        }
           <!--ion-row *ngFor="let p of global.chapters; let i = index">
             <ion-col >
                 <ion-item  (click)="global.selectedItem = i;global.subItem=-1;goToChapter(p);"
@@ -66,7 +73,7 @@
 
         </ion-list>
 
-        <ion-row>
+        <ion-row [style.background-color]='this.global.bgColor'>
             <ion-col>
               <span><b> Ⓒ 1978-2022 Thraithashakam. All rights reserved</b></span>
             </ion-col>

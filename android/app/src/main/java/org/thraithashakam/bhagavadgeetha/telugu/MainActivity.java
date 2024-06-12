@@ -1,4 +1,4 @@
-package org.threesouls.telugu.bhagavadgeetha;
+package org.thraithashakam.bhagavadgeetha.telugu;
 
 import com.getcapacitor.BridgeActivity;
 

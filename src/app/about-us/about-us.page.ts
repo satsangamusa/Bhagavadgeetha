@@ -9,7 +9,7 @@ import { SettingsModalPage } from '../settings-modal/settings-modal.page';
   templateUrl: './about-us.page.html',
   styleUrls: ['./about-us.page.scss'],
   standalone:true,
-  providers:[GlobalService,ModalController],
+  providers:[ModalController],
   imports: [SettingsModalPage,IonCard, CommonModule,IonCol,IonIcon,IonHeader,IonMenuButton,IonMenu,IonMenuToggle,IonToolbar,IonTitle,IonButton,IonButtons,IonContent,IonRow,IonGrid,IonSearchbar,IonList,IonItem,IonLabel],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

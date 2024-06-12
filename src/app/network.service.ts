@@ -1,42 +1,42 @@
 import { Injectable } from '@angular/core';
 import { Network } from '@capacitor/network';
- 
-import { ToastController, Platform } from '@ionic/angular';
+
+import { Platform, ToastController } from '@ionic/angular';
 import { GlobalService } from './global.service';
- 
- 
- 
+
+
+
 @Injectable({
   providedIn: 'root'
 })
 export class NetworkService {
- 
-  connectionStatus:any=false;
+
+  public connectionStatus:any=false;
   constructor(
     private toastController: ToastController, private plt: Platform, public global:GlobalService) {
       this.plt.ready().then(() => {
         this.initializeNetworkEvents();
       });
   }
- 
+
   public initializeNetworkEvents() {
     if(Network){
-      
+
       Network.getStatus().then(status=>{
         console.log(status)
         this.connectionStatus = status.connected;
         this.updateNetworkStatus(status.connected);
       });
     }
-     
+
     Network.addListener("networkStatusChange", st=>{
       this.connectionStatus=st.connected;
       console.log(' when status changed :: ',  this.connectionStatus)
       this.updateNetworkStatus(this.connectionStatus)
-     
+
     })
   }
- 
+
 
   private async updateNetworkStatus(status: boolean) {
     if(status===true){
