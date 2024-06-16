@@ -12,7 +12,7 @@ export class GlobalService {
     return '//www.youtube.com/embed/' + url;
   }
   pages: Array<{ title: string; component: any; }> = [];
-  fontSize: number = 15;
+  fontSize: number = 19;
   startPage: number = 0;
   endPage: number = 0;
   currentPage: number = 0;
@@ -30,9 +30,9 @@ export class GlobalService {
   selectedGVAudio: any = null;
   selectedGGAudio: any = null;
   clickedSongDetails:boolean=false;
-  red:number = 255;
-  green:number = 255;
-  blue:number = 255;
+  red:number = 211;
+  green:number = 211;
+  blue:number = 211;
   fontRed:number = 0;
   fontGreen:number = 0;
   fontBlue:number = 0;
