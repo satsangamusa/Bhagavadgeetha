@@ -95,10 +95,9 @@
            @if(this.global.geetha[this.global.currentPage].verse!=='చివరి పేజి' && this.global.geetha[this.global.currentPage].verse){
             <ion-row>
             <ion-col class="ns">
-              <div class="poem">
-                <div class="poemtext">
+
               <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
-              </div></div>
+
             </ion-col>
           </ion-row>
            }
@@ -109,11 +108,9 @@
           @if(this.global.geetha[this.global.currentPage].main===true){
             <ion-row>
               <ion-col class="ms">
-                <div class="poem">
-                  <div class="poemtext">
+
                     <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
-                  </div>
-                </div>
+
               </ion-col>
             </ion-row>
           }
