@@ -23,14 +23,14 @@
     <ion-row>
       <ion-col class="ion-text-center" >
         @if(this.global.currentPage>0){
-          <span class="align-icon" style="font-size:30px;"  (click)="this.global.currentPage=this.global.currentPage-1;"><img src="assets/icons/left-hand.svg" height="20px" style="padding-top: 2px;"></span>
+          <span class="align-icon" style="font-size:30px;"  (click)="this.global.currentPage=this.global.currentPage-1;">☜</span>
           &nbsp;
         }
           <b><span style="font-size:20px;font-family: mandali;"> {{this.global.geetha[this.global.currentPage].chapterName}}</span></b>&nbsp;
           <ion-icon name="settings-outline"(click)="openSettings()" class="align-icon"></ion-icon>
           @if(this.global.currentPage<=571){
             &nbsp;
-            <span class="align-icon" style="font-size:30px;"  (click)="this.global.currentPage=this.global.currentPage+1;"><img src="assets/icons/right-hand.svg" height="20px" style="padding-top: 2px;"></span>
+            <span class="align-icon" style="font-size:30px;"  (click)="this.global.currentPage=this.global.currentPage+1;">☞</span>
           }
       </ion-col>
     </ion-row>
@@ -98,7 +98,7 @@
             <ion-row>
             <ion-col class="ns">
 
-              <span style="font-family: NTR;text-indent:0px;" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
+              <span style="font-family: NTR;text-indent:0px;line-height:50px" [style.color]='this.global.fontColor' [ngStyle]="{'font-size':this.global.fontSize+'px'}" [style.background-color]='this.global.bgColor' [innerHTML]="this.global.geetha[this.global.currentPage].verse | safe:'html'"> </span>
 
             </ion-col>
           </ion-row>
@@ -169,8 +169,7 @@
   @if(this.global.currentPage<=571){
     <ion-row>
       <ion-col class="ion-text-right" >
-        <img src="assets/icons/right-hand.svg" height="25px" style="margin-right:8px;" (click)="goToTop()" >
-
+        <span (click)="goToTop()" style="font-size:30px;" > ☞</span>
       </ion-col>
     </ion-row>
   }

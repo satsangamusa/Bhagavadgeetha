@@ -8,7 +8,7 @@ public class MainActivity extends BridgeActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState){
-        registerPlugin(ZoomPlugin.class);
+        registerPlugin(org.thraithashakam.bhagavadgeetha.telugu.ZoomPlugin.class);
         super.onCreate(savedInstanceState);
     }
 }

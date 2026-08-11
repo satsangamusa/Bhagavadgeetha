@@ -4,7 +4,7 @@ const config: CapacitorConfig = {
   appId: 'org.thraithashakam.bhagavadgeetha.telugu',
   appName: 'భగవద్గీత',
   webDir: 'www/browser',
-  zoomEnabled:true
+  zoomEnabled:true,
 };
 
 export default config;
